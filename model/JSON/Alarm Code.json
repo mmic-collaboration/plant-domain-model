@@ -1,0 +1,105 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Alarm Code",
+    "description": "Alarm codes are defined by CPI as part of the Digital Membership Architecture for Medicines Manufacturing.  They describe the different failure conditions that can occur during medicines manufacturing process, their relative severity (or 'colour'), and the required recovery action.\n\nAlarm codes have been consolidated from a number of sources, including equipment manufacturers.  It is envisaged that this list will continue to evolve as the requirements are better understood.\n\nThe full list of Digital Membership Alarm Codes is currently defined in the PLANT Domain reference data:\n- https://github.com/mmic-collaboration/plant-domain-model/tree/development/reference-data",
+    "properties": {
+        "alarm code id": {
+            "type": "number",
+            "description": "The unique Digital Membership assigned identifier",
+            "isActivated": true,
+            "autoincrement": {
+                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "index": true,
+            "primaryKey": true,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "alarm code title": {
+            "type": "string",
+            "description": "short description of the alarm code",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "alarm code colour": {
+            "type": "string",
+            "description": "A colour to indicate the severity of the triggered alarm, with the recovery action:\n - RED - Machine Stop, Clear fault condition and trigger reset/restart\n - YELLOW - Machine Paused, Remove hold condition, machine will resume automatic control.\n - WHITE - Information, n/a\n - BLUE - Low Materials Warning, Replenish material stock\n\nRef: FS01 Data Specification, CPI, martin.keane@cpi-uk.com",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "symbols": [
+                "Y"
+            ],
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "enum": [
+                "RED",
+                "YELLOW",
+                "WHITE",
+                "BLUE"
+            ],
+            "examples": [
+                "RED"
+            ]
+        },
+        "alarm code recovery action": {
+            "type": "string",
+            "description": "a short description of the action required in response to this alarm",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "examples": [
+                "Stop filling system"
+            ]
+        },
+        "alarm warning message": {
+            "type": "string",
+            "description": "a short description of the alarm code, typically displayed to the user via the ui of the control software",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "examples": [
+                "Humidity Sensor Fault"
+            ]
+        },
+        "alarm code condition": {
+            "type": "string",
+            "description": "the condition or conditions which resulted in this alarm",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false,
+            "examples": [
+                "Humidity Sensor Has Rported A fault Or Comms Loss"
+            ]
+        }
+    },
+    "isActivated": true,
+    "additionalProperties": false,
+    "required": [
+        "alarm code id",
+        "alarm code colour"
+    ]
+}

@@ -1,13 +1,13 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Sensor Event",
+    "title": "Sensor Event Type",
     "properties": {
-        "sensor event id": {
+        "sensor event type id": {
             "type": "number",
             "isActivated": true,
             "autoincrement": {
-                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
+                "id": "78f06df0-0659-4be0-a2dc-c71bac69a666",
                 "step_num": 1
             },
             "tPrecision": 9,
@@ -17,38 +17,23 @@
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "sensor id": {
-            "type": "number",
-            "isActivated": true,
-            "autoincrement": {
-                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "sensor event type id": {
-            "type": "number",
-            "isActivated": true,
-            "autoincrement": {
-                "id": "5b184a92-1343-473b-a38b-d93908999689",
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "sensor event timestamp": {
+        "sensor event type name": {
             "type": "string",
             "isActivated": true,
             "autoincrement": {
                 "step_num": 1
             },
+            "tPrecision": 9,
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "sensor event type description": {
+            "type": "string",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "tPrecision": 9,
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         }
@@ -56,7 +41,7 @@
     "isActivated": true,
     "additionalProperties": false,
     "required": [
-        "sensor event id",
-        "sensor id"
+        "sensor event type id",
+        "sensor event type name"
     ]
 }

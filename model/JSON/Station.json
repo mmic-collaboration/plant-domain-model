@@ -1,22 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Sensor",
+    "title": "Station",
     "properties": {
-        "sensor id": {
-            "type": "number",
-            "isActivated": true,
-            "autoincrement": {
-                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "index": true,
-            "primaryKey": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
         "station id": {
             "type": "number",
             "isActivated": true,
@@ -26,11 +12,40 @@
             },
             "tPrecision": 9,
             "index": true,
+            "primaryKey": true,
             "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
         },
-        "sensor type": {
+        "equipment id": {
+            "type": "number",
+            "isActivated": true,
+            "autoincrement": {
+                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "index": true,
+            "mode": "int32",
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "state": {
+            "type": "string",
+            "description": "The station state captures the lifecycle of a station:\n\n1. The transition from “Available” to “Running” occurs when a Station Start Request is received from either the local HMI or the Machine Level SCADA.\n2. The transition from “Running” to “In Cycle” occurs when the machine is in the “Running” state and the machine is in auto mode.\n3. The transition from “In Cycle” to “Fault” occurs when a “red” alarm becomes active.\n4. The transition from “Fault” to “In Cycle” occurs when all “red” alarms have been cleared.\n\nRef: FS01 Data Specification, CPI, martin.keane@cpi-uk.com\n",
+            "isActivated": true,
+            "autoincrement": {
+                "step_num": 1
+            },
+            "tPrecision": 9,
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "symbols": [
+                "Y"
+            ],
+            "compositePrimaryKey": false,
+            "compositeUniqueKey": false
+        },
+        "station short code": {
             "type": "string",
             "isActivated": true,
             "autoincrement": {
@@ -38,45 +53,15 @@
             },
             "tPrecision": 9,
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false
-        },
-        "Sensor Configuration": {
-            "type": "array",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "additionalItems": true,
-            "uniqueItems": false,
-            "compositePrimaryKey": false,
             "compositeUniqueKey": false,
-            "items": [
-                {
-                    "type": "string",
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "tPrecision": 9,
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "displayName": "Config-0001"
-                },
-                {
-                    "type": "string",
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "tPrecision": 9,
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "displayName": "Config-0002"
-                }
+            "examples": [
+                "FS01"
             ]
         }
     },
     "isActivated": true,
-    "additionalProperties": false
+    "additionalProperties": false,
+    "required": [
+        "state"
+    ]
 }

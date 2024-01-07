@@ -12,6 +12,7 @@
             },
             "tPrecision": 9,
             "index": true,
+            "primaryKey": true,
             "mode": "int32",
             "compositePrimaryKey": false,
             "compositeUniqueKey": false
@@ -38,5 +39,8 @@
         }
     },
     "isActivated": true,
-    "additionalProperties": false
+    "additionalProperties": false,
+    "required": [
+        "equipment id"
+    ]
 }
