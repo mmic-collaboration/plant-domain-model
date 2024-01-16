@@ -41,40 +41,18 @@
             "compositeUniqueKey": false
         },
         "Sensor Configuration": {
-            "type": "array",
+            "type": "object",
             "isActivated": true,
             "autoincrement": {
                 "step_num": 1
             },
             "tPrecision": 9,
-            "additionalItems": true,
-            "uniqueItems": false,
+            "subtype": "map<str>",
+            "keyType": "char",
+            "keySubtype": "text",
+            "additionalProperties": false,
             "compositePrimaryKey": false,
-            "compositeUniqueKey": false,
-            "items": [
-                {
-                    "type": "string",
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "tPrecision": 9,
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "displayName": "Config-0001"
-                },
-                {
-                    "type": "string",
-                    "isActivated": true,
-                    "autoincrement": {
-                        "step_num": 1
-                    },
-                    "tPrecision": 9,
-                    "compositePrimaryKey": false,
-                    "compositeUniqueKey": false,
-                    "displayName": "Config-0002"
-                }
-            ]
+            "compositeUniqueKey": false
         }
     },
     "isActivated": true,

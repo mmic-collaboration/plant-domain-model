@@ -53,7 +53,7 @@
                 "RED"
             ]
         },
-        "alarm code recovery action": {
+        "alarm code  standard recovery action": {
             "type": "string",
             "description": "a short description of the action required in response to this alarm",
             "isActivated": true,
