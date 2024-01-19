@@ -4,57 +4,18 @@
     "title": "Sensor",
     "properties": {
         "sensor id": {
-            "type": "number",
-            "isActivated": true,
-            "autoincrement": {
-                "id": "6339b50b-0991-4852-801f-d2a4bd7ce7a1",
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "index": true,
-            "primaryKey": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "type": "number"
         },
         "station id": {
-            "type": "number",
-            "isActivated": true,
-            "autoincrement": {
-                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "type": "number"
         },
         "sensor type": {
-            "type": "string",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "type": "string"
         },
         "Sensor Configuration": {
             "type": "object",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "subtype": "map<str>",
-            "keyType": "char",
-            "keySubtype": "text",
-            "additionalProperties": false,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "additionalProperties": false
         }
     },
-    "isActivated": true,
     "additionalProperties": false
 }

@@ -1,0 +1,138 @@
+﻿alarm code Id,alarm code number,alarm warning message,alarm condition,alarm colour,alarm code standard recovery action,alarm code type,alarm code station type
+1,1,Stop Pushbutton Pressed,HMI/Line control PLC Request to Stop Station,RED,Stop filling system,,FS01
+2,2,Air Pressure Low PS1035,Air Pressure switch PRS1035 indicating a Low Inlet Air Pressure,RED,"Stop filling system, de-energise air dump valve",,FS01
+3,3,Dump Valve Fault PS1045,"Pressure switch PRS1045 downstream of the Dump valve is indicating one of the following alarm conditions: -
+• Dump Valve is Energised but PRS1045 Indicating No Pressure
+• Dump Valve is De-Energised but PRS1045 Indicating Pressure is Still Present""",RED,"Stop filling system, de-energise air dump valve",,FS01
+4,4,Guard 1 Main Rear Door SW1445,Guard 1 is Open,RED,"Stop filling system, de-energise air dump valve",,FS01
+5,5,Guard 2 Lower Rear Door SW1465,Guard 2 is Open,RED,"Stop filling system, de-energise air dump valve",,FS01
+6,6,Guard 3 Counting Unit In Place SW1485,Guard 3 is Open,RED,"Stop filling system, de-energise air dump valve",,FS01
+7,7,Guard 4 Desiccant Process Bottle Locking Guard SW1505,Guard 4 is Open,RED,"Stop filling system, de-energise air dump valve",,FS01
+8,8,Guard 5 Bottle Trap Door SW1520,Guard 5 is Open,RED,"Stop filling system, de-energise air dump valve",,FS01
+9,9,E Stop E1 Front PB1540,Emergency Stop 1 Pressed,RED,"Stop filling system, de-energise air dump valve",,FS01
+10,10,E Stop E2 Back PB1560,Emergency Stop 2 Pressed,RED,"Stop filling system, de-energise air dump valve",,FS01
+11,11,Bottle Trap Door Extend Jam SW855,"Output ""Q_BottleTrapDoorExtendCylinder_SOL1145"" is On but the Input reed switch ""I_BottleTrapDoorCylinderExtended_SW855"" is OFF, a ""Fail to Extend"" alarm is generated after a time delay",RED,Stop filling system,,FS01
+12,12,Bottle Trap Door Retract Jam SW865,"Output ""Q_BottleTrapDoorRetractCylinder_SOL1155"" is On but the Input reed switch ""I_BottleTrapDoorCylinderRetracted_SW865"" is OFF, a ""Fail to Retract"" alarm is generated after a time delay",RED,Stop filling system,,FS01
+13,13,Disc Retract Cylinder Extend Jam SW960,"Output ""Q_DiscRetractCylinderExtend_SOL1205"" is On but the Input reed switch ""I_DiscRetractCylinderExtended_SW960"" is OFF, a ""Fail to Extend"" alarm is generated after a time delay",RED,Stop filling system,,FS01
+14,14,Disc Retract Cylinder Retract Jam SW970,"Output ""Q_DiscRetractCylinderRetract_SOL1215"" is On but the Input reed switch ""I_DiscRetractCylinderRetracted_SW970"" is OFF, a ""Fail to Retract"" alarm is generated after a time delay",RED,Stop filling system,,FS01
+15,15,Bottle Twist Gripper Cylinder Extend 150cc Jam LS895,"Output ""Q_BottleTwistGripperExtendCylinder_SOL1185"" is On but the Input reed switch ""I_BottleTwistGripperOpen_LS895"" is OFF, a ""Fail to Extend"" alarm is generated after a time delay",RED,Stop filling system,,FS01
+16,16,Bottle Twist Gripper Cylinder Retract 60cc Jam LS915,"Output ""Q_BottleTwistGripperRetractCylinder_SOL1195"" is On but the Input reed switch ""I_BottleTwistGripperClosed60cc_LS915"" is OFF, a ""Fail to Retract"" alarm is generated after a time delay",RED,Stop filling system,,FS01
+17,17,Bottle Twist Gripper Cylinder Retract Jam LS905,"Output ""Q_BottleTwistGripperRetractCylinder_SOL1195"" is On but the Input reed switch ""I_BottleTwistGripperClosed150cc_LS905"" is OFF, a ""Fail to Retract"" alarm is generated after a time delay",RED,Stop filling system,,FS01
+18,18,Bottle Transfer Gripper Cylinder Extend Jam SW920,"Output ""Q_BottleTransferGripperExtendCylinder_SOL1165"" is On but the Input reed switch ""I_BottleTransferGripperOpen_SW920"" is OFF, a ""Fail to Extend"" alarm is generated after a time delay",RED,Stop filling system,,FS01
+19,19,Bottle Transfer Gripper Cylinder Retract 60cc Jam SW930,"Output ""Q_BottleTransferGripperRetractCylinder_SOL1175"" is On but the Input reed switch ""I_BottleTransferGripperClosed60cc_SW930"" is OFF, a ""Fail to Retract"" alarm is generated after a time delay",RED,Stop filling system,,FS01
+20,20,Bottle Transfer Gripper Cylinder Retract 150cc Jam SW940,"Output ""Q_BottleTransferGripperRetractCylinder_SOL1175"" is On but the Input reed switch ""I_BottleTransferGripperClosed150cc_SW940"" is OFF, a ""Fail to Retract"" alarm is generated after a time delay",RED,Stop filling system,,FS01
+26,26,No Bottle Present At Conveyor PE845,"""I_BottlePresentAtConveyor_PE845"" is OFF and does not correspond to the expected shift register positioning, a ""Bottle Not In Position On Conveyor"" alarm is generated after a time delay",RED,Stop filling system,,FS01
+27,27,2D Matrix Scanner Fault,Scanner Reporting a General Error & cannot Scan,RED,Stop filling system,,FS01
+28,28,2D Matrix Scanner Read Error,Scanner reporting an inspection alarm because it was unable to read a printed code. Bottle returned to conveyor belt and shift register is updated.,WHITE,Record to SCADA Bottle for Rejection,,FS01
+29,29,No Bottle Present at Fill Position PE885,"AT Process 2 (Move Bottle to Fill position), if ""I_BottlePresentAtFillPosition_PE885"" is OFF, a ""No Bottle Present at Fill"" alarm is generated.",RED,Stop filling system,,FS01
+30,30,"Vacuum Error, Disc Not Removed at Desiccant Filling PRS980","""I_DiscPresentVac_PRS980"" is OFF (Vacuum not established) for a time delay when ""Q_DiscVacuum_SOL1370"" is energised or ""I_DiscRetractCylinderExtended_SW960"" is on. Twist & Lift Axis Generates a ""Vacuum Error"" alarm. Bottle returned to conveyor belt and shift register is updated.",RED,Stop filling system,,FS01
+31,31,Bottle Disc Location Error PE950,"""I_DiscDogsEngagedForkSens_PE950"" is OFF after a Twist Movement is complete, Twist & Lift Axis Generates a ""Disc Location Error"" alarm.  Bottle returned to conveyor belt and shift register is updated.",RED,Stop filling system,,FS01
+35,35,Large And Small Door Seal Inflated Error PRS990,"""I_Large&SmallDoorSealInflated_PRS990"" is OFF generating a ""Door Seal Inflated Error"" alarm",RED,Stop filling system,,FS01
+36,36,Iris Valve Pulses Sensor Fault PS1025,"If either ""Q_IrisValveOpen_K625_P1"" or ""Q_IrisValveClosed_K625_P2"" is ON and ""I_IrisValvePulses_PS1025"" remains OFF, a ""Pulse Sensor Error"" alarm is generated after a time delay",RED,Stop filling system,,FS01
+37,37,Iris Valve Open Sensor Fault PS1005,"Output ""Q_IrisValveOpen_K625_P1"" is On but the switch Input ""I_IrisValveOpen_PS1005"" is OFF or Input ""I_IrisValveClosed_PS1015"" is ON, a ""Fail to Open"" alarm is generated after a time delay",RED,Stop filling system,,FS01
+38,38,Iris Valve Close Sensor Fault PS1015,"Output ""Q_IrisValveClosed_K625_P2"" is On but the switch Input ""I_IrisValveClosed_PS1015"" is OFF or Input ""I_IrisValveOpen_PS1005"" is ON, a ""Fail to Close"" alarm is generated after a time delay",RED,Stop filling system,,FS01
+39,39,Iris Motor OverLoad Supply Fault CB625,"""I_IrisMtrO/LSupply_CB625"" is OFF indicating a Motor Supply Circuit Breaker (CB625) Overload Trip",RED,Stop filling system,,FS01
+40,40,Iris Motor Contactor Supply Fault K625,"""I_IrisMtrO/L_K625"" is OFF indicating a Motor Overload Fault (Siemens 3RM1302-2AA04 solid-state Fail-safe reversing starter K625)",RED,Stop filling system,,FS01
+41,41,Humidity Sensor Fault,Humidity Sensor Has Rported A fault Or Comms Loss,RED,Stop filling system,,FS01
+42,42,Humidity Sensor Temperature High Limit,Humidity Sensor Temperature Over High Limit,RED,Stop filling system,,FS01
+43,43,Humidity Sensor Temperature Low Limit,Humidity Sensor Temperature Below Low Limit,RED,Stop filling system,,FS01
+44,44,Humidity Sensor Humidity High Limit,Humidity Sensor Humidity Over High Limit,RED,Stop filling system,,FS01
+45,45,Humidity Sensor Humidity Low Limit,Humidity Sensor Humidity Below Low Limit,RED,Stop filling system,,FS01
+46,46,Humidity Sensor Temperature Warning,Humidity Sensor Temperature Warning (Approaching High or Low),WHITE,Warning Only,,FS01
+47,47,Humidity Sensor Humidity Warning,Humidity Sensor Humidity Limit Warning (Approaching High or Low),WHITE,Warning Only,,FS01
+50,50,X Axis Drive Fault,The drive for the X axis has generated a fault,RED,Stop filling system,,FS01
+51,51,Z Axis Drive Fault,The drive for the Z axis has generated a fault,RED,Stop filling system,,FS01
+52,52,Bottle Lift Drive Fault,The drive for the bottle lift axis has generated a fault,RED,Stop filling system,,FS01
+53,53,Bottle Twist Drive Fault,The drive for the bottle twist axis has generated a fault,RED,Stop filling system,,FS01
+100,100,Recipe Request Error 100 from SCADA: General / unspecified error,RecipeDataResultCode = 100 SCADA,WHITE,Record to SCADA Bottle for Rejection,,FS01
+101,101,Recipe Request Error 101 from SCADA:,RecipeDataResultCode = 101 SCADA,WHITE,Record to SCADA Bottle for Rejection,,FS01
+,,Bottle ID not recognised / not valid,,,,,FS01
+102,102,Recipe Request Error 102 from SCADA:,RecipeDataResultCode = 102 SCADA,WHITE,Record to SCADA Bottle for Rejection,,FS01
+,,Bottle is at incorrect or unexpected station,,,,,FS01
+103,103,Recipe Request Error 103 from SCADA: ,RecipeDataResultCode = 103 SCADA,WHITE,Record to SCADA Bottle for Rejection,,FS01
+,,Bottle was not processed at the expected last station.,,,,,FS01
+104,104,Recipe Request Error 104 from SCADA:,RecipeDataResultCode = 104 SCADA,WHITE,Record to SCADA Bottle for Rejection,,FS01
+,,Bottle recipe data was not found,,,,,FS01
+105,105,Recipe Request Error 105 from SCADA:,RecipeDataResultCode = 105 SCADA,WHITE,Record to SCADA Bottle for Rejection,,FS01
+,,Bottle status is incorrect at this station,,,,,FS01
+106,106,Recipe Request Error 106 from SCADA:,RecipeDataResultCode = 106 SCADA,WHITE,Record to SCADA Bottle for Rejection,,FS01
+,,Bottle was previously processed at this station,,,,,FS01
+107,107,Recipe Request Error 107 from SCADA:,RecipeDataResultCode = 107 SCADA,WHITE,Record to SCADA Bottle for Rejection,,FS01
+,,Bottle is a reject (do not process),,,,,FS01
+108,108,Recipe Request Error Bottle ID mismatch,Control.Common.RecipeDataRequestBottleID not equal to RecipeData.Common.BottleID,RED,Stop filling system,,FS01
+109,109,Recipe Request Error Station ID mismatch,Status.Common.StationID not equal to RecipeData.Common.StationID,RED,Stop filling system,,FS01
+110,110,Recipe Request Timeout,RecipeRequestTimeout Timer Expired,RED,Stop filling system,,FS01
+111,111,Recipe Request Retry Limit Reached,RecipeRequestRetryLimit Reached,RED,Stop filling system,,FS01
+112,112,Recipe Request PMC Error,PMCRecipeStatus >=32,RED,Stop filling system,,FS01
+120,120,Submit Result Data Error 100 from SCADA: General / unspecified error,ResultDataResultCode = 100 SCADA,WHITE,Retry Submit Results,,FS01
+121,121,"Submit Result Data Error 101 from SCADA: 
+Bottle ID not recognised / not valid",ResultDataResultCode = 101 SCADA,WHITE,Record to SCADA Bottle for Rejection,,FS01
+122,122,"Submit Result Data Error 108 from SCADA:
+Bottle result data is not valid. One or more result data have incorrect values.",ResultDataResultCode = 108 SCADA,WHITE,Record to SCADA Bottle for Rejection,,FS01
+123,123,Submit Result Data PMQ Timeout,RecipeRequestTimeout Timer,RED,Stop filling system,,FS01
+124,124,Submit Result Data SCADA Timeout,ResultDataTimeout Timer Expired,RED,Stop filling system,,FS01
+125,125,Line control PLC Comms Error,Indicates loss of communication with Line control PLC (watchdog signal timeout).,RED,"Stop filling system, de-energise air dump valve",,FS01
+126,126,HMI Comms Error,Indicates loss of communication with the local HMI (watchdog signal timeout).,WHITE,None,,FS01
+1001,1 ,Stop Pushbutton Pressed ,HMI/Line Control PLC Request to Stop Station ,RED ,Stop weigher system ,,WM01
+1002,2 ,Air Pressure Low PRS920 ,Air Pressure switch PRS920 indicating a Low Inlet Air Pressure ,RED ,"Stop weigher system, de-energise air dump valve ",Air Issue,WM01
+1003,3 ,Dump Valve Fault PRS930 ,"Pressure switch PRS930 downstream of the Dump valve is indicating one of the following alarm conditions: - 
+ • Dump Valve is Energised but PRS930 Indicating No Pressure 
+• Dump Valve is De-Energised but PRS930 Indicating Pressure is Still Present"" ",RED ,"Stop weigher system, de-energise air dump valve ",,WM01
+1004,4 ,Guard 1 Main Rear Door SW1445 ,Guard 1 is Open ,RED ,"Stop weigher system, de-energise air dump valve ",Guarding / Safety,WM01
+1005,5 ,Guard 2 Reject Bin Door SW1465 ,Guard 2 is Open ,RED ,"Stop weigher system, de-energise air dump valve ",Guarding / Safety,WM01
+1006,6 ,Guard 3 Main Front Door SW1485 ,Guard 3 is Open ,RED ,"Stop weigher system, de-energise air dump valve ",Guarding / Safety,WM01
+1007,7 ,E Stop E1 Rear PB1505 ,Emergency Stop 1 Pressed ,RED ,"Stop weigher system, de-energise air dump valve ",Guarding / Safety,WM01
+1008,8 ,Spare ,,,,,WM01
+1009,9 ,Spare ,,,,,WM01
+1010,10 ,Spare ,,,,,WM01
+1011,11 ,Bottle Gripper Open Jam SW855 ,"Output ""Q_BottleGripperExtend_SOL1145"" is On but the Input reed switch ""I_BottleGripperOpen_SW855"" is OFF, a ""Fail to Open"" alarm is generated after a time delay ",RED ,Stop weigher system ,Gripper issue,WM01
+1012,12 ,Bottle Gripper Closed 150cc Jam SW865 ,"Output ""Q_BottleGripperRetract_SOL1155"" is On but the Input reed switch ""I_BottleGripperClosed150cc_SW865"" is OFF, a ""Fail to Close"" alarm is generated after a time delay ",RED ,Stop weigher system ,Gripper issue,WM01
+1013,13 ,Bottle Gripper Closed 60cc Jam SW875 ,"Output ""Q_BottleGripperRetract_SOL1155"" is On but the Input reed switch ""I_BottleGripperClosed60cc_SW875"" is OFF, a ""Fail to Close"" alarm is generated after a time delay ",RED ,Stop weigher system ,Gripper issue,WM01
+1014,14 ,Z Cylinder Retracted Jam SW885 ,"Output ""Q_ZAxisCylinderRetract_SOL1175"" is On but the Input reed switch ""I_ZAxisCylinderRetracted_SW885"" is OFF, a ""Fail to Retract"" alarm is generated after a time delay ",RED ,Stop weigher system ,movement related,WM01
+1015,15 ,Z Cylinder Extended Jam SW895 ,"Output ""Q_ZAxisCylinderExtend_SOL1165"" is On but the Input reed switch ""I_ZAxisCylinderExtended_SW895"" is OFF, a ""Fail to Extend"" alarm is generated after a time delay ",RED ,Stop weigher system ,movement related,WM01
+1016,16 ,X Axis Servo Fault ,The drive for the X axis has generated a fault ,RED ,Stop weigher system ,movement related,WM01
+1017,17 ,Reject Bin 80% Full Warning PE905 ,Reject Bin sensor PE905 is activated (the bin is 80% full) ,WHITE ,Warning only ,Reject related,WM01
+1018,18 ,Reject Bin Full PE915 ,Reject Bin sensor PE915 is activated (the bin is 100% full) ,RED ,Stop weigher system ,Reject related,WM01
+1019,19 ,Reject Confirmation Error ,A Rejected Bottle did not drop into the Reject Bin ,RED ,Stop weigher system ,Reject related,WM01
+1020,20 ,Bottle Exceeded Upper Weight Limit ,The weight measurement of the current bottle has exceeded the upper weight limit. Bottle put into reject bin. ,WHITE ,Reject Bottle ,Weight - process error,WM01
+1021,21 ,Bottle Exceeded Lower Weight Limit ,The weight measurement of the current bottle has exceeded the lower weight limit. Bottle put into reject bin. ,WHITE ,Reject Bottle ,Weight - process error,WM01
+1022,22 ,Bottle Exceeded Weight Limit 3 Times ,The weight measurement of 3 consecutive bottles has exceeded the upper or lower weight limits. Stop producing bottles. ,RED ,Stop weigher system ,Weight - process error,WM01
+1023,23 ,Weigh Module Fault ,The Weighing Module is reporting a Fault ,RED ,Stop weigher system ,Weight - process error,WM01
+1024,24 ,Spare ,,,,,WM01
+1025,25 ,Spare ,,,,,WM01
+1026,26 ,No Bottle Present At Conveyor PE845 ,"""I_BottlePresentAtConveyor_PE845"" is OFF and does not correspond to the expected shift register positioning, a ""Bottle Not In Position On Conveyor"" alarm is generated after a time delay ",RED ,Stop weigher system ,common - bottle missing / 2d barcode issue,WM01
+1027,27 ,2D Matrix Scanner Fault ,Scanner Reporting a General Error & cannot Scan ,RED ,Stop weigher system ,common - bottle missing / 2d barcode issue,WM01
+1028,28 ,2D Matrix Scanner Read Error ,Scanner reporting an inspection alarm because it was unable to read a printed code ,WHITE ,Reject Bottle ,common - bottle missing / 2d barcode issue,WM01
+1090,90 ,Line Estop Reset Stations ,Line Emergency Stop Circuit Not Healthy ,RED ,Stop filling system ,,WM01
+1095,95 ,Station Conditions Not OK ,Station Auto Start Conditions Not OK ,RED ,Stop filling system ,,WM01
+1100,100 ,Recipe Request Error 100 from SCADA: General / unspecified error ,RecipeDataResultCode = 100 SCADA ,WHITE ,Record to SCADA Bottle for Rejection ,Recipe Request Error,WM01
+1101,101 ,Recipe Request Error 101 from SCADA: Bottle ID not recognised / not valid ,RecipeDataResultCode = 101 SCADA ,WHITE ,Record to SCADA Bottle for Rejection ,Recipe Request Error,WM01
+1102,102 ,Recipe Request Error 102 from SCADA: Bottle is at incorrect or unexpected station ,RecipeDataResultCode = 102 SCADA , WHITE ,Record to SCADA Bottle for Rejection ,Recipe Request Error,WM01
+1103,103 ,Recipe Request Error 103 from SCADA:  Bottle was not processed at the expected last station. ,RecipeDataResultCode = 103 SCADA , WHITE ,Record to SCADA Bottle for Rejection ,Recipe Request Error,WM01
+1104,104 ,Recipe Request Error 104 from SCADA: Bottle recipe data was not found ,RecipeDataResultCode = 104 SCADA , WHITE ,Record to SCADA Bottle for Rejection ,Recipe Request Error,WM01
+1105,105 ,Recipe Request Error 105 from SCADA: Bottle status is incorrect at this station ,RecipeDataResultCode = 105 SCADA ,WHITE ,Record to SCADA Bottle for Rejection ,Recipe Request Error,WM01
+1106,106 ,Recipe Request Error 106 from SCADA: Bottle was previously processed at this station ,RecipeDataResultCode = 106 SCADA ,WHITE ,Record to SCADA Bottle for Rejection ,Recipe Request Error,WM01
+1107,107 ,Recipe Request Error 107 from SCADA: Bottle is a reject (do not process) ,RecipeDataResultCode = 107 SCADA ,WHITE ,Record to SCADA Bottle for Rejection ,Recipe Request Error,WM01
+1108,108 ,Recipe Request Error Bottle ID mismatch ,Control.Common.RecipeDataRequestBottleID not equal to RecipeData.Common.BottleID ,RED ,Stop filling system ,,WM01
+1109,109 ,Recipe Request Error Station ID mismatch ,Status.Common.StationID not equal to RecipeData.Common.StationID ,RED ,Stop filling system ,,WM01
+1110,110 ,Recipe Request Timeout ,RecipeRequestTimeout Timer Expired ,RED ,Stop filling system ,,WM01
+1111,111 ,Recipe Request Retry Limit Reached ,RecipeRequestRetryLimit Reached ,RED ,Stop filling system ,,WM01
+1112,112 ,Recipe Request PMC Error ,PMCRecipeStatus >=32 ,RED ,Stop filling system ,,WM01
+1113,113 ,Recipe Request Error Bottle ID Not Equal To 36 Characters ,Control.Common.RecipeDataRequestBottleID not equal to 36 Characters ,RED ,Stop filling system ,,WM01
+1120,120 ,Submit Result Data Error 100 from SCADA: General / unspecified error ,ResultDataResultCode = 100 SCADA ,WHITE ,Retry Submit Results ,Submit Result error,WM01
+1121,121 ,Submit Result Data Error 101 from SCADA: ,ResultDataResultCode = 101 SCADA ,WHITE ,Record to SCADA  ,Submit Result error,WM01
+1122,122 ,Submit Result Data Error 102 from SCADA: ,ResultDataResultCode = 102 SCADA ,WHITE ,Record to SCADA  ,Submit Result error,WM01
+1123,123 ,Submit Result Data Error 103 from SCADA: ,ResultDataResultCode = 103 SCADA ,WHITE ,Record to SCADA  ,Submit Result error,WM01
+1124,124 ,Submit Result Data Error 104 from SCADA: ,ResultDataResultCode = 104 SCADA ,WHITE ,Record to SCADA  ,Submit Result error,WM01
+1125,125 ,Submit Result Data Error 105 from SCADA: ,ResultDataResultCode = 105 SCADA ,WHITE ,Record to SCADA  ,Submit Result error,WM01
+1126,126 ,Submit Result Data Error 106 from SCADA: ,ResultDataResultCode = 106 SCADA ,WHITE ,Record to SCADA  ,Submit Result error,WM01
+1127,127 ,Submit Result Data Error 107 from SCADA: ,ResultDataResultCode = 107 SCADA ,WHITE ,Record to SCADA  ,Submit Result error,WM01
+1128,128 ,"Submit Result Data Error 108 from SCADA: 
+Bottle result data is not valid. One or more result data have incorrect values. ",ResultDataResultCode = 108 SCADA ,RED ,Stop Filling System ,Submit Result error,WM01
+1129,129 ,Submit Result Data PMQ Timeout ,RecipeRequestTimeout Timer ,RED ,Stop filling system ,,WM01
+1130,130 ,Submit Result Data SCADA Timeout ,ResultDataTimeout Timer Expired ,RED ,Stop filling system ,,WM01
+1131,131 ,Submit Result Data PMQ Batch Release Timeout ,PMQBatchReleaseStatus TimerExpired ,RED ,Stop filling system ,,WM01
+1132,132 ,Recipe Request PMC Error ,PMCRecipeStatus >=100 ,RED ,Stop filling system ,,WM01
+1133,133 ,Line Control PLC Comms Error ,Indicates loss of communication with Line Control PLC (watchdog signal timeout). ,RED ,"Stop filling system, de-energise air dump valve ",Comms Error,WM01
+1134,134 ,HMI Comms Error ,Indicates loss of communication with the local HMI (watchdog signal timeout). ,WHITE ,Warning only ,Comms Error,WM01
+1135,135 ,MES SCADA Comms Error ,Indicates loss of communication with MES/SCADA (watchdog signal timeout). ,RED ,"Stop filling system, de-energise air dump valve ",Comms Error,WM01
