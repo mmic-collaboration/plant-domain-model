@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Batch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="BatchProductName" type="xs:string" />
+        <xs:element name="BatchStatus" type="xs:string" />
+        <xs:element name="BatchStartTimeUTC" type="xs:string" />
+        <xs:element name="BatchEndTimeUTC" type="xs:string" />
+        <xs:element name="BatchBottlesTarget" type="xs:unsignedByte" />
+        <xs:element name="BatchBottlesInProgress" type="xs:unsignedByte" />
+        <xs:element name="BatchBottlesCompleted" type="xs:unsignedByte" />
+        <xs:element name="BatchBottlesRejected" type="xs:unsignedByte" />
+        <xs:element name="Bottles">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="Bottle">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="BBSS01-BatchNumber" type="xs:string" />
+                    <xs:element name="BBSS01-BottleID" type="xs:string" />
+                    <xs:element name="BBSS01-BottleLotNumber" type="xs:unsignedInt" />
+                    <xs:element name="BBSS01-BottleSize" type="xs:unsignedByte" />
+                    <xs:element name="BBSS01-CycleEndTime" type="xs:string" />
+                    <xs:element name="BBSS01-CycleStartTime" type="xs:string" />
+                    <xs:element name="BBSS01-CycleTime" type="xs:decimal" />
+                    <xs:element name="BBSS01-ResultCode" type="xs:unsignedByte" />
+                    <xs:element name="BBSS01-ScadaRecipeName" type="xs:string" />
+                    <xs:element name="BBSS01-ScadaRecipeVersion" type="xs:string" />
+                    <xs:element minOccurs="0" name="FS01-ActualFillCount" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="FS01-BatchNumber" type="xs:string" />
+                    <xs:element minOccurs="0" name="FS01-BottleID" type="xs:string" />
+                    <xs:element minOccurs="0" name="FS01-ContainerID" type="xs:string" />
+                    <xs:element minOccurs="0" name="FS01-CycleEndTime" type="xs:string" />
+                    <xs:element minOccurs="0" name="FS01-CycleStartTime" type="xs:string" />
+                    <xs:element minOccurs="0" name="FS01-CycleTime" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="FS01-HumidityActual" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="FS01-ResultCode" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="FS01-ScadaRecipeName" />
+                    <xs:element minOccurs="0" name="FS01-ScadaRecipeVersion" />
+                    <xs:element minOccurs="0" name="FS01-TargetFillCount" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="FS01-TemperatureActual" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="FS02-ActualFillCount" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="FS02-BatchNumber" type="xs:string" />
+                    <xs:element minOccurs="0" name="FS02-BottleID" type="xs:string" />
+                    <xs:element minOccurs="0" name="FS02-ContainerID" type="xs:string" />
+                    <xs:element minOccurs="0" name="FS02-CycleEndTime" type="xs:string" />
+                    <xs:element minOccurs="0" name="FS02-CycleStartTime" type="xs:string" />
+                    <xs:element minOccurs="0" name="FS02-CycleTime" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="FS02-HumidityActual" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="FS02-ResultCode" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="FS02-ScadaRecipeName" />
+                    <xs:element minOccurs="0" name="FS02-ScadaRecipeVersion" />
+                    <xs:element minOccurs="0" name="FS02-TargetFillCount" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="FS02-TemperatureActual" type="xs:decimal" />
+                    <xs:element name="WM01-ActualWeight" type="xs:decimal" />
+                    <xs:element name="WM01-BatchNumber" type="xs:string" />
+                    <xs:element name="WM01-BottleID" type="xs:string" />
+                    <xs:element name="WM01-CycleEndTime" type="xs:string" />
+                    <xs:element name="WM01-CycleStartTime" type="xs:string" />
+                    <xs:element name="WM01-CycleTime" type="xs:decimal" />
+                    <xs:element name="WM01-ResultCode" type="xs:unsignedByte" />
+                    <xs:element name="WM01-ScadaRecipeName" type="xs:string" />
+                    <xs:element name="WM01-ScadaRecipeVersion" type="xs:string" />
+                    <xs:element name="WM01-TargetWeight" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="WM02-ActualWeight" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="WM02-BatchNumber" type="xs:string" />
+                    <xs:element minOccurs="0" name="WM02-BottleID" type="xs:string" />
+                    <xs:element minOccurs="0" name="WM02-CycleEndTime" type="xs:string" />
+                    <xs:element minOccurs="0" name="WM02-CycleStartTime" type="xs:string" />
+                    <xs:element minOccurs="0" name="WM02-CycleTime" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="WM02-ResultCode" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="WM02-ScadaRecipeName" />
+                    <xs:element minOccurs="0" name="WM02-ScadaRecipeVersion" />
+                    <xs:element minOccurs="0" name="WM02-TargetWeight" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="WM03-ActualWeight" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="WM03-BatchNumber" type="xs:string" />
+                    <xs:element minOccurs="0" name="WM03-BottleID" type="xs:string" />
+                    <xs:element minOccurs="0" name="WM03-CycleEndTime" type="xs:string" />
+                    <xs:element minOccurs="0" name="WM03-CycleStartTime" type="xs:string" />
+                    <xs:element minOccurs="0" name="WM03-CycleTime" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="WM03-ResultCode" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="WM03-ScadaRecipeName" />
+                    <xs:element minOccurs="0" name="WM03-ScadaRecipeVersion" />
+                    <xs:element minOccurs="0" name="WM03-TargetWeight" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="BSS01-BatchNumber" type="xs:string" />
+                    <xs:element minOccurs="0" name="BSS01-BottleID" type="xs:string" />
+                    <xs:element minOccurs="0" name="BSS01-ResultCode" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="BSS01-CycleEndTime" type="xs:string" />
+                    <xs:element minOccurs="0" name="BSS01-CycleStartTime" type="xs:string" />
+                    <xs:element minOccurs="0" name="BSS01-CycleTime" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="BSS01-ScadaRecipeName" type="xs:string" />
+                    <xs:element minOccurs="0" name="BSS01-ScadaRecipeVersion" type="xs:string" />
+                    <xs:element minOccurs="0" name="BSS01-SealingPowerTarget" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="BSS01-SealingPowerActual" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="BSS01-SealingSpeedTarget" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="BSS01-SealingSpeedActual" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="BCR01-BatchNumber" type="xs:string" />
+                    <xs:element minOccurs="0" name="BCR01-BottleID" type="xs:string" />
+                    <xs:element minOccurs="0" name="BCR01-ResultCode" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="BCR01-CycleEndTime" type="xs:string" />
+                    <xs:element minOccurs="0" name="BCR01-CycleStartTime" type="xs:string" />
+                    <xs:element minOccurs="0" name="BCR01-CycleTime" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="BCR01-ScadaRecipeName" type="xs:string" />
+                    <xs:element minOccurs="0" name="BCR01-ScadaRecipeVersion" type="xs:string" />
+                    <xs:element minOccurs="0" name="BCS01-BatchNumber" type="xs:string" />
+                    <xs:element minOccurs="0" name="BCS01-BottleID" type="xs:string" />
+                    <xs:element minOccurs="0" name="BCS01-ResultCode" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="BCS01-CycleEndTime" type="xs:string" />
+                    <xs:element minOccurs="0" name="BCS01-CycleStartTime" type="xs:string" />
+                    <xs:element minOccurs="0" name="BCS01-CycleTime" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="BCS01-ScadaRecipeName" type="xs:string" />
+                    <xs:element minOccurs="0" name="BCS01-ScadaRecipeVersion" type="xs:string" />
+                    <xs:element minOccurs="0" name="BCS01-CapType" type="xs:string" />
+                    <xs:element minOccurs="0" name="BCS01-CapLotNumber" type="xs:unsignedInt" />
+                    <xs:element minOccurs="0" name="BCS01-CapTorqueTarget" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="BCS01-CapTorqueActual" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="BCS01-HeadDropHeightTarget" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="BCS01-HeadDropHeightActual" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="RBS01-BatchNumber" type="xs:string" />
+                    <xs:element minOccurs="0" name="RBS01-BottleID" type="xs:string" />
+                    <xs:element minOccurs="0" name="RBS01-ResultCode" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="RBS01-CycleEndTime" type="xs:string" />
+                    <xs:element minOccurs="0" name="RBS01-CycleStartTime" type="xs:string" />
+                    <xs:element minOccurs="0" name="RBS01-CycleTime" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="RBS01-ScadaRecipeName" />
+                    <xs:element minOccurs="0" name="RBS01-ScadaRecipeVersion" />
+                    <xs:element minOccurs="0" name="RBS01-RobotOperationType" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="RBS01-PickRobotDockingStationNumberTarget" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="RBS01-PickRobotDockingStationNumberActual" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="RBS01-PickModulaTrayNumberTarget" />
+                    <xs:element minOccurs="0" name="RBS01-PickModulaTrayNumberActual" />
+                    <xs:element minOccurs="0" name="RBS01-PickModulaTrayPocketNumberTarget" />
+                    <xs:element minOccurs="0" name="RBS01-PickModulaTrayPocketNumberActual" />
+                    <xs:element minOccurs="0" name="RBS01-PutRobotDockingStationNumberTarget" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="RBS01-PutRobotDockingStationNumberActual" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="RBS01-PutModulaTrayNumberTarget" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="RBS01-PutModulaTrayNumberActual" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="RBS01-PutModulaTrayPocketNumberTarget" type="xs:string" />
+                    <xs:element minOccurs="0" name="RSB01-PutModulaTrayPocketNumberActual" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="BottleID" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="BatchNumber" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

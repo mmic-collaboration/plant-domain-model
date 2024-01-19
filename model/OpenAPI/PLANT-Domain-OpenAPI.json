@@ -1,0 +1,234 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "PLANT Domain Open API Schema",
+    "contact": {
+      "email": "timothy.galvin@atos.net"
+    },
+    "version": "0.2.2"
+  },
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Sensor": {
+        "type": "object",
+        "properties": {
+          "sensorId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "sensor id"
+          },
+          "stationId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "station id"
+          },
+          "sensorType": {
+            "type": "string",
+            "title": "sensor type"
+          },
+          "sensorConfiguration": {
+            "type": "array",
+            "title": "Sensor Configuration",
+            "items": {
+              "type": "string"
+            },
+            "nullable": false
+          }
+        },
+        "nullable": false
+      },
+      "Equipment": {
+        "type": "object",
+        "required": [
+          "equipmentId"
+        ],
+        "properties": {
+          "equipmentId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "equipment id"
+          },
+          "equipmentModel": {
+            "type": "string",
+            "title": "equipment model"
+          },
+          "manufacturer": {
+            "type": "string",
+            "title": "manufacturer"
+          }
+        },
+        "nullable": false
+      },
+      "Sensor_Event": {
+        "type": "object",
+        "required": [
+          "sensorEventId",
+          "sensorId"
+        ],
+        "properties": {
+          "sensorEventId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "sensor event id"
+          },
+          "sensorId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "sensor id"
+          },
+          "sensorEventTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "sensor event type id"
+          },
+          "sensorEventTimestamp": {
+            "type": "string",
+            "format": "date-time",
+            "title": "sensor event timestamp"
+          }
+        },
+        "nullable": false
+      },
+      "Alarm_Code": {
+        "type": "object",
+        "description": "Alarm codes are defined by CPI as part of the Digital Membership Architecture for Medicines Manufacturing.  They describe the different failure conditions that can occur during medicines manufacturing process, their relative severity (or 'colour'), and the required recovery action.\n\nAlarm codes have been consolidated from a number of sources, including equipment manufacturers.  It is envisaged that this list will continue to evolve as the requirements are better understood.\n\nThe full list of Digital Membership Alarm Codes is currently defined in the PLANT Domain reference data:\n- https://github.com/mmic-collaboration/plant-domain-model/tree/development/reference-data",
+        "required": [
+          "alarmCodeId",
+          "alarmCodeColour"
+        ],
+        "properties": {
+          "alarmCodeId": {
+            "type": "number",
+            "format": "float",
+            "title": "alarm code id",
+            "description": "The unique Digital Membership assigned identifier"
+          },
+          "alarmCodeTitle": {
+            "type": "string",
+            "title": "alarm code title",
+            "description": "short description of the alarm code"
+          },
+          "alarmCodeColour": {
+            "type": "string",
+            "title": "alarm code colour",
+            "description": "A colour to indicate the severity of the triggered alarm, with the recovery action:\n - RED - Machine Stop, Clear fault condition and trigger reset/restart\n - YELLOW - Machine Paused, Remove hold condition, machine will resume automatic control.\n - WHITE - Information, n/a\n - BLUE - Low Materials Warning, Replenish material stock\n\nRef: FS01 Data Specification, CPI, martin.keane@cpi-uk.com",
+            "enum": [
+              "RED",
+              "YELLOW",
+              "WHITE",
+              "BLUE"
+            ],
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "example": "RED"
+          },
+          "alarmCodeRecoveryAction": {
+            "type": "string",
+            "title": "alarm code recovery action",
+            "description": "a short description of the action required in response to this alarm",
+            "example": "Stop filling system"
+          },
+          "alarmWarningMessage": {
+            "type": "string",
+            "title": "alarm warning message",
+            "description": "a short description of the alarm code, typically displayed to the user via the ui of the control software",
+            "example": "Humidity Sensor Fault"
+          },
+          "alarmCodeCondition": {
+            "type": "string",
+            "title": "alarm code condition",
+            "description": "the condition or conditions which resulted in this alarm",
+            "example": "Humidity Sensor Has Rported A fault Or Comms Loss"
+          }
+        },
+        "nullable": false
+      },
+      "Alarm_Sensor_Event": {
+        "type": "object",
+        "required": [
+          "sensorEventId",
+          "alarmCodeId"
+        ],
+        "properties": {
+          "sensorEventId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "sensor event id"
+          },
+          "alarmCodeId": {
+            "type": "number",
+            "format": "float",
+            "title": "alarm code id"
+          },
+          "status": {
+            "type": "string",
+            "title": "status"
+          },
+          "customMessage": {
+            "type": "string",
+            "title": "custom message"
+          },
+          "acknowledged": {
+            "type": "boolean",
+            "title": "acknowledged",
+            "description": "Describes the state of an alarm.\nref: OPC-UA=10000-Part9 (v1.05.03)"
+          }
+        },
+        "nullable": false
+      },
+      "Sensor_Event_Type": {
+        "type": "object",
+        "required": [
+          "sensorEventTypeId",
+          "sensorEventTypeName"
+        ],
+        "properties": {
+          "sensorEventTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "sensor event type id"
+          },
+          "sensorEventTypeName": {
+            "type": "string",
+            "title": "sensor event type name"
+          },
+          "sensorEventTypeDescription": {
+            "type": "string",
+            "title": "sensor event type description"
+          }
+        },
+        "nullable": false
+      },
+      "Station": {
+        "type": "object",
+        "required": [
+          "state"
+        ],
+        "properties": {
+          "stationId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "station id"
+          },
+          "equipmentId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "equipment id"
+          },
+          "state": {
+            "type": "string",
+            "title": "state",
+            "description": "The station state captures the lifecycle of a station:\n\n1. The transition from “Available” to “Running” occurs when a Station Start Request is received from either the local HMI or the Machine Level SCADA.\n2. The transition from “Running” to “In Cycle” occurs when the machine is in the “Running” state and the machine is in auto mode.\n3. The transition from “In Cycle” to “Fault” occurs when a “red” alarm becomes active.\n4. The transition from “Fault” to “In Cycle” occurs when all “red” alarms have been cleared.\n\nRef: FS01 Data Specification, CPI, martin.keane@cpi-uk.com\n",
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+          },
+          "stationShortCode": {
+            "type": "string",
+            "title": "station short code",
+            "example": "FS01"
+          }
+        },
+        "nullable": false
+      }
+    }
+  }
+}

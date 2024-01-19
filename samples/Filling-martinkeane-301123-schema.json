@@ -1,0 +1,2177 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "BatchNumber": {
+      "type": "string"
+    },
+    "BatchProductName": {
+      "type": "string"
+    },
+    "BatchStatus": {
+      "type": "string"
+    },
+    "BatchStartTimeUTC": {
+      "type": "string"
+    },
+    "BatchEndTimeUTC": {
+      "type": "string"
+    },
+    "BatchBottlesTarget": {
+      "type": "string"
+    },
+    "BatchBottlesInProgress": {
+      "type": "string"
+    },
+    "BatchBottlesCompleted": {
+      "type": "string"
+    },
+    "BatchBottlesRejected": {
+      "type": "string"
+    },
+    "Bottles": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "BottleID": {
+              "type": "string"
+            },
+            "BBSS01-BatchNumber": {
+              "type": "string"
+            },
+            "BBSS01-BottleID": {
+              "type": "string"
+            },
+            "BBSS01-BottleLotNumber": {
+              "type": "string"
+            },
+            "BBSS01-BottleSize": {
+              "type": "string"
+            },
+            "BBSS01-CycleEndTime": {
+              "type": "string"
+            },
+            "BBSS01-CycleStartTime": {
+              "type": "string"
+            },
+            "BBSS01-CycleTime": {
+              "type": "string"
+            },
+            "BBSS01-ResultCode": {
+              "type": "string"
+            },
+            "BBSS01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BBSS01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "WM01-ActualWeight": {
+              "type": "string"
+            },
+            "WM01-BatchNumber": {
+              "type": "string"
+            },
+            "WM01-BottleID": {
+              "type": "string"
+            },
+            "WM01-CycleEndTime": {
+              "type": "string"
+            },
+            "WM01-CycleStartTime": {
+              "type": "string"
+            },
+            "WM01-CycleTime": {
+              "type": "string"
+            },
+            "WM01-ResultCode": {
+              "type": "string"
+            },
+            "WM01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "WM01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "WM01-TargetWeight": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "BottleID",
+            "BBSS01-BatchNumber",
+            "BBSS01-BottleID",
+            "BBSS01-BottleLotNumber",
+            "BBSS01-BottleSize",
+            "BBSS01-CycleEndTime",
+            "BBSS01-CycleStartTime",
+            "BBSS01-CycleTime",
+            "BBSS01-ResultCode",
+            "BBSS01-ScadaRecipeName",
+            "BBSS01-ScadaRecipeVersion",
+            "WM01-ActualWeight",
+            "WM01-BatchNumber",
+            "WM01-BottleID",
+            "WM01-CycleEndTime",
+            "WM01-CycleStartTime",
+            "WM01-CycleTime",
+            "WM01-ResultCode",
+            "WM01-ScadaRecipeName",
+            "WM01-ScadaRecipeVersion",
+            "WM01-TargetWeight"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "BottleID": {
+              "type": "string"
+            },
+            "BBSS01-BatchNumber": {
+              "type": "string"
+            },
+            "BBSS01-BottleID": {
+              "type": "string"
+            },
+            "BBSS01-BottleLotNumber": {
+              "type": "string"
+            },
+            "BBSS01-BottleSize": {
+              "type": "string"
+            },
+            "BBSS01-CycleEndTime": {
+              "type": "string"
+            },
+            "BBSS01-CycleStartTime": {
+              "type": "string"
+            },
+            "BBSS01-CycleTime": {
+              "type": "string"
+            },
+            "BBSS01-ResultCode": {
+              "type": "string"
+            },
+            "BBSS01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BBSS01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "FS01-ActualFillCount": {
+              "type": "string"
+            },
+            "FS01-BatchNumber": {
+              "type": "string"
+            },
+            "FS01-BottleID": {
+              "type": "string"
+            },
+            "FS01-ContainerID": {
+              "type": "string"
+            },
+            "FS01-CycleEndTime": {
+              "type": "string"
+            },
+            "FS01-CycleStartTime": {
+              "type": "string"
+            },
+            "FS01-CycleTime": {
+              "type": "string"
+            },
+            "FS01-HumidityActual": {
+              "type": "string"
+            },
+            "FS01-ResultCode": {
+              "type": "string"
+            },
+            "FS01-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "FS01-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "FS01-TargetFillCount": {
+              "type": "string"
+            },
+            "FS01-TemperatureActual": {
+              "type": "string"
+            },
+            "FS02-ActualFillCount": {
+              "type": "string"
+            },
+            "FS02-BatchNumber": {
+              "type": "string"
+            },
+            "FS02-BottleID": {
+              "type": "string"
+            },
+            "FS02-ContainerID": {
+              "type": "string"
+            },
+            "FS02-CycleEndTime": {
+              "type": "string"
+            },
+            "FS02-CycleStartTime": {
+              "type": "string"
+            },
+            "FS02-CycleTime": {
+              "type": "string"
+            },
+            "FS02-HumidityActual": {
+              "type": "string"
+            },
+            "FS02-ResultCode": {
+              "type": "string"
+            },
+            "FS02-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "FS02-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "FS02-TargetFillCount": {
+              "type": "string"
+            },
+            "FS02-TemperatureActual": {
+              "type": "string"
+            },
+            "WM01-ActualWeight": {
+              "type": "string"
+            },
+            "WM01-BatchNumber": {
+              "type": "string"
+            },
+            "WM01-BottleID": {
+              "type": "string"
+            },
+            "WM01-CycleEndTime": {
+              "type": "string"
+            },
+            "WM01-CycleStartTime": {
+              "type": "string"
+            },
+            "WM01-CycleTime": {
+              "type": "string"
+            },
+            "WM01-ResultCode": {
+              "type": "string"
+            },
+            "WM01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "WM01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "WM01-TargetWeight": {
+              "type": "string"
+            },
+            "WM02-ActualWeight": {
+              "type": "string"
+            },
+            "WM02-BatchNumber": {
+              "type": "string"
+            },
+            "WM02-BottleID": {
+              "type": "string"
+            },
+            "WM02-CycleEndTime": {
+              "type": "string"
+            },
+            "WM02-CycleStartTime": {
+              "type": "string"
+            },
+            "WM02-CycleTime": {
+              "type": "string"
+            },
+            "WM02-ResultCode": {
+              "type": "string"
+            },
+            "WM02-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "WM02-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "WM02-TargetWeight": {
+              "type": "string"
+            },
+            "WM03-ActualWeight": {
+              "type": "string"
+            },
+            "WM03-BatchNumber": {
+              "type": "string"
+            },
+            "WM03-BottleID": {
+              "type": "string"
+            },
+            "WM03-CycleEndTime": {
+              "type": "string"
+            },
+            "WM03-CycleStartTime": {
+              "type": "string"
+            },
+            "WM03-CycleTime": {
+              "type": "string"
+            },
+            "WM03-ResultCode": {
+              "type": "string"
+            },
+            "WM03-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "WM03-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "WM03-TargetWeight": {
+              "type": "string"
+            },
+            "BSS01-BatchNumber": {
+              "type": "string"
+            },
+            "BSS01-BottleID": {
+              "type": "string"
+            },
+            "BSS01-ResultCode": {
+              "type": "string"
+            },
+            "BSS01-CycleEndTime": {
+              "type": "string"
+            },
+            "BSS01-CycleStartTime": {
+              "type": "string"
+            },
+            "BSS01-CycleTime": {
+              "type": "string"
+            },
+            "BSS01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BSS01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "BSS01-SealingPowerTarget": {
+              "type": "string"
+            },
+            "BSS01-SealingPowerActual": {
+              "type": "string"
+            },
+            "BSS01-SealingSpeedTarget": {
+              "type": "string"
+            },
+            "BSS01-SealingSpeedActual": {
+              "type": "string"
+            },
+            "BCR01-BatchNumber": {
+              "type": "string"
+            },
+            "BCR01-BottleID": {
+              "type": "string"
+            },
+            "BCR01-ResultCode": {
+              "type": "string"
+            },
+            "BCR01-CycleEndTime": {
+              "type": "string"
+            },
+            "BCR01-CycleStartTime": {
+              "type": "string"
+            },
+            "BCR01-CycleTime": {
+              "type": "string"
+            },
+            "BCR01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BCR01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "BCS01-BatchNumber": {
+              "type": "string"
+            },
+            "BCS01-BottleID": {
+              "type": "string"
+            },
+            "BCS01-ResultCode": {
+              "type": "string"
+            },
+            "BCS01-CycleEndTime": {
+              "type": "string"
+            },
+            "BCS01-CycleStartTime": {
+              "type": "string"
+            },
+            "BCS01-CycleTime": {
+              "type": "string"
+            },
+            "BCS01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BCS01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "BCS01-CapType": {
+              "type": "string"
+            },
+            "BCS01-CapLotNumber": {
+              "type": "string"
+            },
+            "BCS01-CapTorqueTarget": {
+              "type": "string"
+            },
+            "BCS01-CapTorqueActual": {
+              "type": "string"
+            },
+            "BCS01-HeadDropHeightTarget": {
+              "type": "string"
+            },
+            "BCS01-HeadDropHeightActual": {
+              "type": "string"
+            },
+            "RBS01-BatchNumber": {
+              "type": "string"
+            },
+            "RBS01-BottleID": {
+              "type": "string"
+            },
+            "RBS01-ResultCode": {
+              "type": "string"
+            },
+            "RBS01-CycleEndTime": {
+              "type": "string"
+            },
+            "RBS01-CycleStartTime": {
+              "type": "string"
+            },
+            "RBS01-CycleTime": {
+              "type": "string"
+            },
+            "RBS01-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-RobotOperationType": {
+              "type": "string"
+            },
+            "RBS01-PickRobotDockingStationNumberTarget": {
+              "type": "string"
+            },
+            "RBS01-PickRobotDockingStationNumberActual": {
+              "type": "string"
+            },
+            "RBS01-PickModulaTrayNumberTarget": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-PickModulaTrayNumberActual": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-PickModulaTrayPocketNumberTarget": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-PickModulaTrayPocketNumberActual": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-PutRobotDockingStationNumberTarget": {
+              "type": "string"
+            },
+            "RBS01-PutRobotDockingStationNumberActual": {
+              "type": "string"
+            },
+            "RBS01-PutModulaTrayNumberTarget": {
+              "type": "string"
+            },
+            "RBS01-PutModulaTrayNumberActual": {
+              "type": "string"
+            },
+            "RBS01-PutModulaTrayPocketNumberTarget": {
+              "type": "string"
+            },
+            "RSB01-PutModulaTrayPocketNumberActual": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "BottleID",
+            "BBSS01-BatchNumber",
+            "BBSS01-BottleID",
+            "BBSS01-BottleLotNumber",
+            "BBSS01-BottleSize",
+            "BBSS01-CycleEndTime",
+            "BBSS01-CycleStartTime",
+            "BBSS01-CycleTime",
+            "BBSS01-ResultCode",
+            "BBSS01-ScadaRecipeName",
+            "BBSS01-ScadaRecipeVersion",
+            "FS01-ActualFillCount",
+            "FS01-BatchNumber",
+            "FS01-BottleID",
+            "FS01-ContainerID",
+            "FS01-CycleEndTime",
+            "FS01-CycleStartTime",
+            "FS01-CycleTime",
+            "FS01-HumidityActual",
+            "FS01-ResultCode",
+            "FS01-ScadaRecipeName",
+            "FS01-ScadaRecipeVersion",
+            "FS01-TargetFillCount",
+            "FS01-TemperatureActual",
+            "FS02-ActualFillCount",
+            "FS02-BatchNumber",
+            "FS02-BottleID",
+            "FS02-ContainerID",
+            "FS02-CycleEndTime",
+            "FS02-CycleStartTime",
+            "FS02-CycleTime",
+            "FS02-HumidityActual",
+            "FS02-ResultCode",
+            "FS02-ScadaRecipeName",
+            "FS02-ScadaRecipeVersion",
+            "FS02-TargetFillCount",
+            "FS02-TemperatureActual",
+            "WM01-ActualWeight",
+            "WM01-BatchNumber",
+            "WM01-BottleID",
+            "WM01-CycleEndTime",
+            "WM01-CycleStartTime",
+            "WM01-CycleTime",
+            "WM01-ResultCode",
+            "WM01-ScadaRecipeName",
+            "WM01-ScadaRecipeVersion",
+            "WM01-TargetWeight",
+            "WM02-ActualWeight",
+            "WM02-BatchNumber",
+            "WM02-BottleID",
+            "WM02-CycleEndTime",
+            "WM02-CycleStartTime",
+            "WM02-CycleTime",
+            "WM02-ResultCode",
+            "WM02-ScadaRecipeName",
+            "WM02-ScadaRecipeVersion",
+            "WM02-TargetWeight",
+            "WM03-ActualWeight",
+            "WM03-BatchNumber",
+            "WM03-BottleID",
+            "WM03-CycleEndTime",
+            "WM03-CycleStartTime",
+            "WM03-CycleTime",
+            "WM03-ResultCode",
+            "WM03-ScadaRecipeName",
+            "WM03-ScadaRecipeVersion",
+            "WM03-TargetWeight",
+            "BSS01-BatchNumber",
+            "BSS01-BottleID",
+            "BSS01-ResultCode",
+            "BSS01-CycleEndTime",
+            "BSS01-CycleStartTime",
+            "BSS01-CycleTime",
+            "BSS01-ScadaRecipeName",
+            "BSS01-ScadaRecipeVersion",
+            "BSS01-SealingPowerTarget",
+            "BSS01-SealingPowerActual",
+            "BSS01-SealingSpeedTarget",
+            "BSS01-SealingSpeedActual",
+            "BCR01-BatchNumber",
+            "BCR01-BottleID",
+            "BCR01-ResultCode",
+            "BCR01-CycleEndTime",
+            "BCR01-CycleStartTime",
+            "BCR01-CycleTime",
+            "BCR01-ScadaRecipeName",
+            "BCR01-ScadaRecipeVersion",
+            "BCS01-BatchNumber",
+            "BCS01-BottleID",
+            "BCS01-ResultCode",
+            "BCS01-CycleEndTime",
+            "BCS01-CycleStartTime",
+            "BCS01-CycleTime",
+            "BCS01-ScadaRecipeName",
+            "BCS01-ScadaRecipeVersion",
+            "BCS01-CapType",
+            "BCS01-CapLotNumber",
+            "BCS01-CapTorqueTarget",
+            "BCS01-CapTorqueActual",
+            "BCS01-HeadDropHeightTarget",
+            "BCS01-HeadDropHeightActual",
+            "RBS01-BatchNumber",
+            "RBS01-BottleID",
+            "RBS01-ResultCode",
+            "RBS01-CycleEndTime",
+            "RBS01-CycleStartTime",
+            "RBS01-CycleTime",
+            "RBS01-ScadaRecipeName",
+            "RBS01-ScadaRecipeVersion",
+            "RBS01-RobotOperationType",
+            "RBS01-PickRobotDockingStationNumberTarget",
+            "RBS01-PickRobotDockingStationNumberActual",
+            "RBS01-PickModulaTrayNumberTarget",
+            "RBS01-PickModulaTrayNumberActual",
+            "RBS01-PickModulaTrayPocketNumberTarget",
+            "RBS01-PickModulaTrayPocketNumberActual",
+            "RBS01-PutRobotDockingStationNumberTarget",
+            "RBS01-PutRobotDockingStationNumberActual",
+            "RBS01-PutModulaTrayNumberTarget",
+            "RBS01-PutModulaTrayNumberActual",
+            "RBS01-PutModulaTrayPocketNumberTarget",
+            "RSB01-PutModulaTrayPocketNumberActual"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "BottleID": {
+              "type": "string"
+            },
+            "BBSS01-BatchNumber": {
+              "type": "string"
+            },
+            "BBSS01-BottleID": {
+              "type": "string"
+            },
+            "BBSS01-BottleLotNumber": {
+              "type": "string"
+            },
+            "BBSS01-BottleSize": {
+              "type": "string"
+            },
+            "BBSS01-CycleEndTime": {
+              "type": "string"
+            },
+            "BBSS01-CycleStartTime": {
+              "type": "string"
+            },
+            "BBSS01-CycleTime": {
+              "type": "string"
+            },
+            "BBSS01-ResultCode": {
+              "type": "string"
+            },
+            "BBSS01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BBSS01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "FS01-ActualFillCount": {
+              "type": "string"
+            },
+            "FS01-BatchNumber": {
+              "type": "string"
+            },
+            "FS01-BottleID": {
+              "type": "string"
+            },
+            "FS01-ContainerID": {
+              "type": "string"
+            },
+            "FS01-CycleEndTime": {
+              "type": "string"
+            },
+            "FS01-CycleStartTime": {
+              "type": "string"
+            },
+            "FS01-CycleTime": {
+              "type": "string"
+            },
+            "FS01-HumidityActual": {
+              "type": "string"
+            },
+            "FS01-ResultCode": {
+              "type": "string"
+            },
+            "FS01-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "FS01-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "FS01-TargetFillCount": {
+              "type": "string"
+            },
+            "FS01-TemperatureActual": {
+              "type": "string"
+            },
+            "FS02-ActualFillCount": {
+              "type": "string"
+            },
+            "FS02-BatchNumber": {
+              "type": "string"
+            },
+            "FS02-BottleID": {
+              "type": "string"
+            },
+            "FS02-ContainerID": {
+              "type": "string"
+            },
+            "FS02-CycleEndTime": {
+              "type": "string"
+            },
+            "FS02-CycleStartTime": {
+              "type": "string"
+            },
+            "FS02-CycleTime": {
+              "type": "string"
+            },
+            "FS02-HumidityActual": {
+              "type": "string"
+            },
+            "FS02-ResultCode": {
+              "type": "string"
+            },
+            "FS02-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "FS02-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "FS02-TargetFillCount": {
+              "type": "string"
+            },
+            "FS02-TemperatureActual": {
+              "type": "string"
+            },
+            "WM01-ActualWeight": {
+              "type": "string"
+            },
+            "WM01-BatchNumber": {
+              "type": "string"
+            },
+            "WM01-BottleID": {
+              "type": "string"
+            },
+            "WM01-CycleEndTime": {
+              "type": "string"
+            },
+            "WM01-CycleStartTime": {
+              "type": "string"
+            },
+            "WM01-CycleTime": {
+              "type": "string"
+            },
+            "WM01-ResultCode": {
+              "type": "string"
+            },
+            "WM01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "WM01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "WM01-TargetWeight": {
+              "type": "string"
+            },
+            "WM02-ActualWeight": {
+              "type": "string"
+            },
+            "WM02-BatchNumber": {
+              "type": "string"
+            },
+            "WM02-BottleID": {
+              "type": "string"
+            },
+            "WM02-CycleEndTime": {
+              "type": "string"
+            },
+            "WM02-CycleStartTime": {
+              "type": "string"
+            },
+            "WM02-CycleTime": {
+              "type": "string"
+            },
+            "WM02-ResultCode": {
+              "type": "string"
+            },
+            "WM02-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "WM02-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "WM02-TargetWeight": {
+              "type": "string"
+            },
+            "WM03-ActualWeight": {
+              "type": "string"
+            },
+            "WM03-BatchNumber": {
+              "type": "string"
+            },
+            "WM03-BottleID": {
+              "type": "string"
+            },
+            "WM03-CycleEndTime": {
+              "type": "string"
+            },
+            "WM03-CycleStartTime": {
+              "type": "string"
+            },
+            "WM03-CycleTime": {
+              "type": "string"
+            },
+            "WM03-ResultCode": {
+              "type": "string"
+            },
+            "WM03-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "WM03-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "WM03-TargetWeight": {
+              "type": "string"
+            },
+            "BSS01-BatchNumber": {
+              "type": "string"
+            },
+            "BSS01-BottleID": {
+              "type": "string"
+            },
+            "BSS01-ResultCode": {
+              "type": "string"
+            },
+            "BSS01-CycleEndTime": {
+              "type": "string"
+            },
+            "BSS01-CycleStartTime": {
+              "type": "string"
+            },
+            "BSS01-CycleTime": {
+              "type": "string"
+            },
+            "BSS01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BSS01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "BSS01-SealingPowerTarget": {
+              "type": "string"
+            },
+            "BSS01-SealingPowerActual": {
+              "type": "string"
+            },
+            "BSS01-SealingSpeedTarget": {
+              "type": "string"
+            },
+            "BSS01-SealingSpeedActual": {
+              "type": "string"
+            },
+            "BCR01-BatchNumber": {
+              "type": "string"
+            },
+            "BCR01-BottleID": {
+              "type": "string"
+            },
+            "BCR01-ResultCode": {
+              "type": "string"
+            },
+            "BCR01-CycleEndTime": {
+              "type": "string"
+            },
+            "BCR01-CycleStartTime": {
+              "type": "string"
+            },
+            "BCR01-CycleTime": {
+              "type": "string"
+            },
+            "BCR01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BCR01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "BCS01-BatchNumber": {
+              "type": "string"
+            },
+            "BCS01-BottleID": {
+              "type": "string"
+            },
+            "BCS01-ResultCode": {
+              "type": "string"
+            },
+            "BCS01-CycleEndTime": {
+              "type": "string"
+            },
+            "BCS01-CycleStartTime": {
+              "type": "string"
+            },
+            "BCS01-CycleTime": {
+              "type": "string"
+            },
+            "BCS01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BCS01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "BCS01-CapType": {
+              "type": "string"
+            },
+            "BCS01-CapLotNumber": {
+              "type": "string"
+            },
+            "BCS01-CapTorqueTarget": {
+              "type": "string"
+            },
+            "BCS01-CapTorqueActual": {
+              "type": "string"
+            },
+            "BCS01-HeadDropHeightTarget": {
+              "type": "string"
+            },
+            "BCS01-HeadDropHeightActual": {
+              "type": "string"
+            },
+            "RBS01-BatchNumber": {
+              "type": "string"
+            },
+            "RBS01-BottleID": {
+              "type": "string"
+            },
+            "RBS01-ResultCode": {
+              "type": "string"
+            },
+            "RBS01-CycleEndTime": {
+              "type": "string"
+            },
+            "RBS01-CycleStartTime": {
+              "type": "string"
+            },
+            "RBS01-CycleTime": {
+              "type": "string"
+            },
+            "RBS01-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-RobotOperationType": {
+              "type": "string"
+            },
+            "RBS01-PickRobotDockingStationNumberTarget": {
+              "type": "string"
+            },
+            "RBS01-PickRobotDockingStationNumberActual": {
+              "type": "string"
+            },
+            "RBS01-PickModulaTrayNumberTarget": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-PickModulaTrayNumberActual": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-PickModulaTrayPocketNumberTarget": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-PickModulaTrayPocketNumberActual": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-PutRobotDockingStationNumberTarget": {
+              "type": "string"
+            },
+            "RBS01-PutRobotDockingStationNumberActual": {
+              "type": "string"
+            },
+            "RBS01-PutModulaTrayNumberTarget": {
+              "type": "string"
+            },
+            "RBS01-PutModulaTrayNumberActual": {
+              "type": "string"
+            },
+            "RBS01-PutModulaTrayPocketNumberTarget": {
+              "type": "string"
+            },
+            "RSB01-PutModulaTrayPocketNumberActual": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "BottleID",
+            "BBSS01-BatchNumber",
+            "BBSS01-BottleID",
+            "BBSS01-BottleLotNumber",
+            "BBSS01-BottleSize",
+            "BBSS01-CycleEndTime",
+            "BBSS01-CycleStartTime",
+            "BBSS01-CycleTime",
+            "BBSS01-ResultCode",
+            "BBSS01-ScadaRecipeName",
+            "BBSS01-ScadaRecipeVersion",
+            "FS01-ActualFillCount",
+            "FS01-BatchNumber",
+            "FS01-BottleID",
+            "FS01-ContainerID",
+            "FS01-CycleEndTime",
+            "FS01-CycleStartTime",
+            "FS01-CycleTime",
+            "FS01-HumidityActual",
+            "FS01-ResultCode",
+            "FS01-ScadaRecipeName",
+            "FS01-ScadaRecipeVersion",
+            "FS01-TargetFillCount",
+            "FS01-TemperatureActual",
+            "FS02-ActualFillCount",
+            "FS02-BatchNumber",
+            "FS02-BottleID",
+            "FS02-ContainerID",
+            "FS02-CycleEndTime",
+            "FS02-CycleStartTime",
+            "FS02-CycleTime",
+            "FS02-HumidityActual",
+            "FS02-ResultCode",
+            "FS02-ScadaRecipeName",
+            "FS02-ScadaRecipeVersion",
+            "FS02-TargetFillCount",
+            "FS02-TemperatureActual",
+            "WM01-ActualWeight",
+            "WM01-BatchNumber",
+            "WM01-BottleID",
+            "WM01-CycleEndTime",
+            "WM01-CycleStartTime",
+            "WM01-CycleTime",
+            "WM01-ResultCode",
+            "WM01-ScadaRecipeName",
+            "WM01-ScadaRecipeVersion",
+            "WM01-TargetWeight",
+            "WM02-ActualWeight",
+            "WM02-BatchNumber",
+            "WM02-BottleID",
+            "WM02-CycleEndTime",
+            "WM02-CycleStartTime",
+            "WM02-CycleTime",
+            "WM02-ResultCode",
+            "WM02-ScadaRecipeName",
+            "WM02-ScadaRecipeVersion",
+            "WM02-TargetWeight",
+            "WM03-ActualWeight",
+            "WM03-BatchNumber",
+            "WM03-BottleID",
+            "WM03-CycleEndTime",
+            "WM03-CycleStartTime",
+            "WM03-CycleTime",
+            "WM03-ResultCode",
+            "WM03-ScadaRecipeName",
+            "WM03-ScadaRecipeVersion",
+            "WM03-TargetWeight",
+            "BSS01-BatchNumber",
+            "BSS01-BottleID",
+            "BSS01-ResultCode",
+            "BSS01-CycleEndTime",
+            "BSS01-CycleStartTime",
+            "BSS01-CycleTime",
+            "BSS01-ScadaRecipeName",
+            "BSS01-ScadaRecipeVersion",
+            "BSS01-SealingPowerTarget",
+            "BSS01-SealingPowerActual",
+            "BSS01-SealingSpeedTarget",
+            "BSS01-SealingSpeedActual",
+            "BCR01-BatchNumber",
+            "BCR01-BottleID",
+            "BCR01-ResultCode",
+            "BCR01-CycleEndTime",
+            "BCR01-CycleStartTime",
+            "BCR01-CycleTime",
+            "BCR01-ScadaRecipeName",
+            "BCR01-ScadaRecipeVersion",
+            "BCS01-BatchNumber",
+            "BCS01-BottleID",
+            "BCS01-ResultCode",
+            "BCS01-CycleEndTime",
+            "BCS01-CycleStartTime",
+            "BCS01-CycleTime",
+            "BCS01-ScadaRecipeName",
+            "BCS01-ScadaRecipeVersion",
+            "BCS01-CapType",
+            "BCS01-CapLotNumber",
+            "BCS01-CapTorqueTarget",
+            "BCS01-CapTorqueActual",
+            "BCS01-HeadDropHeightTarget",
+            "BCS01-HeadDropHeightActual",
+            "RBS01-BatchNumber",
+            "RBS01-BottleID",
+            "RBS01-ResultCode",
+            "RBS01-CycleEndTime",
+            "RBS01-CycleStartTime",
+            "RBS01-CycleTime",
+            "RBS01-ScadaRecipeName",
+            "RBS01-ScadaRecipeVersion",
+            "RBS01-RobotOperationType",
+            "RBS01-PickRobotDockingStationNumberTarget",
+            "RBS01-PickRobotDockingStationNumberActual",
+            "RBS01-PickModulaTrayNumberTarget",
+            "RBS01-PickModulaTrayNumberActual",
+            "RBS01-PickModulaTrayPocketNumberTarget",
+            "RBS01-PickModulaTrayPocketNumberActual",
+            "RBS01-PutRobotDockingStationNumberTarget",
+            "RBS01-PutRobotDockingStationNumberActual",
+            "RBS01-PutModulaTrayNumberTarget",
+            "RBS01-PutModulaTrayNumberActual",
+            "RBS01-PutModulaTrayPocketNumberTarget",
+            "RSB01-PutModulaTrayPocketNumberActual"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "BottleID": {
+              "type": "string"
+            },
+            "BBSS01-BatchNumber": {
+              "type": "string"
+            },
+            "BBSS01-BottleID": {
+              "type": "string"
+            },
+            "BBSS01-BottleLotNumber": {
+              "type": "string"
+            },
+            "BBSS01-BottleSize": {
+              "type": "string"
+            },
+            "BBSS01-CycleEndTime": {
+              "type": "string"
+            },
+            "BBSS01-CycleStartTime": {
+              "type": "string"
+            },
+            "BBSS01-CycleTime": {
+              "type": "string"
+            },
+            "BBSS01-ResultCode": {
+              "type": "string"
+            },
+            "BBSS01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BBSS01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "FS01-ActualFillCount": {
+              "type": "string"
+            },
+            "FS01-BatchNumber": {
+              "type": "string"
+            },
+            "FS01-BottleID": {
+              "type": "string"
+            },
+            "FS01-ContainerID": {
+              "type": "string"
+            },
+            "FS01-CycleEndTime": {
+              "type": "string"
+            },
+            "FS01-CycleStartTime": {
+              "type": "string"
+            },
+            "FS01-CycleTime": {
+              "type": "string"
+            },
+            "FS01-HumidityActual": {
+              "type": "string"
+            },
+            "FS01-ResultCode": {
+              "type": "string"
+            },
+            "FS01-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "FS01-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "FS01-TargetFillCount": {
+              "type": "string"
+            },
+            "FS01-TemperatureActual": {
+              "type": "string"
+            },
+            "FS02-ActualFillCount": {
+              "type": "string"
+            },
+            "FS02-BatchNumber": {
+              "type": "string"
+            },
+            "FS02-BottleID": {
+              "type": "string"
+            },
+            "FS02-ContainerID": {
+              "type": "string"
+            },
+            "FS02-CycleEndTime": {
+              "type": "string"
+            },
+            "FS02-CycleStartTime": {
+              "type": "string"
+            },
+            "FS02-CycleTime": {
+              "type": "string"
+            },
+            "FS02-HumidityActual": {
+              "type": "string"
+            },
+            "FS02-ResultCode": {
+              "type": "string"
+            },
+            "FS02-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "FS02-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "FS02-TargetFillCount": {
+              "type": "string"
+            },
+            "FS02-TemperatureActual": {
+              "type": "string"
+            },
+            "WM01-ActualWeight": {
+              "type": "string"
+            },
+            "WM01-BatchNumber": {
+              "type": "string"
+            },
+            "WM01-BottleID": {
+              "type": "string"
+            },
+            "WM01-CycleEndTime": {
+              "type": "string"
+            },
+            "WM01-CycleStartTime": {
+              "type": "string"
+            },
+            "WM01-CycleTime": {
+              "type": "string"
+            },
+            "WM01-ResultCode": {
+              "type": "string"
+            },
+            "WM01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "WM01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "WM01-TargetWeight": {
+              "type": "string"
+            },
+            "WM02-ActualWeight": {
+              "type": "string"
+            },
+            "WM02-BatchNumber": {
+              "type": "string"
+            },
+            "WM02-BottleID": {
+              "type": "string"
+            },
+            "WM02-CycleEndTime": {
+              "type": "string"
+            },
+            "WM02-CycleStartTime": {
+              "type": "string"
+            },
+            "WM02-CycleTime": {
+              "type": "string"
+            },
+            "WM02-ResultCode": {
+              "type": "string"
+            },
+            "WM02-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "WM02-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "WM02-TargetWeight": {
+              "type": "string"
+            },
+            "WM03-ActualWeight": {
+              "type": "string"
+            },
+            "WM03-BatchNumber": {
+              "type": "string"
+            },
+            "WM03-BottleID": {
+              "type": "string"
+            },
+            "WM03-CycleEndTime": {
+              "type": "string"
+            },
+            "WM03-CycleStartTime": {
+              "type": "string"
+            },
+            "WM03-CycleTime": {
+              "type": "string"
+            },
+            "WM03-ResultCode": {
+              "type": "string"
+            },
+            "WM03-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "WM03-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "WM03-TargetWeight": {
+              "type": "string"
+            },
+            "BSS01-BatchNumber": {
+              "type": "string"
+            },
+            "BSS01-BottleID": {
+              "type": "string"
+            },
+            "BSS01-ResultCode": {
+              "type": "string"
+            },
+            "BSS01-CycleEndTime": {
+              "type": "string"
+            },
+            "BSS01-CycleStartTime": {
+              "type": "string"
+            },
+            "BSS01-CycleTime": {
+              "type": "string"
+            },
+            "BSS01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BSS01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "BSS01-SealingPowerTarget": {
+              "type": "string"
+            },
+            "BSS01-SealingPowerActual": {
+              "type": "string"
+            },
+            "BSS01-SealingSpeedTarget": {
+              "type": "string"
+            },
+            "BSS01-SealingSpeedActual": {
+              "type": "string"
+            },
+            "BCR01-BatchNumber": {
+              "type": "string"
+            },
+            "BCR01-BottleID": {
+              "type": "string"
+            },
+            "BCR01-ResultCode": {
+              "type": "string"
+            },
+            "BCR01-CycleEndTime": {
+              "type": "string"
+            },
+            "BCR01-CycleStartTime": {
+              "type": "string"
+            },
+            "BCR01-CycleTime": {
+              "type": "string"
+            },
+            "BCR01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BCR01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "BCS01-BatchNumber": {
+              "type": "string"
+            },
+            "BCS01-BottleID": {
+              "type": "string"
+            },
+            "BCS01-ResultCode": {
+              "type": "string"
+            },
+            "BCS01-CycleEndTime": {
+              "type": "string"
+            },
+            "BCS01-CycleStartTime": {
+              "type": "string"
+            },
+            "BCS01-CycleTime": {
+              "type": "string"
+            },
+            "BCS01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BCS01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "BCS01-CapType": {
+              "type": "string"
+            },
+            "BCS01-CapLotNumber": {
+              "type": "string"
+            },
+            "BCS01-CapTorqueTarget": {
+              "type": "string"
+            },
+            "BCS01-CapTorqueActual": {
+              "type": "string"
+            },
+            "BCS01-HeadDropHeightTarget": {
+              "type": "string"
+            },
+            "BCS01-HeadDropHeightActual": {
+              "type": "string"
+            },
+            "RBS01-BatchNumber": {
+              "type": "string"
+            },
+            "RBS01-BottleID": {
+              "type": "string"
+            },
+            "RBS01-ResultCode": {
+              "type": "string"
+            },
+            "RBS01-CycleEndTime": {
+              "type": "string"
+            },
+            "RBS01-CycleStartTime": {
+              "type": "string"
+            },
+            "RBS01-CycleTime": {
+              "type": "string"
+            },
+            "RBS01-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-RobotOperationType": {
+              "type": "string"
+            },
+            "RBS01-PickRobotDockingStationNumberTarget": {
+              "type": "string"
+            },
+            "RBS01-PickRobotDockingStationNumberActual": {
+              "type": "string"
+            },
+            "RBS01-PickModulaTrayNumberTarget": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-PickModulaTrayNumberActual": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-PickModulaTrayPocketNumberTarget": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-PickModulaTrayPocketNumberActual": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-PutRobotDockingStationNumberTarget": {
+              "type": "string"
+            },
+            "RBS01-PutRobotDockingStationNumberActual": {
+              "type": "string"
+            },
+            "RBS01-PutModulaTrayNumberTarget": {
+              "type": "string"
+            },
+            "RBS01-PutModulaTrayNumberActual": {
+              "type": "string"
+            },
+            "RBS01-PutModulaTrayPocketNumberTarget": {
+              "type": "string"
+            },
+            "RSB01-PutModulaTrayPocketNumberActual": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "BottleID",
+            "BBSS01-BatchNumber",
+            "BBSS01-BottleID",
+            "BBSS01-BottleLotNumber",
+            "BBSS01-BottleSize",
+            "BBSS01-CycleEndTime",
+            "BBSS01-CycleStartTime",
+            "BBSS01-CycleTime",
+            "BBSS01-ResultCode",
+            "BBSS01-ScadaRecipeName",
+            "BBSS01-ScadaRecipeVersion",
+            "FS01-ActualFillCount",
+            "FS01-BatchNumber",
+            "FS01-BottleID",
+            "FS01-ContainerID",
+            "FS01-CycleEndTime",
+            "FS01-CycleStartTime",
+            "FS01-CycleTime",
+            "FS01-HumidityActual",
+            "FS01-ResultCode",
+            "FS01-ScadaRecipeName",
+            "FS01-ScadaRecipeVersion",
+            "FS01-TargetFillCount",
+            "FS01-TemperatureActual",
+            "FS02-ActualFillCount",
+            "FS02-BatchNumber",
+            "FS02-BottleID",
+            "FS02-ContainerID",
+            "FS02-CycleEndTime",
+            "FS02-CycleStartTime",
+            "FS02-CycleTime",
+            "FS02-HumidityActual",
+            "FS02-ResultCode",
+            "FS02-ScadaRecipeName",
+            "FS02-ScadaRecipeVersion",
+            "FS02-TargetFillCount",
+            "FS02-TemperatureActual",
+            "WM01-ActualWeight",
+            "WM01-BatchNumber",
+            "WM01-BottleID",
+            "WM01-CycleEndTime",
+            "WM01-CycleStartTime",
+            "WM01-CycleTime",
+            "WM01-ResultCode",
+            "WM01-ScadaRecipeName",
+            "WM01-ScadaRecipeVersion",
+            "WM01-TargetWeight",
+            "WM02-ActualWeight",
+            "WM02-BatchNumber",
+            "WM02-BottleID",
+            "WM02-CycleEndTime",
+            "WM02-CycleStartTime",
+            "WM02-CycleTime",
+            "WM02-ResultCode",
+            "WM02-ScadaRecipeName",
+            "WM02-ScadaRecipeVersion",
+            "WM02-TargetWeight",
+            "WM03-ActualWeight",
+            "WM03-BatchNumber",
+            "WM03-BottleID",
+            "WM03-CycleEndTime",
+            "WM03-CycleStartTime",
+            "WM03-CycleTime",
+            "WM03-ResultCode",
+            "WM03-ScadaRecipeName",
+            "WM03-ScadaRecipeVersion",
+            "WM03-TargetWeight",
+            "BSS01-BatchNumber",
+            "BSS01-BottleID",
+            "BSS01-ResultCode",
+            "BSS01-CycleEndTime",
+            "BSS01-CycleStartTime",
+            "BSS01-CycleTime",
+            "BSS01-ScadaRecipeName",
+            "BSS01-ScadaRecipeVersion",
+            "BSS01-SealingPowerTarget",
+            "BSS01-SealingPowerActual",
+            "BSS01-SealingSpeedTarget",
+            "BSS01-SealingSpeedActual",
+            "BCR01-BatchNumber",
+            "BCR01-BottleID",
+            "BCR01-ResultCode",
+            "BCR01-CycleEndTime",
+            "BCR01-CycleStartTime",
+            "BCR01-CycleTime",
+            "BCR01-ScadaRecipeName",
+            "BCR01-ScadaRecipeVersion",
+            "BCS01-BatchNumber",
+            "BCS01-BottleID",
+            "BCS01-ResultCode",
+            "BCS01-CycleEndTime",
+            "BCS01-CycleStartTime",
+            "BCS01-CycleTime",
+            "BCS01-ScadaRecipeName",
+            "BCS01-ScadaRecipeVersion",
+            "BCS01-CapType",
+            "BCS01-CapLotNumber",
+            "BCS01-CapTorqueTarget",
+            "BCS01-CapTorqueActual",
+            "BCS01-HeadDropHeightTarget",
+            "BCS01-HeadDropHeightActual",
+            "RBS01-BatchNumber",
+            "RBS01-BottleID",
+            "RBS01-ResultCode",
+            "RBS01-CycleEndTime",
+            "RBS01-CycleStartTime",
+            "RBS01-CycleTime",
+            "RBS01-ScadaRecipeName",
+            "RBS01-ScadaRecipeVersion",
+            "RBS01-RobotOperationType",
+            "RBS01-PickRobotDockingStationNumberTarget",
+            "RBS01-PickRobotDockingStationNumberActual",
+            "RBS01-PickModulaTrayNumberTarget",
+            "RBS01-PickModulaTrayNumberActual",
+            "RBS01-PickModulaTrayPocketNumberTarget",
+            "RBS01-PickModulaTrayPocketNumberActual",
+            "RBS01-PutRobotDockingStationNumberTarget",
+            "RBS01-PutRobotDockingStationNumberActual",
+            "RBS01-PutModulaTrayNumberTarget",
+            "RBS01-PutModulaTrayNumberActual",
+            "RBS01-PutModulaTrayPocketNumberTarget",
+            "RSB01-PutModulaTrayPocketNumberActual"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "BottleID": {
+              "type": "string"
+            },
+            "BBSS01-BatchNumber": {
+              "type": "string"
+            },
+            "BBSS01-BottleID": {
+              "type": "string"
+            },
+            "BBSS01-BottleLotNumber": {
+              "type": "string"
+            },
+            "BBSS01-BottleSize": {
+              "type": "string"
+            },
+            "BBSS01-CycleEndTime": {
+              "type": "string"
+            },
+            "BBSS01-CycleStartTime": {
+              "type": "string"
+            },
+            "BBSS01-CycleTime": {
+              "type": "string"
+            },
+            "BBSS01-ResultCode": {
+              "type": "string"
+            },
+            "BBSS01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BBSS01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "FS01-ActualFillCount": {
+              "type": "string"
+            },
+            "FS01-BatchNumber": {
+              "type": "string"
+            },
+            "FS01-BottleID": {
+              "type": "string"
+            },
+            "FS01-ContainerID": {
+              "type": "string"
+            },
+            "FS01-CycleEndTime": {
+              "type": "string"
+            },
+            "FS01-CycleStartTime": {
+              "type": "string"
+            },
+            "FS01-CycleTime": {
+              "type": "string"
+            },
+            "FS01-HumidityActual": {
+              "type": "string"
+            },
+            "FS01-ResultCode": {
+              "type": "string"
+            },
+            "FS01-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "FS01-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "FS01-TargetFillCount": {
+              "type": "string"
+            },
+            "FS01-TemperatureActual": {
+              "type": "string"
+            },
+            "FS02-ActualFillCount": {
+              "type": "string"
+            },
+            "FS02-BatchNumber": {
+              "type": "string"
+            },
+            "FS02-BottleID": {
+              "type": "string"
+            },
+            "FS02-ContainerID": {
+              "type": "string"
+            },
+            "FS02-CycleEndTime": {
+              "type": "string"
+            },
+            "FS02-CycleStartTime": {
+              "type": "string"
+            },
+            "FS02-CycleTime": {
+              "type": "string"
+            },
+            "FS02-HumidityActual": {
+              "type": "string"
+            },
+            "FS02-ResultCode": {
+              "type": "string"
+            },
+            "FS02-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "FS02-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "FS02-TargetFillCount": {
+              "type": "string"
+            },
+            "FS02-TemperatureActual": {
+              "type": "string"
+            },
+            "WM01-ActualWeight": {
+              "type": "string"
+            },
+            "WM01-BatchNumber": {
+              "type": "string"
+            },
+            "WM01-BottleID": {
+              "type": "string"
+            },
+            "WM01-CycleEndTime": {
+              "type": "string"
+            },
+            "WM01-CycleStartTime": {
+              "type": "string"
+            },
+            "WM01-CycleTime": {
+              "type": "string"
+            },
+            "WM01-ResultCode": {
+              "type": "string"
+            },
+            "WM01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "WM01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "WM01-TargetWeight": {
+              "type": "string"
+            },
+            "WM02-ActualWeight": {
+              "type": "string"
+            },
+            "WM02-BatchNumber": {
+              "type": "string"
+            },
+            "WM02-BottleID": {
+              "type": "string"
+            },
+            "WM02-CycleEndTime": {
+              "type": "string"
+            },
+            "WM02-CycleStartTime": {
+              "type": "string"
+            },
+            "WM02-CycleTime": {
+              "type": "string"
+            },
+            "WM02-ResultCode": {
+              "type": "string"
+            },
+            "WM02-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "WM02-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "WM02-TargetWeight": {
+              "type": "string"
+            },
+            "WM03-ActualWeight": {
+              "type": "string"
+            },
+            "WM03-BatchNumber": {
+              "type": "string"
+            },
+            "WM03-BottleID": {
+              "type": "string"
+            },
+            "WM03-CycleEndTime": {
+              "type": "string"
+            },
+            "WM03-CycleStartTime": {
+              "type": "string"
+            },
+            "WM03-CycleTime": {
+              "type": "string"
+            },
+            "WM03-ResultCode": {
+              "type": "string"
+            },
+            "WM03-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "WM03-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "WM03-TargetWeight": {
+              "type": "string"
+            },
+            "BSS01-BatchNumber": {
+              "type": "string"
+            },
+            "BSS01-BottleID": {
+              "type": "string"
+            },
+            "BSS01-ResultCode": {
+              "type": "string"
+            },
+            "BSS01-CycleEndTime": {
+              "type": "string"
+            },
+            "BSS01-CycleStartTime": {
+              "type": "string"
+            },
+            "BSS01-CycleTime": {
+              "type": "string"
+            },
+            "BSS01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BSS01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "BSS01-SealingPowerTarget": {
+              "type": "string"
+            },
+            "BSS01-SealingPowerActual": {
+              "type": "string"
+            },
+            "BSS01-SealingSpeedTarget": {
+              "type": "string"
+            },
+            "BSS01-SealingSpeedActual": {
+              "type": "string"
+            },
+            "BCR01-BatchNumber": {
+              "type": "string"
+            },
+            "BCR01-BottleID": {
+              "type": "string"
+            },
+            "BCR01-ResultCode": {
+              "type": "string"
+            },
+            "BCR01-CycleEndTime": {
+              "type": "string"
+            },
+            "BCR01-CycleStartTime": {
+              "type": "string"
+            },
+            "BCR01-CycleTime": {
+              "type": "string"
+            },
+            "BCR01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BCR01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "BCS01-BatchNumber": {
+              "type": "string"
+            },
+            "BCS01-BottleID": {
+              "type": "string"
+            },
+            "BCS01-ResultCode": {
+              "type": "string"
+            },
+            "BCS01-CycleEndTime": {
+              "type": "string"
+            },
+            "BCS01-CycleStartTime": {
+              "type": "string"
+            },
+            "BCS01-CycleTime": {
+              "type": "string"
+            },
+            "BCS01-ScadaRecipeName": {
+              "type": "string"
+            },
+            "BCS01-ScadaRecipeVersion": {
+              "type": "string"
+            },
+            "BCS01-CapType": {
+              "type": "string"
+            },
+            "BCS01-CapLotNumber": {
+              "type": "string"
+            },
+            "BCS01-CapTorqueTarget": {
+              "type": "string"
+            },
+            "BCS01-CapTorqueActual": {
+              "type": "string"
+            },
+            "BCS01-HeadDropHeightTarget": {
+              "type": "string"
+            },
+            "BCS01-HeadDropHeightActual": {
+              "type": "string"
+            },
+            "RBS01-BatchNumber": {
+              "type": "string"
+            },
+            "RBS01-BottleID": {
+              "type": "string"
+            },
+            "RBS01-ResultCode": {
+              "type": "string"
+            },
+            "RBS01-CycleEndTime": {
+              "type": "string"
+            },
+            "RBS01-CycleStartTime": {
+              "type": "string"
+            },
+            "RBS01-CycleTime": {
+              "type": "string"
+            },
+            "RBS01-ScadaRecipeName": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-ScadaRecipeVersion": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-RobotOperationType": {
+              "type": "string"
+            },
+            "RBS01-PickRobotDockingStationNumberTarget": {
+              "type": "string"
+            },
+            "RBS01-PickRobotDockingStationNumberActual": {
+              "type": "string"
+            },
+            "RBS01-PickModulaTrayNumberTarget": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-PickModulaTrayNumberActual": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-PickModulaTrayPocketNumberTarget": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-PickModulaTrayPocketNumberActual": {
+              "type": "array",
+              "items": {}
+            },
+            "RBS01-PutRobotDockingStationNumberTarget": {
+              "type": "string"
+            },
+            "RBS01-PutRobotDockingStationNumberActual": {
+              "type": "string"
+            },
+            "RBS01-PutModulaTrayNumberTarget": {
+              "type": "string"
+            },
+            "RBS01-PutModulaTrayNumberActual": {
+              "type": "string"
+            },
+            "RBS01-PutModulaTrayPocketNumberTarget": {
+              "type": "string"
+            },
+            "RSB01-PutModulaTrayPocketNumberActual": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "BottleID",
+            "BBSS01-BatchNumber",
+            "BBSS01-BottleID",
+            "BBSS01-BottleLotNumber",
+            "BBSS01-BottleSize",
+            "BBSS01-CycleEndTime",
+            "BBSS01-CycleStartTime",
+            "BBSS01-CycleTime",
+            "BBSS01-ResultCode",
+            "BBSS01-ScadaRecipeName",
+            "BBSS01-ScadaRecipeVersion",
+            "FS01-ActualFillCount",
+            "FS01-BatchNumber",
+            "FS01-BottleID",
+            "FS01-ContainerID",
+            "FS01-CycleEndTime",
+            "FS01-CycleStartTime",
+            "FS01-CycleTime",
+            "FS01-HumidityActual",
+            "FS01-ResultCode",
+            "FS01-ScadaRecipeName",
+            "FS01-ScadaRecipeVersion",
+            "FS01-TargetFillCount",
+            "FS01-TemperatureActual",
+            "FS02-ActualFillCount",
+            "FS02-BatchNumber",
+            "FS02-BottleID",
+            "FS02-ContainerID",
+            "FS02-CycleEndTime",
+            "FS02-CycleStartTime",
+            "FS02-CycleTime",
+            "FS02-HumidityActual",
+            "FS02-ResultCode",
+            "FS02-ScadaRecipeName",
+            "FS02-ScadaRecipeVersion",
+            "FS02-TargetFillCount",
+            "FS02-TemperatureActual",
+            "WM01-ActualWeight",
+            "WM01-BatchNumber",
+            "WM01-BottleID",
+            "WM01-CycleEndTime",
+            "WM01-CycleStartTime",
+            "WM01-CycleTime",
+            "WM01-ResultCode",
+            "WM01-ScadaRecipeName",
+            "WM01-ScadaRecipeVersion",
+            "WM01-TargetWeight",
+            "WM02-ActualWeight",
+            "WM02-BatchNumber",
+            "WM02-BottleID",
+            "WM02-CycleEndTime",
+            "WM02-CycleStartTime",
+            "WM02-CycleTime",
+            "WM02-ResultCode",
+            "WM02-ScadaRecipeName",
+            "WM02-ScadaRecipeVersion",
+            "WM02-TargetWeight",
+            "WM03-ActualWeight",
+            "WM03-BatchNumber",
+            "WM03-BottleID",
+            "WM03-CycleEndTime",
+            "WM03-CycleStartTime",
+            "WM03-CycleTime",
+            "WM03-ResultCode",
+            "WM03-ScadaRecipeName",
+            "WM03-ScadaRecipeVersion",
+            "WM03-TargetWeight",
+            "BSS01-BatchNumber",
+            "BSS01-BottleID",
+            "BSS01-ResultCode",
+            "BSS01-CycleEndTime",
+            "BSS01-CycleStartTime",
+            "BSS01-CycleTime",
+            "BSS01-ScadaRecipeName",
+            "BSS01-ScadaRecipeVersion",
+            "BSS01-SealingPowerTarget",
+            "BSS01-SealingPowerActual",
+            "BSS01-SealingSpeedTarget",
+            "BSS01-SealingSpeedActual",
+            "BCR01-BatchNumber",
+            "BCR01-BottleID",
+            "BCR01-ResultCode",
+            "BCR01-CycleEndTime",
+            "BCR01-CycleStartTime",
+            "BCR01-CycleTime",
+            "BCR01-ScadaRecipeName",
+            "BCR01-ScadaRecipeVersion",
+            "BCS01-BatchNumber",
+            "BCS01-BottleID",
+            "BCS01-ResultCode",
+            "BCS01-CycleEndTime",
+            "BCS01-CycleStartTime",
+            "BCS01-CycleTime",
+            "BCS01-ScadaRecipeName",
+            "BCS01-ScadaRecipeVersion",
+            "BCS01-CapType",
+            "BCS01-CapLotNumber",
+            "BCS01-CapTorqueTarget",
+            "BCS01-CapTorqueActual",
+            "BCS01-HeadDropHeightTarget",
+            "BCS01-HeadDropHeightActual",
+            "RBS01-BatchNumber",
+            "RBS01-BottleID",
+            "RBS01-ResultCode",
+            "RBS01-CycleEndTime",
+            "RBS01-CycleStartTime",
+            "RBS01-CycleTime",
+            "RBS01-ScadaRecipeName",
+            "RBS01-ScadaRecipeVersion",
+            "RBS01-RobotOperationType",
+            "RBS01-PickRobotDockingStationNumberTarget",
+            "RBS01-PickRobotDockingStationNumberActual",
+            "RBS01-PickModulaTrayNumberTarget",
+            "RBS01-PickModulaTrayNumberActual",
+            "RBS01-PickModulaTrayPocketNumberTarget",
+            "RBS01-PickModulaTrayPocketNumberActual",
+            "RBS01-PutRobotDockingStationNumberTarget",
+            "RBS01-PutRobotDockingStationNumberActual",
+            "RBS01-PutModulaTrayNumberTarget",
+            "RBS01-PutModulaTrayNumberActual",
+            "RBS01-PutModulaTrayPocketNumberTarget",
+            "RSB01-PutModulaTrayPocketNumberActual"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "BatchNumber",
+    "BatchProductName",
+    "BatchStatus",
+    "BatchStartTimeUTC",
+    "BatchEndTimeUTC",
+    "BatchBottlesTarget",
+    "BatchBottlesInProgress",
+    "BatchBottlesCompleted",
+    "BatchBottlesRejected",
+    "Bottles"
+  ]
+}
