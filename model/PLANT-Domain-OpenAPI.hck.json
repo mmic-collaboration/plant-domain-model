@@ -488,6 +488,9 @@
                                     "error": {}
                                 }
                             ]
+                        },
+                        "error": {
+                            "refPath": false
                         }
                     },
                     {
@@ -510,6 +513,14 @@
                             "name": "Sensor Event",
                             "properties": [
                                 {
+                                    "GUID": "e3092d9a-390a-42d4-9e81-fd488491f87e",
+                                    "childRelationships": [
+                                        "e875d207-f457-4564-9708-54125d68d2a8",
+                                        "ea4da639-8efa-4450-8d60-9e67b038db9c"
+                                    ],
+                                    "error": {}
+                                },
+                                {
                                     "GUID": "2ef11825-3352-4007-98a2-bc00bae9a094",
                                     "relationshipType": "Foreign Key",
                                     "foreignCollection": "df1f5335-1685-4c40-8b9d-8183fda2369c",
@@ -527,18 +538,12 @@
                                         "5cecb1f9-400b-4cad-8d81-fd3fe44d3c42"
                                     ],
                                     "error": {}
-                                },
-                                {
-                                    "GUID": "e3092d9a-390a-42d4-9e81-fd488491f87e",
-                                    "childRelationships": [
-                                        "e875d207-f457-4564-9708-54125d68d2a8",
-                                        "ea4da639-8efa-4450-8d60-9e67b038db9c"
-                                    ],
-                                    "error": {}
                                 }
                             ]
                         },
-                        "error": {}
+                        "error": {
+                            "refPath": false
+                        }
                     },
                     {
                         "GUID": "9333cc00-5fe8-4bf0-89ca-713a912db4e0",
@@ -573,7 +578,9 @@
                                 }
                             ]
                         },
-                        "error": {}
+                        "error": {
+                            "refPath": false
+                        }
                     },
                     {
                         "GUID": "9548896a-8446-474e-912b-5600c75b1737",
@@ -595,13 +602,6 @@
                             "name": "Alarm Sensor Event",
                             "properties": [
                                 {
-                                    "GUID": "6fcba480-0e89-44ce-adf8-ec0e42049ff0",
-                                    "childRelationships": [
-                                        "c6e2b380-86e6-461c-8be2-aa9cbe1e40b0"
-                                    ],
-                                    "error": {}
-                                },
-                                {
                                     "GUID": "f3781eb6-1ed5-47ee-a7d5-3bcfb51dac46",
                                     "relationshipType": "Foreign Key",
                                     "foreignCollection": "93201189-b4eb-4394-938c-6ffc4f4f6710",
@@ -612,10 +612,19 @@
                                     ],
                                     "parentRelationship": "e875d207-f457-4564-9708-54125d68d2a8",
                                     "error": {}
+                                },
+                                {
+                                    "GUID": "6fcba480-0e89-44ce-adf8-ec0e42049ff0",
+                                    "childRelationships": [
+                                        "c6e2b380-86e6-461c-8be2-aa9cbe1e40b0"
+                                    ],
+                                    "error": {}
                                 }
                             ]
                         },
-                        "error": {}
+                        "error": {
+                            "refPath": false
+                        }
                     },
                     {
                         "GUID": "d38d5cc0-1809-4ab1-aa19-dcea26a40f9e",
@@ -650,7 +659,9 @@
                                 }
                             ]
                         },
-                        "error": {}
+                        "error": {
+                            "refPath": false
+                        }
                     },
                     {
                         "GUID": "53913ee2-5949-4df1-96b2-7c4802d7e6fc",
@@ -680,7 +691,9 @@
                                 }
                             ]
                         },
-                        "error": {}
+                        "error": {
+                            "refPath": false
+                        }
                     },
                     {
                         "GUID": "de1b9c09-94be-486d-abb0-e085e811cf84",
@@ -715,7 +728,9 @@
                                 }
                             ]
                         },
-                        "error": {}
+                        "error": {
+                            "refPath": false
+                        }
                     }
                 ],
                 "childType": "componentObject",
@@ -938,7 +953,7 @@
         "type": "polyglotDefinitions",
         "properties": [
             {
-                "name": "Sensor",
+                "name": "Sensor(1)",
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
@@ -1035,13 +1050,11 @@
                 "childType": "object",
                 "type": "document",
                 "GUID": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
-                "code": "sensor",
+                "code": "sensor(1)",
                 "description": "",
                 "comments": "",
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PLANT Domain/Sensor",
-                "link": "PLANT-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -1051,10 +1064,12 @@
                         "df1f5335-1685-4c40-8b9d-8183fda2369c"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PLANT Domain/Sensor"
             },
             {
-                "name": "Sensor Event",
+                "name": "Sensor Event(1)",
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
@@ -1200,13 +1215,11 @@
                 "childType": "object",
                 "type": "document",
                 "GUID": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
-                "code": "sensorEvent",
+                "code": "sensorEvent(1)",
                 "description": "",
                 "comments": "",
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PLANT Domain/Sensor Event",
-                "link": "PLANT-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -1216,10 +1229,12 @@
                         "93201189-b4eb-4394-938c-6ffc4f4f6710"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PLANT Domain/Sensor Event"
             },
             {
-                "name": "Alarm Code",
+                "name": "Alarm Code(1)",
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
@@ -1257,54 +1272,16 @@
                         "primaryKey": false,
                         "nullable": false,
                         "type": "string",
-                        "name": "alarm code title",
+                        "name": "alarm code number",
                         "hackoladeMeta": {
                             "namingConvention": "code"
                         },
                         "isActivated": true,
-                        "GUID": "5f6a4709-fa67-4c77-b234-f38c2787ba10",
+                        "GUID": "a071aab9-7e17-4338-8113-320384504446",
                         "required": false,
-                        "description": "short description of the alarm code",
-                        "code": "alarmCodeTitle",
-                        "error": {}
-                    },
-                    {
-                        "primaryKey": false,
-                        "nullable": false,
-                        "type": "string",
-                        "name": "alarm code colour",
-                        "hackoladeMeta": {
-                            "namingConvention": "code"
-                        },
-                        "isActivated": true,
-                        "required": true,
-                        "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
-                        "description": "A colour to indicate the severity of the triggered alarm, with the recovery action:\n - RED - Machine Stop, Clear fault condition and trigger reset/restart\n - YELLOW - Machine Paused, Remove hold condition, machine will resume automatic control.\n - WHITE - Information, n/a\n - BLUE - Low Materials Warning, Replenish material stock\n\nRef: FS01 Data Specification, CPI, martin.keane@cpi-uk.com",
-                        "GUID": "bb32e9d6-8912-4870-a179-1dd957335ea6",
-                        "enum": [
-                            "RED",
-                            "YELLOW",
-                            "WHITE",
-                            "BLUE"
-                        ],
-                        "sample": "RED",
-                        "code": "alarmCodeColour",
-                        "error": {}
-                    },
-                    {
-                        "primaryKey": false,
-                        "nullable": false,
-                        "type": "string",
-                        "name": "alarm code  standard recovery action",
-                        "hackoladeMeta": {
-                            "namingConvention": "code"
-                        },
-                        "isActivated": true,
-                        "GUID": "b8b1ff14-97c6-4f74-9dbe-c61e030f278c",
-                        "required": false,
-                        "sample": "Stop filling system",
-                        "description": "a short description of the action required in response to this alarm",
-                        "code": "alarmCodeStandardRecoveryAction",
+                        "sample": "Humidity Sensor Fault",
+                        "description": "a short description of the alarm code, typically displayed to the user via the ui of the control software",
+                        "code": "alarmCodeNumber",
                         "error": {}
                     },
                     {
@@ -1327,7 +1304,7 @@
                         "primaryKey": false,
                         "nullable": false,
                         "type": "string",
-                        "name": "alarm code condition",
+                        "name": "alarm condition",
                         "hackoladeMeta": {
                             "namingConvention": "code"
                         },
@@ -1336,7 +1313,236 @@
                         "required": false,
                         "sample": "Humidity Sensor Has Rported A fault Or Comms Loss",
                         "description": "the condition or conditions which resulted in this alarm",
-                        "code": "alarmCodeCondition",
+                        "code": "alarmCondition",
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "nullable": false,
+                        "type": "string",
+                        "name": "alarm colour",
+                        "hackoladeMeta": {
+                            "namingConvention": "code"
+                        },
+                        "isActivated": true,
+                        "required": true,
+                        "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                        "description": "A colour to indicate the severity of the triggered alarm, with the recovery action:\n - RED - Machine Stop, Clear fault condition and trigger reset/restart\n - YELLOW - Machine Paused, Remove hold condition, machine will resume automatic control.\n - WHITE - Information, n/a\n - BLUE - Low Materials Warning, Replenish material stock\n\nRef: FS01 Data Specification, CPI, martin.keane@cpi-uk.com",
+                        "GUID": "bb32e9d6-8912-4870-a179-1dd957335ea6",
+                        "enum": [
+                            "RED",
+                            "YELLOW",
+                            "WHITE",
+                            "BLUE"
+                        ],
+                        "sample": "RED",
+                        "code": "alarmColour",
+                        "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "nullable": false,
+                        "type": "string",
+                        "name": "alarm code  standard recovery action",
+                        "hackoladeMeta": {
+                            "namingConvention": "code"
+                        },
+                        "isActivated": true,
+                        "GUID": "b8b1ff14-97c6-4f74-9dbe-c61e030f278c",
+                        "required": false,
+                        "sample": "Stop filling system",
+                        "description": "a short description of the action required in response to this alarm",
+                        "code": "alarmCodeStandardRecoveryAction",
+                        "error": {}
+                    },
+                    {
+                        "properties": [
+                            {
+                                "primaryKey": false,
+                                "nullable": false,
+                                "type": "string",
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "GUID": "8e9331b6-c8df-4932-a588-284ce801371a",
+                                "arrayItem": true,
+                                "displayName": "Air",
+                                "error": {}
+                            },
+                            {
+                                "primaryKey": false,
+                                "nullable": false,
+                                "type": "string",
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "GUID": "fa931d59-70f3-4377-a28f-a6e2dbc5750b",
+                                "arrayItem": true,
+                                "displayName": "Guarding",
+                                "foreignCollection": "",
+                                "foreignField": [],
+                                "error": {}
+                            },
+                            {
+                                "primaryKey": false,
+                                "nullable": false,
+                                "type": "string",
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "GUID": "d5866a25-2db9-435f-adb0-ec32f32f072c",
+                                "arrayItem": true,
+                                "displayName": "Gripper",
+                                "foreignCollection": "",
+                                "foreignField": [],
+                                "error": {}
+                            },
+                            {
+                                "primaryKey": false,
+                                "nullable": false,
+                                "type": "string",
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "GUID": "1ca1f998-dd49-4bae-8124-72d6b9099cc8",
+                                "arrayItem": true,
+                                "displayName": "Movement",
+                                "foreignCollection": "",
+                                "foreignField": [],
+                                "error": {}
+                            },
+                            {
+                                "primaryKey": false,
+                                "nullable": false,
+                                "type": "string",
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "GUID": "8fc1974a-e236-4d34-a54f-1582a185a4e4",
+                                "arrayItem": true,
+                                "displayName": "Reject",
+                                "foreignCollection": "",
+                                "foreignField": [],
+                                "error": {}
+                            },
+                            {
+                                "primaryKey": false,
+                                "nullable": false,
+                                "type": "string",
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "GUID": "56b3b44d-287c-4e1c-ad30-dffb1462133f",
+                                "arrayItem": true,
+                                "displayName": "Weight",
+                                "foreignCollection": "",
+                                "foreignField": [],
+                                "error": {}
+                            },
+                            {
+                                "primaryKey": false,
+                                "nullable": false,
+                                "type": "string",
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "GUID": "21d3af82-2a87-41e5-8a00-ba7c80a47e36",
+                                "arrayItem": true,
+                                "displayName": "Bottle",
+                                "foreignCollection": "",
+                                "foreignField": [],
+                                "error": {}
+                            },
+                            {
+                                "primaryKey": false,
+                                "nullable": false,
+                                "type": "string",
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "GUID": "7aad913a-9868-40db-9b3d-09b59bf284e2",
+                                "arrayItem": true,
+                                "displayName": "Recipe",
+                                "foreignCollection": "",
+                                "foreignField": [],
+                                "error": {}
+                            },
+                            {
+                                "primaryKey": false,
+                                "nullable": false,
+                                "type": "string",
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "GUID": "ee019371-a83d-460a-82e0-1d2e7df20427",
+                                "arrayItem": true,
+                                "displayName": "Result",
+                                "foreignCollection": "",
+                                "foreignField": [],
+                                "error": {}
+                            },
+                            {
+                                "primaryKey": false,
+                                "nullable": false,
+                                "type": "string",
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "GUID": "fa93496b-7353-4d91-bf7c-2201236384e8",
+                                "arrayItem": true,
+                                "displayName": "Comms",
+                                "foreignCollection": "",
+                                "foreignField": [],
+                                "error": {}
+                            }
+                        ],
+                        "primaryKey": false,
+                        "additionalItems": true,
+                        "uniqueItems": false,
+                        "subtype": "schema",
+                        "nullable": false,
+                        "childType": "array",
+                        "type": "array",
+                        "hackoladeMeta": {
+                            "namingConvention": "code"
+                        },
+                        "isActivated": true,
+                        "GUID": "8fd5826d-285c-4923-9a8c-f007f377bba4",
+                        "name": "alarm code type",
+                        "code": "alarmCodeType",
+                        "error": {}
+                    },
+                    {
+                        "properties": [
+                            {
+                                "primaryKey": false,
+                                "nullable": false,
+                                "type": "string",
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "GUID": "2eb4485b-d3ce-4175-900e-af6ccd0b42de",
+                                "arrayItem": true,
+                                "displayName": "WM01",
+                                "error": {}
+                            },
+                            {
+                                "primaryKey": false,
+                                "nullable": false,
+                                "type": "string",
+                                "hackoladeMeta": {},
+                                "isActivated": true,
+                                "GUID": "6c9327e3-3262-46a4-9a03-8c1b3518ae0b",
+                                "arrayItem": true,
+                                "displayName": "FS01",
+                                "foreignCollection": "",
+                                "foreignField": [],
+                                "error": {}
+                            }
+                        ],
+                        "primaryKey": false,
+                        "additionalItems": true,
+                        "uniqueItems": false,
+                        "subtype": "schema",
+                        "nullable": false,
+                        "childType": "array",
+                        "type": "array",
+                        "hackoladeMeta": {
+                            "namingConvention": "code"
+                        },
+                        "isActivated": true,
+                        "GUID": "303b3c66-8a1d-4224-951d-0cdc7af0f0bd",
+                        "name": "alarm code station type",
+                        "code": "alarmCodeStationType",
                         "error": {}
                     }
                 ],
@@ -1349,13 +1555,11 @@
                 "childType": "object",
                 "type": "document",
                 "GUID": "e6926013-972e-41a9-aa62-cf68986a8ca0",
-                "code": "alarmCode",
+                "code": "alarmCode(1)",
                 "description": "Alarm codes are defined by CPI as part of the Digital Membership Architecture for Medicines Manufacturing.  They describe the different failure conditions that can occur during medicines manufacturing process, their relative severity (or 'colour'), and the required recovery action.\n\nAlarm codes have been consolidated from a number of sources, including equipment manufacturers.  It is envisaged that this list will continue to evolve as the requirements are better understood.\n\nThe full list of Digital Membership Alarm Codes is currently defined in the PLANT Domain reference data:\n- https://github.com/mmic-collaboration/plant-domain-model/tree/development/reference-data",
                 "comments": "",
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PLANT Domain/Alarm Code",
-                "link": "PLANT-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -1365,10 +1569,12 @@
                         "9333cc00-5fe8-4bf0-89ca-713a912db4e0"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PLANT Domain/Alarm Code"
             },
             {
-                "name": "Alarm Sensor Event",
+                "name": "Alarm Sensor Event(1)",
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
@@ -1458,6 +1664,26 @@
                         "GUID": "bb2d9248-f23f-482f-98a5-3f4aa5ce063c",
                         "code": "acknowledged",
                         "error": {}
+                    },
+                    {
+                        "primaryKey": false,
+                        "properties": [],
+                        "additionalProperties": false,
+                        "additionalPropControl": "Boolean",
+                        "additionalPropertiesObjectType": "integer",
+                        "additionalPropertiesIntegerFormat": "int32",
+                        "subtype": "schema",
+                        "nullable": false,
+                        "childType": "object",
+                        "type": "document",
+                        "name": "New attribute",
+                        "hackoladeMeta": {
+                            "namingConvention": "code"
+                        },
+                        "isActivated": true,
+                        "GUID": "a7e9889d-f989-41ce-8ca9-a6d59b38ec82",
+                        "code": "newAttribute",
+                        "error": {}
                     }
                 ],
                 "additionalProperties": false,
@@ -1469,13 +1695,11 @@
                 "childType": "object",
                 "type": "document",
                 "GUID": "82b94275-49cf-4c23-a220-dff7ef13d773",
-                "code": "alarmSensorEvent",
+                "code": "alarmSensorEvent(1)",
                 "description": "",
                 "comments": "",
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PLANT Domain/Alarm Sensor Event",
-                "link": "PLANT-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -1485,10 +1709,12 @@
                         "9548896a-8446-474e-912b-5600c75b1737"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PLANT Domain/Alarm Sensor Event"
             },
             {
-                "name": "Sensor Event Type",
+                "name": "Sensor Event Type(1)",
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
@@ -1559,13 +1785,11 @@
                 "childType": "object",
                 "type": "document",
                 "GUID": "12cdf2cf-b4cd-4a07-9950-7a053fcf1efe",
-                "code": "sensorEventType",
+                "code": "sensorEventType(1)",
                 "description": "",
                 "comments": "",
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PLANT Domain/Sensor Event Type",
-                "link": "PLANT-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -1575,10 +1799,12 @@
                         "d38d5cc0-1809-4ab1-aa19-dcea26a40f9e"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PLANT Domain/Sensor Event Type"
             },
             {
-                "name": "Equipment Node",
+                "name": "Equipment Node(1)",
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
@@ -1709,13 +1935,11 @@
                 "childType": "object",
                 "type": "document",
                 "GUID": "cb15922e-8372-4f6d-baba-fdcbe652892f",
-                "code": "equipmentNode",
+                "code": "equipmentNode(1)",
                 "description": "",
                 "comments": "",
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PLANT Domain/Equipment Node",
-                "link": "PLANT-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -1725,10 +1949,12 @@
                         "53913ee2-5949-4df1-96b2-7c4802d7e6fc"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PLANT Domain/Equipment Node"
             },
             {
-                "name": "Cycle",
+                "name": "Cycle(1)",
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
@@ -1861,13 +2087,11 @@
                 "childType": "object",
                 "type": "document",
                 "GUID": "46371898-f67c-4565-9d2a-95e4feda4254",
-                "code": "cycle",
+                "code": "cycle(1)",
                 "description": "",
                 "comments": "",
+                "error": {},
                 "definitionEntityType": "modelDefinition",
-                "fieldRelativePath": "#/PLANT Domain/Cycle",
-                "link": "PLANT-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
                 "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
@@ -1877,7 +2101,9 @@
                         "de1b9c09-94be-486d-abb0-e085e811cf84"
                     ]
                 ],
-                "error": {}
+                "kind": "relativePath",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/PLANT Domain/Cycle"
             },
             {
                 "name": "fk Sensor Event.sensor id to Sensor.sensor id",
@@ -1909,20 +2135,20 @@
                     "dataType": "",
                     "shape": [
                         {
-                            "x": 4029.118027707095,
-                            "y": 1981.8084295617061
+                            "x": 10695.784694373762,
+                            "y": 8648.475096228372
                         },
                         {
-                            "x": 3971.6810331304505,
-                            "y": 1981.8084295617061
+                            "x": 10638.347699797117,
+                            "y": 8648.475096228372
                         },
                         {
-                            "x": 3971.6810331304505,
-                            "y": 1981.2456999957994
+                            "x": 10638.347699797117,
+                            "y": 8647.912366662466
                         },
                         {
-                            "x": 3914.244038553806,
-                            "y": 1981.2456999957994
+                            "x": 10580.910705220473,
+                            "y": 8647.912366662466
                         }
                     ],
                     "sides": [
@@ -1930,19 +2156,19 @@
                         "right"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PLANT-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk Sensor Event.sensor id to Sensor.sensor id",
-                "fileType": "hackoladeSchema",
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "15c3a4af-197b-4214-9984-e808c275ec0a"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk Sensor Event.sensor id to Sensor.sensor id"
             },
             {
                 "name": "fk Process Event Type.sensor event type id to Sensor Event.sensor event type id",
@@ -1974,20 +2200,20 @@
                     "dataType": "",
                     "shape": [
                         {
-                            "x": 4489.492815069865,
-                            "y": 1981.6300090305062
+                            "x": 11156.159481736533,
+                            "y": 8648.296675697173
                         },
                         {
-                            "x": 4418.30542138848,
-                            "y": 1981.6300090305062
+                            "x": 11084.972088055147,
+                            "y": 8648.296675697173
                         },
                         {
-                            "x": 4418.30542138848,
-                            "y": 1981.8084295617061
+                            "x": 11084.972088055147,
+                            "y": 8648.475096228372
                         },
                         {
-                            "x": 4347.118027707094,
-                            "y": 1981.8084295617061
+                            "x": 11013.784694373762,
+                            "y": 8648.475096228372
                         }
                     ],
                     "sides": [
@@ -1995,19 +2221,19 @@
                         "right"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PLANT-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk Process Event Type.sensor event type id to Sensor Event.sensor event type id",
-                "fileType": "hackoladeSchema",
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "5cecb1f9-400b-4cad-8d81-fd3fe44d3c42"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk Process Event Type.sensor event type id to Sensor Event.sensor event type id"
             },
             {
                 "name": "fk Alarm Code.alarm code id to Alarm.alarm code id",
@@ -2039,20 +2265,20 @@
                     "dataType": "",
                     "shape": [
                         {
-                            "x": 4454.428564209057,
-                            "y": 2257.9796656472126
+                            "x": 11153.095230875724,
+                            "y": 8933.506438908085
                         },
                         {
-                            "x": 4383.907383041866,
-                            "y": 2257.9796656472126
+                            "x": 11066.574049708532,
+                            "y": 8933.506438908085
                         },
                         {
-                            "x": 4383.907383041866,
-                            "y": 2258.569022768308
+                            "x": 11066.574049708532,
+                            "y": 8934.235689434976
                         },
                         {
-                            "x": 4313.386201874673,
-                            "y": 2258.569022768308
+                            "x": 10980.052868541341,
+                            "y": 8934.235689434976
                         }
                     ],
                     "sides": [
@@ -2060,19 +2286,19 @@
                         "right"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PLANT-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk Alarm Code.alarm code id to Alarm.alarm code id",
-                "fileType": "hackoladeSchema",
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "c6e2b380-86e6-461c-8be2-aa9cbe1e40b0"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk Alarm Code.alarm code id to Alarm.alarm code id"
             },
             {
                 "name": "fk Alarm.sensor event id to Sensor Event.sensor event id",
@@ -2104,20 +2330,20 @@
                     "dataType": "",
                     "shape": [
                         {
-                            "x": 4187.386201874673,
-                            "y": 2197.069022768308
+                            "x": 10854.052868541341,
+                            "y": 8863.735689434976
                         },
                         {
-                            "x": 4187.386201874673,
-                            "y": 2129.188726165007
+                            "x": 10854.052868541341,
+                            "y": 8795.855392831674
                         },
                         {
-                            "x": 4188.118027707094,
-                            "y": 2129.188726165007
+                            "x": 10854.784694373762,
+                            "y": 8795.855392831674
                         },
                         {
-                            "x": 4188.118027707094,
-                            "y": 2061.3084295617064
+                            "x": 10854.784694373762,
+                            "y": 8727.975096228372
                         }
                     ],
                     "sides": [
@@ -2125,19 +2351,19 @@
                         "bottom"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PLANT-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk Alarm.sensor event id to Sensor Event.sensor event id",
-                "fileType": "hackoladeSchema",
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "e875d207-f457-4564-9708-54125d68d2a8"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk Alarm.sensor event id to Sensor Event.sensor event id"
             },
             {
                 "name": "fk Sensor.station id to Station.station id",
@@ -2169,16 +2395,16 @@
                     "dataType": "",
                     "shape": [
                         {
-                            "x": 3637.244038553806,
-                            "y": 1981.2456999957994
+                            "x": 10303.910705220473,
+                            "y": 8647.912366662466
                         },
                         {
-                            "x": 3473.5014376973277,
-                            "y": 1981.2456999957994
+                            "x": 10140.168104363995,
+                            "y": 8647.912366662466
                         },
                         {
-                            "x": 3473.5014376973277,
-                            "y": 1890.9825074465477
+                            "x": 10140.168104363995,
+                            "y": 8557.649174113214
                         }
                     ],
                     "sides": [
@@ -2186,19 +2412,19 @@
                         "bottom"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PLANT-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/fk Sensor.station id to Station.station id",
-                "fileType": "hackoladeSchema",
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "c64c89bd-483f-43ac-96dd-b4fd28e9f79e"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/fk Sensor.station id to Station.station id"
             },
             {
                 "name": "New Relationship",
@@ -2229,20 +2455,20 @@
                     "dataType": "",
                     "shape": [
                         {
-                            "x": 4187.286965052486,
-                            "y": 1815.385868946069
+                            "x": 10853.953631719154,
+                            "y": 8482.052535612736
                         },
                         {
-                            "x": 4187.286965052486,
-                            "y": 1858.8471492538874
+                            "x": 10853.953631719154,
+                            "y": 8525.513815920554
                         },
                         {
-                            "x": 4188.118027707094,
-                            "y": 1858.8471492538874
+                            "x": 10854.784694373762,
+                            "y": 8525.513815920554
                         },
                         {
-                            "x": 4188.118027707094,
-                            "y": 1902.3084295617061
+                            "x": 10854.784694373762,
+                            "y": 8568.975096228372
                         }
                     ],
                     "sides": [
@@ -2250,19 +2476,19 @@
                         "top"
                     ]
                 },
-                "definitionEntityType": "relationship",
-                "link": "PLANT-Domain-Polyglot.hck.json",
-                "kind": "relativePath",
-                "fieldRelativePath": "#/relationships/New Relationship",
-                "fileType": "hackoladeSchema",
                 "hackoladeMeta": {
                     "namingConvention": "code"
                 },
+                "definitionEntityType": "relationship",
+                "fileType": "hackoladeSchema",
                 "definitionRefs": [
                     [
                         "ea4da639-8efa-4450-8d60-9e67b038db9c"
                     ]
-                ]
+                ],
+                "kind": "relativePath",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "fieldRelativePath": "#/relationships/New Relationship"
             }
         ],
         "GUID": "c6bd47c7-856a-407e-9277-8a85e100bace"
@@ -2296,8 +2522,8 @@
         }
     ],
     "title": "PLANT Domain Open API Schema",
-    "modelVersion": "0.3.0",
-    "lastModifTS": "2024-01-14T18:28:21.722Z",
+    "modelVersion": "0.3.1",
+    "lastModifTS": "2024-01-19T08:15:03.553Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2387,93 +2613,6 @@
                             "color": {
                                 "hex": "#2196F3"
                             }
-                        },
-                        {
-                            "GUID": "b5cc3593-cdea-428b-871d-3343d12dfc84",
-                            "x": 3637.2440385538043,
-                            "y": 1787.702365668212,
-                            "width": 254,
-                            "height": 141,
-                            "color": {
-                                "hex": "#2196F3"
-                            }
-                        },
-                        {
-                            "GUID": "7c1d8091-de11-458c-b2a9-7651b6e1eca1",
-                            "x": 3230.0926906597415,
-                            "y": 2012.3314398478324,
-                            "width": 259,
-                            "height": 87,
-                            "color": {
-                                "hex": "#2196F3"
-                            }
-                        },
-                        {
-                            "GUID": "42b5cf54-82a8-4869-a52a-6fb831d24c25",
-                            "x": 4029.118027707095,
-                            "y": 1902.3084295617061,
-                            "width": 318,
-                            "height": 177,
-                            "color": {
-                                "hex": "#2196F3"
-                            }
-                        },
-                        {
-                            "GUID": "20f517f5-9720-446e-9ff6-d1c40b700a9f",
-                            "x": 4420.8468179405845,
-                            "y": 2185.240882562648,
-                            "width": 310,
-                            "height": 141,
-                            "color": {
-                                "hex": "#2196F3"
-                            }
-                        },
-                        {
-                            "GUID": "e5e3e3f4-05a3-4cc6-bc0c-543d4dae6813",
-                            "x": 4050.192286451849,
-                            "y": 2172.442408838093,
-                            "width": 252,
-                            "height": 123,
-                            "color": {
-                                "hex": "#2196F3"
-                            }
-                        },
-                        {
-                            "GUID": "0443a6e9-164e-4d69-b55d-217417d86132",
-                            "x": 4444.717153378569,
-                            "y": 1938.1300090305062,
-                            "width": 324,
-                            "height": 87,
-                            "color": {
-                                "hex": "#2196F3"
-                            }
-                        },
-                        {
-                            "GUID": "7130776c-8cbc-41e4-84bb-00135137b3e8",
-                            "x": 3634.192286451849,
-                            "y": 2038.6957900319355,
-                            "width": 261,
-                            "height": 105,
-                            "color": {
-                                "hex": "#2196F3"
-                            }
-                        },
-                        {
-                            "GUID": "70d0353d-ec15-482b-968e-034d8b2916e0",
-                            "x": 4035.854266545097,
-                            "y": 1674.385868946069,
-                            "width": 276,
-                            "height": 141,
-                            "color": {
-                                "hex": "#2196F3"
-                            }
-                        },
-                        {
-                            "GUID": "0a4949c4-da2f-441d-aa24-9d8d086f5333",
-                            "x": 40,
-                            "y": 40,
-                            "width": 175,
-                            "height": 51
                         }
                     ],
                     "rootPath": [

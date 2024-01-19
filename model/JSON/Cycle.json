@@ -4,75 +4,24 @@
     "title": "Cycle",
     "properties": {
         "cycle id": {
-            "type": "number",
-            "isActivated": true,
-            "autoincrement": {
-                "id": "e6ebe980-edd1-40a9-a53b-a91623713489",
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "index": true,
-            "primaryKey": true,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "type": "number"
         },
         "sensor event id": {
-            "type": "number",
-            "isActivated": true,
-            "autoincrement": {
-                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "type": "number"
         },
         "cycle start timestamp": {
-            "type": "string",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "type": "string"
         },
         "cycle result": {
-            "type": "boolean",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "index": true,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "type": "boolean"
         },
         "cycle result code": {
-            "type": "number",
-            "isActivated": true,
-            "autoincrement": {
-                "id": "f9c7d3ea-497e-4c81-b943-861e0c35ca8b",
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "index": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "type": "number"
         },
         "cycle end timestamp": {
-            "type": "string",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "type": "string"
         }
     },
-    "isActivated": true,
     "additionalProperties": false,
     "required": [
         "cycle id",

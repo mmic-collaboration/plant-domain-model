@@ -4,65 +4,26 @@
     "title": "Alarm Sensor Event",
     "properties": {
         "sensor event id": {
-            "type": "number",
-            "isActivated": true,
-            "autoincrement": {
-                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "index": true,
-            "primaryKey": true,
-            "mode": "int32",
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "type": "number"
         },
         "alarm code id": {
-            "type": "number",
-            "isActivated": true,
-            "autoincrement": {
-                "id": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "index": true,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "type": "number"
         },
         "status": {
-            "type": "string",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "type": "string"
         },
         "custom message": {
-            "type": "string",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "type": "string"
         },
         "acknowledged": {
             "type": "boolean",
-            "description": "Describes the state of an alarm.\nref: OPC-UA=10000-Part9 (v1.05.03)",
-            "isActivated": true,
-            "autoincrement": {
-                "step_num": 1
-            },
-            "tPrecision": 9,
-            "index": true,
-            "compositePrimaryKey": false,
-            "compositeUniqueKey": false
+            "description": "Describes the state of an alarm.\nref: OPC-UA=10000-Part9 (v1.05.03)"
+        },
+        "New attribute": {
+            "type": "object",
+            "additionalProperties": false
         }
     },
-    "isActivated": true,
     "additionalProperties": false,
     "required": [
         "sensor event id",

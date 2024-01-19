@@ -1,0 +1,1302 @@
+[
+  {
+    "alarm code Id": 1,
+    "alarm code number": 1,
+    "alarm warning message": "Stop Pushbutton Pressed",
+    "alarm condition": "HMI/Line control PLC Request to Stop Station",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 2,
+    "alarm code number": 2,
+    "alarm warning message": "Air Pressure Low PS1035",
+    "alarm condition": "Air Pressure switch PRS1035 indicating a Low Inlet Air Pressure",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system, de-energise air dump valve",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 3,
+    "alarm code number": 3,
+    "alarm warning message": "Dump Valve Fault PS1045",
+    "alarm condition": "Pressure switch PRS1045 downstream of the Dump valve is indicating one of the following alarm conditions: -\n• Dump Valve is Energised but PRS1045 Indicating No Pressure\n• Dump Valve is De-Energised but PRS1045 Indicating Pressure is Still Present",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system, de-energise air dump valve",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 4,
+    "alarm code number": 4,
+    "alarm warning message": "Guard 1 Main Rear Door SW1445",
+    "alarm condition": "Guard 1 is Open",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system, de-energise air dump valve",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 5,
+    "alarm code number": 5,
+    "alarm warning message": "Guard 2 Lower Rear Door SW1465",
+    "alarm condition": "Guard 2 is Open",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system, de-energise air dump valve",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 6,
+    "alarm code number": 6,
+    "alarm warning message": "Guard 3 Counting Unit In Place SW1485",
+    "alarm condition": "Guard 3 is Open",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system, de-energise air dump valve",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 7,
+    "alarm code number": 7,
+    "alarm warning message": "Guard 4 Desiccant Process Bottle Locking Guard SW1505",
+    "alarm condition": "Guard 4 is Open",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system, de-energise air dump valve",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 8,
+    "alarm code number": 8,
+    "alarm warning message": "Guard 5 Bottle Trap Door SW1520",
+    "alarm condition": "Guard 5 is Open",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system, de-energise air dump valve",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 9,
+    "alarm code number": 9,
+    "alarm warning message": "E Stop E1 Front PB1540",
+    "alarm condition": "Emergency Stop 1 Pressed",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system, de-energise air dump valve",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 10,
+    "alarm code number": 10,
+    "alarm warning message": "E Stop E2 Back PB1560",
+    "alarm condition": "Emergency Stop 2 Pressed",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system, de-energise air dump valve",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 11,
+    "alarm code number": 11,
+    "alarm warning message": "Bottle Trap Door Extend Jam SW855",
+    "alarm condition": "Output \"Q_BottleTrapDoorExtendCylinder_SOL1145\" is On but the Input reed switch \"I_BottleTrapDoorCylinderExtended_SW855\" is OFF, a \"Fail to Extend\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 12,
+    "alarm code number": 12,
+    "alarm warning message": "Bottle Trap Door Retract Jam SW865",
+    "alarm condition": "Output \"Q_BottleTrapDoorRetractCylinder_SOL1155\" is On but the Input reed switch \"I_BottleTrapDoorCylinderRetracted_SW865\" is OFF, a \"Fail to Retract\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 13,
+    "alarm code number": 13,
+    "alarm warning message": "Disc Retract Cylinder Extend Jam SW960",
+    "alarm condition": "Output \"Q_DiscRetractCylinderExtend_SOL1205\" is On but the Input reed switch \"I_DiscRetractCylinderExtended_SW960\" is OFF, a \"Fail to Extend\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 14,
+    "alarm code number": 14,
+    "alarm warning message": "Disc Retract Cylinder Retract Jam SW970",
+    "alarm condition": "Output \"Q_DiscRetractCylinderRetract_SOL1215\" is On but the Input reed switch \"I_DiscRetractCylinderRetracted_SW970\" is OFF, a \"Fail to Retract\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 15,
+    "alarm code number": 15,
+    "alarm warning message": "Bottle Twist Gripper Cylinder Extend 150cc Jam LS895",
+    "alarm condition": "Output \"Q_BottleTwistGripperExtendCylinder_SOL1185\" is On but the Input reed switch \"I_BottleTwistGripperOpen_LS895\" is OFF, a \"Fail to Extend\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 16,
+    "alarm code number": 16,
+    "alarm warning message": "Bottle Twist Gripper Cylinder Retract 60cc Jam LS915",
+    "alarm condition": "Output \"Q_BottleTwistGripperRetractCylinder_SOL1195\" is On but the Input reed switch \"I_BottleTwistGripperClosed60cc_LS915\" is OFF, a \"Fail to Retract\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 17,
+    "alarm code number": 17,
+    "alarm warning message": "Bottle Twist Gripper Cylinder Retract Jam LS905",
+    "alarm condition": "Output \"Q_BottleTwistGripperRetractCylinder_SOL1195\" is On but the Input reed switch \"I_BottleTwistGripperClosed150cc_LS905\" is OFF, a \"Fail to Retract\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 18,
+    "alarm code number": 18,
+    "alarm warning message": "Bottle Transfer Gripper Cylinder Extend Jam SW920",
+    "alarm condition": "Output \"Q_BottleTransferGripperExtendCylinder_SOL1165\" is On but the Input reed switch \"I_BottleTransferGripperOpen_SW920\" is OFF, a \"Fail to Extend\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 19,
+    "alarm code number": 19,
+    "alarm warning message": "Bottle Transfer Gripper Cylinder Retract 60cc Jam SW930",
+    "alarm condition": "Output \"Q_BottleTransferGripperRetractCylinder_SOL1175\" is On but the Input reed switch \"I_BottleTransferGripperClosed60cc_SW930\" is OFF, a \"Fail to Retract\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 20,
+    "alarm code number": 20,
+    "alarm warning message": "Bottle Transfer Gripper Cylinder Retract 150cc Jam SW940",
+    "alarm condition": "Output \"Q_BottleTransferGripperRetractCylinder_SOL1175\" is On but the Input reed switch \"I_BottleTransferGripperClosed150cc_SW940\" is OFF, a \"Fail to Retract\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 26,
+    "alarm code number": 26,
+    "alarm warning message": "No Bottle Present At Conveyor PE845",
+    "alarm condition": "I_BottlePresentAtConveyor_PE845\" is OFF and does not correspond to the expected shift register positioning, a \"Bottle Not In Position On Conveyor\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 27,
+    "alarm code number": 27,
+    "alarm warning message": "2D Matrix Scanner Fault",
+    "alarm condition": "Scanner Reporting a General Error & cannot Scan",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 28,
+    "alarm code number": 28,
+    "alarm warning message": "2D Matrix Scanner Read Error",
+    "alarm condition": "Scanner reporting an inspection alarm because it was unable to read a printed code. Bottle returned to conveyor belt and shift register is updated.",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 29,
+    "alarm code number": 29,
+    "alarm warning message": "No Bottle Present at Fill Position PE885",
+    "alarm condition": "AT Process 2 (Move Bottle to Fill position), if \"I_BottlePresentAtFillPosition_PE885\" is OFF, a \"No Bottle Present at Fill\" alarm is generated.",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 30,
+    "alarm code number": 30,
+    "alarm warning message": "Vacuum Error, Disc Not Removed at Desiccant Filling PRS980",
+    "alarm condition": "I_DiscPresentVac_PRS980\" is OFF (Vacuum not established) for a time delay when \"Q_DiscVacuum_SOL1370\" is energised or \"I_DiscRetractCylinderExtended_SW960\" is on. Twist & Lift Axis Generates a \"Vacuum Error\" alarm. Bottle returned to conveyor belt and shift register is updated.",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 31,
+    "alarm code number": 31,
+    "alarm warning message": "Bottle Disc Location Error PE950",
+    "alarm condition": "I_DiscDogsEngagedForkSens_PE950\" is OFF after a Twist Movement is complete, Twist & Lift Axis Generates a \"Disc Location Error\" alarm.  Bottle returned to conveyor belt and shift register is updated.",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 35,
+    "alarm code number": 35,
+    "alarm warning message": "Large And Small Door Seal Inflated Error PRS990",
+    "alarm condition": "I_Large&SmallDoorSealInflated_PRS990\" is OFF generating a \"Door Seal Inflated Error\" alarm",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 36,
+    "alarm code number": 36,
+    "alarm warning message": "Iris Valve Pulses Sensor Fault PS1025",
+    "alarm condition": "If either \"Q_IrisValveOpen_K625_P1\" or \"Q_IrisValveClosed_K625_P2\" is ON and \"I_IrisValvePulses_PS1025\" remains OFF, a \"Pulse Sensor Error\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 37,
+    "alarm code number": 37,
+    "alarm warning message": "Iris Valve Open Sensor Fault PS1005",
+    "alarm condition": "Output \"Q_IrisValveOpen_K625_P1\" is On but the switch Input \"I_IrisValveOpen_PS1005\" is OFF or Input \"I_IrisValveClosed_PS1015\" is ON, a \"Fail to Open\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 38,
+    "alarm code number": 38,
+    "alarm warning message": "Iris Valve Close Sensor Fault PS1015",
+    "alarm condition": "Output \"Q_IrisValveClosed_K625_P2\" is On but the switch Input \"I_IrisValveClosed_PS1015\" is OFF or Input \"I_IrisValveOpen_PS1005\" is ON, a \"Fail to Close\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 39,
+    "alarm code number": 39,
+    "alarm warning message": "Iris Motor OverLoad Supply Fault CB625",
+    "alarm condition": "I_IrisMtrO/LSupply_CB625\" is OFF indicating a Motor Supply Circuit Breaker (CB625) Overload Trip",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 40,
+    "alarm code number": 40,
+    "alarm warning message": "Iris Motor Contactor Supply Fault K625",
+    "alarm condition": "I_IrisMtrO/L_K625\" is OFF indicating a Motor Overload Fault (Siemens 3RM1302-2AA04 solid-state Fail-safe reversing starter K625)",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 41,
+    "alarm code number": 41,
+    "alarm warning message": "Humidity Sensor Fault",
+    "alarm condition": "Humidity Sensor Has Rported A fault Or Comms Loss",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 42,
+    "alarm code number": 42,
+    "alarm warning message": "Humidity Sensor Temperature High Limit",
+    "alarm condition": "Humidity Sensor Temperature Over High Limit",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 43,
+    "alarm code number": 43,
+    "alarm warning message": "Humidity Sensor Temperature Low Limit",
+    "alarm condition": "Humidity Sensor Temperature Below Low Limit",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 44,
+    "alarm code number": 44,
+    "alarm warning message": "Humidity Sensor Humidity High Limit",
+    "alarm condition": "Humidity Sensor Humidity Over High Limit",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 45,
+    "alarm code number": 45,
+    "alarm warning message": "Humidity Sensor Humidity Low Limit",
+    "alarm condition": "Humidity Sensor Humidity Below Low Limit",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 46,
+    "alarm code number": 46,
+    "alarm warning message": "Humidity Sensor Temperature Warning",
+    "alarm condition": "Humidity Sensor Temperature Warning (Approaching High or Low)",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Warning Only",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 47,
+    "alarm code number": 47,
+    "alarm warning message": "Humidity Sensor Humidity Warning",
+    "alarm condition": "Humidity Sensor Humidity Limit Warning (Approaching High or Low)",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Warning Only",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 50,
+    "alarm code number": 50,
+    "alarm warning message": "X Axis Drive Fault",
+    "alarm condition": "The drive for the X axis has generated a fault",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 51,
+    "alarm code number": 51,
+    "alarm warning message": "Z Axis Drive Fault",
+    "alarm condition": "The drive for the Z axis has generated a fault",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 52,
+    "alarm code number": 52,
+    "alarm warning message": "Bottle Lift Drive Fault",
+    "alarm condition": "The drive for the bottle lift axis has generated a fault",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 53,
+    "alarm code number": 53,
+    "alarm warning message": "Bottle Twist Drive Fault",
+    "alarm condition": "The drive for the bottle twist axis has generated a fault",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 100,
+    "alarm code number": 100,
+    "alarm warning message": "Recipe Request Error 100 from SCADA: General / unspecified error",
+    "alarm condition": "RecipeDataResultCode = 100 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 101,
+    "alarm code number": 101,
+    "alarm warning message": "Recipe Request Error 101 from SCADA:",
+    "alarm condition": "RecipeDataResultCode = 101 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": "",
+    "alarm code number": "",
+    "alarm warning message": "Bottle ID not recognised / not valid",
+    "alarm condition": "",
+    "alarm colour": "",
+    "alarm code standard recovery action": "",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 102,
+    "alarm code number": 102,
+    "alarm warning message": "Recipe Request Error 102 from SCADA:",
+    "alarm condition": "RecipeDataResultCode = 102 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": "",
+    "alarm code number": "",
+    "alarm warning message": "Bottle is at incorrect or unexpected station",
+    "alarm condition": "",
+    "alarm colour": "",
+    "alarm code standard recovery action": "",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 103,
+    "alarm code number": 103,
+    "alarm warning message": "Recipe Request Error 103 from SCADA:",
+    "alarm condition": "RecipeDataResultCode = 103 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": "",
+    "alarm code number": "",
+    "alarm warning message": "Bottle was not processed at the expected last station.",
+    "alarm condition": "",
+    "alarm colour": "",
+    "alarm code standard recovery action": "",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 104,
+    "alarm code number": 104,
+    "alarm warning message": "Recipe Request Error 104 from SCADA:",
+    "alarm condition": "RecipeDataResultCode = 104 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": "",
+    "alarm code number": "",
+    "alarm warning message": "Bottle recipe data was not found",
+    "alarm condition": "",
+    "alarm colour": "",
+    "alarm code standard recovery action": "",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 105,
+    "alarm code number": 105,
+    "alarm warning message": "Recipe Request Error 105 from SCADA:",
+    "alarm condition": "RecipeDataResultCode = 105 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": "",
+    "alarm code number": "",
+    "alarm warning message": "Bottle status is incorrect at this station",
+    "alarm condition": "",
+    "alarm colour": "",
+    "alarm code standard recovery action": "",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 106,
+    "alarm code number": 106,
+    "alarm warning message": "Recipe Request Error 106 from SCADA:",
+    "alarm condition": "RecipeDataResultCode = 106 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": "",
+    "alarm code number": "",
+    "alarm warning message": "Bottle was previously processed at this station",
+    "alarm condition": "",
+    "alarm colour": "",
+    "alarm code standard recovery action": "",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 107,
+    "alarm code number": 107,
+    "alarm warning message": "Recipe Request Error 107 from SCADA:",
+    "alarm condition": "RecipeDataResultCode = 107 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": "",
+    "alarm code number": "",
+    "alarm warning message": "Bottle is a reject (do not process)",
+    "alarm condition": "",
+    "alarm colour": "",
+    "alarm code standard recovery action": "",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 108,
+    "alarm code number": 108,
+    "alarm warning message": "Recipe Request Error Bottle ID mismatch",
+    "alarm condition": "Control.Common.RecipeDataRequestBottleID not equal to RecipeData.Common.BottleID",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 109,
+    "alarm code number": 109,
+    "alarm warning message": "Recipe Request Error Station ID mismatch",
+    "alarm condition": "Status.Common.StationID not equal to RecipeData.Common.StationID",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 110,
+    "alarm code number": 110,
+    "alarm warning message": "Recipe Request Timeout",
+    "alarm condition": "RecipeRequestTimeout Timer Expired",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 111,
+    "alarm code number": 111,
+    "alarm warning message": "Recipe Request Retry Limit Reached",
+    "alarm condition": "RecipeRequestRetryLimit Reached",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 112,
+    "alarm code number": 112,
+    "alarm warning message": "Recipe Request PMC Error",
+    "alarm condition": "PMCRecipeStatus >=32",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 120,
+    "alarm code number": 120,
+    "alarm warning message": "Submit Result Data Error 100 from SCADA: General / unspecified error",
+    "alarm condition": "ResultDataResultCode = 100 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Retry Submit Results",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 121,
+    "alarm code number": 121,
+    "alarm warning message": "Submit Result Data Error 101 from SCADA: \nBottle ID not recognised / not valid",
+    "alarm condition": "ResultDataResultCode = 101 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 122,
+    "alarm code number": 122,
+    "alarm warning message": "Submit Result Data Error 108 from SCADA:\nBottle result data is not valid. One or more result data have incorrect values.",
+    "alarm condition": "ResultDataResultCode = 108 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 123,
+    "alarm code number": 123,
+    "alarm warning message": "Submit Result Data PMQ Timeout",
+    "alarm condition": "RecipeRequestTimeout Timer",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 124,
+    "alarm code number": 124,
+    "alarm warning message": "Submit Result Data SCADA Timeout",
+    "alarm condition": "ResultDataTimeout Timer Expired",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 125,
+    "alarm code number": 125,
+    "alarm warning message": "Line control PLC Comms Error",
+    "alarm condition": "Indicates loss of communication with Line control PLC (watchdog signal timeout).",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system, de-energise air dump valve",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 126,
+    "alarm code number": 126,
+    "alarm warning message": "HMI Comms Error",
+    "alarm condition": "Indicates loss of communication with the local HMI (watchdog signal timeout).",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "None",
+    "alarm code type": "",
+    "alarm code station type": "FS01"
+  },
+  {
+    "alarm code Id": 1001,
+    "alarm code number": 1,
+    "alarm warning message": "Stop Pushbutton Pressed",
+    "alarm condition": "HMI/Line Control PLC Request to Stop Station",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1002,
+    "alarm code number": 2,
+    "alarm warning message": "Air Pressure Low PRS920",
+    "alarm condition": "Air Pressure switch PRS920 indicating a Low Inlet Air Pressure",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system, de-energise air dump valve",
+    "alarm code type": "Air Issue",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1003,
+    "alarm code number": 3,
+    "alarm warning message": "Dump Valve Fault PRS930",
+    "alarm condition": "Pressure switch PRS930 downstream of the Dump valve is indicating one of the following alarm conditions: - \n • Dump Valve is Energised but PRS930 Indicating No Pressure \n• Dump Valve is De-Energised but PRS930 Indicating Pressure is Still Present",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system, de-energise air dump valve",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1004,
+    "alarm code number": 4,
+    "alarm warning message": "Guard 1 Main Rear Door SW1445",
+    "alarm condition": "Guard 1 is Open",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system, de-energise air dump valve",
+    "alarm code type": "Guarding / Safety",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1005,
+    "alarm code number": 5,
+    "alarm warning message": "Guard 2 Reject Bin Door SW1465",
+    "alarm condition": "Guard 2 is Open",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system, de-energise air dump valve",
+    "alarm code type": "Guarding / Safety",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1006,
+    "alarm code number": 6,
+    "alarm warning message": "Guard 3 Main Front Door SW1485",
+    "alarm condition": "Guard 3 is Open",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system, de-energise air dump valve",
+    "alarm code type": "Guarding / Safety",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1007,
+    "alarm code number": 7,
+    "alarm warning message": "E Stop E1 Rear PB1505",
+    "alarm condition": "Emergency Stop 1 Pressed",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system, de-energise air dump valve",
+    "alarm code type": "Guarding / Safety",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1008,
+    "alarm code number": 8,
+    "alarm warning message": "Spare",
+    "alarm condition": "",
+    "alarm colour": "",
+    "alarm code standard recovery action": "",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1009,
+    "alarm code number": 9,
+    "alarm warning message": "Spare",
+    "alarm condition": "",
+    "alarm colour": "",
+    "alarm code standard recovery action": "",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1010,
+    "alarm code number": 10,
+    "alarm warning message": "Spare",
+    "alarm condition": "",
+    "alarm colour": "",
+    "alarm code standard recovery action": "",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1011,
+    "alarm code number": 11,
+    "alarm warning message": "Bottle Gripper Open Jam SW855",
+    "alarm condition": "Output \"Q_BottleGripperExtend_SOL1145\" is On but the Input reed switch \"I_BottleGripperOpen_SW855\" is OFF, a \"Fail to Open\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system",
+    "alarm code type": "Gripper issue",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1012,
+    "alarm code number": 12,
+    "alarm warning message": "Bottle Gripper Closed 150cc Jam SW865",
+    "alarm condition": "Output \"Q_BottleGripperRetract_SOL1155\" is On but the Input reed switch \"I_BottleGripperClosed150cc_SW865\" is OFF, a \"Fail to Close\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system",
+    "alarm code type": "Gripper issue",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1013,
+    "alarm code number": 13,
+    "alarm warning message": "Bottle Gripper Closed 60cc Jam SW875",
+    "alarm condition": "Output \"Q_BottleGripperRetract_SOL1155\" is On but the Input reed switch \"I_BottleGripperClosed60cc_SW875\" is OFF, a \"Fail to Close\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system",
+    "alarm code type": "Gripper issue",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1014,
+    "alarm code number": 14,
+    "alarm warning message": "Z Cylinder Retracted Jam SW885",
+    "alarm condition": "Output \"Q_ZAxisCylinderRetract_SOL1175\" is On but the Input reed switch \"I_ZAxisCylinderRetracted_SW885\" is OFF, a \"Fail to Retract\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system",
+    "alarm code type": "movement related",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1015,
+    "alarm code number": 15,
+    "alarm warning message": "Z Cylinder Extended Jam SW895",
+    "alarm condition": "Output \"Q_ZAxisCylinderExtend_SOL1165\" is On but the Input reed switch \"I_ZAxisCylinderExtended_SW895\" is OFF, a \"Fail to Extend\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system",
+    "alarm code type": "movement related",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1016,
+    "alarm code number": 16,
+    "alarm warning message": "X Axis Servo Fault",
+    "alarm condition": "The drive for the X axis has generated a fault",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system",
+    "alarm code type": "movement related",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1017,
+    "alarm code number": 17,
+    "alarm warning message": "Reject Bin 80% Full Warning PE905",
+    "alarm condition": "Reject Bin sensor PE905 is activated (the bin is 80% full)",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Warning only",
+    "alarm code type": "Reject related",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1018,
+    "alarm code number": 18,
+    "alarm warning message": "Reject Bin Full PE915",
+    "alarm condition": "Reject Bin sensor PE915 is activated (the bin is 100% full)",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system",
+    "alarm code type": "Reject related",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1019,
+    "alarm code number": 19,
+    "alarm warning message": "Reject Confirmation Error",
+    "alarm condition": "A Rejected Bottle did not drop into the Reject Bin",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system",
+    "alarm code type": "Reject related",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1020,
+    "alarm code number": 20,
+    "alarm warning message": "Bottle Exceeded Upper Weight Limit",
+    "alarm condition": "The weight measurement of the current bottle has exceeded the upper weight limit. Bottle put into reject bin.",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Reject Bottle",
+    "alarm code type": "Weight - process error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1021,
+    "alarm code number": 21,
+    "alarm warning message": "Bottle Exceeded Lower Weight Limit",
+    "alarm condition": "The weight measurement of the current bottle has exceeded the lower weight limit. Bottle put into reject bin.",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Reject Bottle",
+    "alarm code type": "Weight - process error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1022,
+    "alarm code number": 22,
+    "alarm warning message": "Bottle Exceeded Weight Limit 3 Times",
+    "alarm condition": "The weight measurement of 3 consecutive bottles has exceeded the upper or lower weight limits. Stop producing bottles.",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system",
+    "alarm code type": "Weight - process error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1023,
+    "alarm code number": 23,
+    "alarm warning message": "Weigh Module Fault",
+    "alarm condition": "The Weighing Module is reporting a Fault",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system",
+    "alarm code type": "Weight - process error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1024,
+    "alarm code number": 24,
+    "alarm warning message": "Spare",
+    "alarm condition": "",
+    "alarm colour": "",
+    "alarm code standard recovery action": "",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1025,
+    "alarm code number": 25,
+    "alarm warning message": "Spare",
+    "alarm condition": "",
+    "alarm colour": "",
+    "alarm code standard recovery action": "",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1026,
+    "alarm code number": 26,
+    "alarm warning message": "No Bottle Present At Conveyor PE845",
+    "alarm condition": "I_BottlePresentAtConveyor_PE845\" is OFF and does not correspond to the expected shift register positioning, a \"Bottle Not In Position On Conveyor\" alarm is generated after a time delay",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system",
+    "alarm code type": "common - bottle missing / 2d barcode issue",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1027,
+    "alarm code number": 27,
+    "alarm warning message": "2D Matrix Scanner Fault",
+    "alarm condition": "Scanner Reporting a General Error & cannot Scan",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop weigher system",
+    "alarm code type": "common - bottle missing / 2d barcode issue",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1028,
+    "alarm code number": 28,
+    "alarm warning message": "2D Matrix Scanner Read Error",
+    "alarm condition": "Scanner reporting an inspection alarm because it was unable to read a printed code",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Reject Bottle",
+    "alarm code type": "common - bottle missing / 2d barcode issue",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1090,
+    "alarm code number": 90,
+    "alarm warning message": "Line Estop Reset Stations",
+    "alarm condition": "Line Emergency Stop Circuit Not Healthy",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1095,
+    "alarm code number": 95,
+    "alarm warning message": "Station Conditions Not OK",
+    "alarm condition": "Station Auto Start Conditions Not OK",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1100,
+    "alarm code number": 100,
+    "alarm warning message": "Recipe Request Error 100 from SCADA: General / unspecified error",
+    "alarm condition": "RecipeDataResultCode = 100 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "Recipe Request Error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1101,
+    "alarm code number": 101,
+    "alarm warning message": "Recipe Request Error 101 from SCADA: Bottle ID not recognised / not valid",
+    "alarm condition": "RecipeDataResultCode = 101 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "Recipe Request Error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1102,
+    "alarm code number": 102,
+    "alarm warning message": "Recipe Request Error 102 from SCADA: Bottle is at incorrect or unexpected station",
+    "alarm condition": "RecipeDataResultCode = 102 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "Recipe Request Error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1103,
+    "alarm code number": 103,
+    "alarm warning message": "Recipe Request Error 103 from SCADA:  Bottle was not processed at the expected last station.",
+    "alarm condition": "RecipeDataResultCode = 103 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "Recipe Request Error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1104,
+    "alarm code number": 104,
+    "alarm warning message": "Recipe Request Error 104 from SCADA: Bottle recipe data was not found",
+    "alarm condition": "RecipeDataResultCode = 104 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "Recipe Request Error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1105,
+    "alarm code number": 105,
+    "alarm warning message": "Recipe Request Error 105 from SCADA: Bottle status is incorrect at this station",
+    "alarm condition": "RecipeDataResultCode = 105 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "Recipe Request Error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1106,
+    "alarm code number": 106,
+    "alarm warning message": "Recipe Request Error 106 from SCADA: Bottle was previously processed at this station",
+    "alarm condition": "RecipeDataResultCode = 106 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "Recipe Request Error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1107,
+    "alarm code number": 107,
+    "alarm warning message": "Recipe Request Error 107 from SCADA: Bottle is a reject (do not process)",
+    "alarm condition": "RecipeDataResultCode = 107 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA Bottle for Rejection",
+    "alarm code type": "Recipe Request Error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1108,
+    "alarm code number": 108,
+    "alarm warning message": "Recipe Request Error Bottle ID mismatch",
+    "alarm condition": "Control.Common.RecipeDataRequestBottleID not equal to RecipeData.Common.BottleID",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1109,
+    "alarm code number": 109,
+    "alarm warning message": "Recipe Request Error Station ID mismatch",
+    "alarm condition": "Status.Common.StationID not equal to RecipeData.Common.StationID",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1110,
+    "alarm code number": 110,
+    "alarm warning message": "Recipe Request Timeout",
+    "alarm condition": "RecipeRequestTimeout Timer Expired",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1111,
+    "alarm code number": 111,
+    "alarm warning message": "Recipe Request Retry Limit Reached",
+    "alarm condition": "RecipeRequestRetryLimit Reached",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1112,
+    "alarm code number": 112,
+    "alarm warning message": "Recipe Request PMC Error",
+    "alarm condition": "PMCRecipeStatus >=32",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1113,
+    "alarm code number": 113,
+    "alarm warning message": "Recipe Request Error Bottle ID Not Equal To 36 Characters",
+    "alarm condition": "Control.Common.RecipeDataRequestBottleID not equal to 36 Characters",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1120,
+    "alarm code number": 120,
+    "alarm warning message": "Submit Result Data Error 100 from SCADA: General / unspecified error",
+    "alarm condition": "ResultDataResultCode = 100 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Retry Submit Results",
+    "alarm code type": "Submit Result error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1121,
+    "alarm code number": 121,
+    "alarm warning message": "Submit Result Data Error 101 from SCADA:",
+    "alarm condition": "ResultDataResultCode = 101 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA",
+    "alarm code type": "Submit Result error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1122,
+    "alarm code number": 122,
+    "alarm warning message": "Submit Result Data Error 102 from SCADA:",
+    "alarm condition": "ResultDataResultCode = 102 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA",
+    "alarm code type": "Submit Result error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1123,
+    "alarm code number": 123,
+    "alarm warning message": "Submit Result Data Error 103 from SCADA:",
+    "alarm condition": "ResultDataResultCode = 103 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA",
+    "alarm code type": "Submit Result error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1124,
+    "alarm code number": 124,
+    "alarm warning message": "Submit Result Data Error 104 from SCADA:",
+    "alarm condition": "ResultDataResultCode = 104 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA",
+    "alarm code type": "Submit Result error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1125,
+    "alarm code number": 125,
+    "alarm warning message": "Submit Result Data Error 105 from SCADA:",
+    "alarm condition": "ResultDataResultCode = 105 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA",
+    "alarm code type": "Submit Result error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1126,
+    "alarm code number": 126,
+    "alarm warning message": "Submit Result Data Error 106 from SCADA:",
+    "alarm condition": "ResultDataResultCode = 106 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA",
+    "alarm code type": "Submit Result error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1127,
+    "alarm code number": 127,
+    "alarm warning message": "Submit Result Data Error 107 from SCADA:",
+    "alarm condition": "ResultDataResultCode = 107 SCADA",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Record to SCADA",
+    "alarm code type": "Submit Result error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1128,
+    "alarm code number": 128,
+    "alarm warning message": "Submit Result Data Error 108 from SCADA: \nBottle result data is not valid. One or more result data have incorrect values.",
+    "alarm condition": "ResultDataResultCode = 108 SCADA",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop Filling System",
+    "alarm code type": "Submit Result error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1129,
+    "alarm code number": 129,
+    "alarm warning message": "Submit Result Data PMQ Timeout",
+    "alarm condition": "RecipeRequestTimeout Timer",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1130,
+    "alarm code number": 130,
+    "alarm warning message": "Submit Result Data SCADA Timeout",
+    "alarm condition": "ResultDataTimeout Timer Expired",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1131,
+    "alarm code number": 131,
+    "alarm warning message": "Submit Result Data PMQ Batch Release Timeout",
+    "alarm condition": "PMQBatchReleaseStatus TimerExpired",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1132,
+    "alarm code number": 132,
+    "alarm warning message": "Recipe Request PMC Error",
+    "alarm condition": "PMCRecipeStatus >=100",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system",
+    "alarm code type": "",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1133,
+    "alarm code number": 133,
+    "alarm warning message": "Line Control PLC Comms Error",
+    "alarm condition": "Indicates loss of communication with Line Control PLC (watchdog signal timeout).",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system, de-energise air dump valve",
+    "alarm code type": "Comms Error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1134,
+    "alarm code number": 134,
+    "alarm warning message": "HMI Comms Error",
+    "alarm condition": "Indicates loss of communication with the local HMI (watchdog signal timeout).",
+    "alarm colour": "WHITE",
+    "alarm code standard recovery action": "Warning only",
+    "alarm code type": "Comms Error",
+    "alarm code station type": "WM01"
+  },
+  {
+    "alarm code Id": 1135,
+    "alarm code number": 135,
+    "alarm warning message": "MES SCADA Comms Error",
+    "alarm condition": "Indicates loss of communication with MES/SCADA (watchdog signal timeout).",
+    "alarm colour": "RED",
+    "alarm code standard recovery action": "Stop filling system, de-energise air dump valve",
+    "alarm code type": "Comms Error",
+    "alarm code station type": "WM01"
+  }
+]
