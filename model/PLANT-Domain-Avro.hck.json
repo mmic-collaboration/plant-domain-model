@@ -1,0 +1,3159 @@
+{
+    "modelName": "PLANTDomainAvroSchema",
+    "collections": [
+        {
+            "GUID": "851d9856-de0f-442e-b5b2-01a3e4d37eb9",
+            "type": "reference",
+            "$ref": "#external/definitions/Sensor",
+            "refType": "polyglot",
+            "ref": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+            "refIdPath": [
+                "3913d541-d258-45ed-b96a-b3966d30f4d3",
+                "c5bc408c-45a2-40d8-835b-40f5922f7fa4",
+                "e961595d-cd47-4802-91d4-05c90e7f9ee2"
+            ],
+            "isActivated": true,
+            "collectionName": "Sensor",
+            "bucketId": "525285b3-d665-4316-94f6-f39d587902ca",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "dcae9d82-69ff-4f86-b78d-03a5d00a6629"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "cc7da46d-ac5f-4055-857c-df44e31cfd33",
+                        "childRelationships": [
+                            "8f2b78d0-46c3-4843-b75e-a1c3fdd114c4"
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "GUID": "9fe63624-ac48-4016-aac8-067a27c65bb4",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "6fc337cc-eb96-449b-bc86-881fc0f15a21",
+                        "foreignField": [
+                            "6fc337cc-eb96-449b-bc86-881fc0f15a21",
+                            "cb15922e-8372-4f6d-baba-fdcbe652892f",
+                            "a1ddee7a-1931-4bf1-9fea-b972fe7cca35"
+                        ],
+                        "parentRelationship": "edece56f-a319-4583-b55d-a2956c13f53d",
+                        "error": {}
+                    }
+                ]
+            },
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "GUID": "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+            "type": "reference",
+            "$ref": "#external/definitions/Sensor Event",
+            "refType": "polyglot",
+            "ref": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+            "refIdPath": [
+                "3913d541-d258-45ed-b96a-b3966d30f4d3",
+                "c5bc408c-45a2-40d8-835b-40f5922f7fa4",
+                "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae"
+            ],
+            "isActivated": true,
+            "collectionName": "Sensor Event",
+            "bucketId": "525285b3-d665-4316-94f6-f39d587902ca",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "f456df35-6f32-454f-b12c-34bbdb7e986b"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "2ef11825-3352-4007-98a2-bc00bae9a094",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "851d9856-de0f-442e-b5b2-01a3e4d37eb9",
+                        "foreignField": [
+                            "851d9856-de0f-442e-b5b2-01a3e4d37eb9",
+                            "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                            "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                        ],
+                        "parentRelationship": "8f2b78d0-46c3-4843-b75e-a1c3fdd114c4",
+                        "error": {}
+                    },
+                    {
+                        "GUID": "642911f6-b1b7-413c-a5ca-a1c0fd914352",
+                        "childRelationships": [
+                            "aad37be4-6b24-4cd7-baf2-ff64f7f1f091"
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "GUID": "e3092d9a-390a-42d4-9e81-fd488491f87e",
+                        "childRelationships": [
+                            "b36818cc-ccc2-438c-9a29-aadf1d9c8e5a",
+                            "8e9e9d3b-abc4-49ea-b188-17687e1bb1d8"
+                        ],
+                        "error": {}
+                    }
+                ]
+            },
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "collectionName": true
+                }
+            }
+        },
+        {
+            "GUID": "428e4e0a-86bb-4e0b-8c41-59828ece0323",
+            "type": "reference",
+            "$ref": "#external/definitions/Alarm Code",
+            "refType": "polyglot",
+            "ref": "e6926013-972e-41a9-aa62-cf68986a8ca0",
+            "refIdPath": [
+                "3913d541-d258-45ed-b96a-b3966d30f4d3",
+                "c5bc408c-45a2-40d8-835b-40f5922f7fa4",
+                "e6926013-972e-41a9-aa62-cf68986a8ca0"
+            ],
+            "isActivated": true,
+            "collectionName": "Alarm Code",
+            "bucketId": "525285b3-d665-4316-94f6-f39d587902ca",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "6c64d849-a4d9-4268-a3c7-f9643cd74730"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "cf68c2a1-26bc-467e-9305-e76ddfaf4959",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "0c6594ec-6d22-4a71-9f56-472f0a9b18f8",
+                        "foreignField": [
+                            "0c6594ec-6d22-4a71-9f56-472f0a9b18f8",
+                            "82b94275-49cf-4c23-a220-dff7ef13d773",
+                            "6fcba480-0e89-44ce-adf8-ec0e42049ff0"
+                        ],
+                        "parentRelationship": "d6806765-bd89-4063-8bd4-fae65a9c89a9",
+                        "error": {}
+                    }
+                ]
+            },
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "collectionName": true
+                }
+            }
+        },
+        {
+            "GUID": "0c6594ec-6d22-4a71-9f56-472f0a9b18f8",
+            "type": "reference",
+            "$ref": "#external/definitions/Alarm Sensor Event",
+            "refType": "polyglot",
+            "ref": "82b94275-49cf-4c23-a220-dff7ef13d773",
+            "refIdPath": [
+                "3913d541-d258-45ed-b96a-b3966d30f4d3",
+                "c5bc408c-45a2-40d8-835b-40f5922f7fa4",
+                "82b94275-49cf-4c23-a220-dff7ef13d773"
+            ],
+            "isActivated": true,
+            "collectionName": "Alarm Sensor Event",
+            "bucketId": "525285b3-d665-4316-94f6-f39d587902ca",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "7bdd1464-9372-478d-b556-14572ea69478"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "6fcba480-0e89-44ce-adf8-ec0e42049ff0",
+                        "childRelationships": [
+                            "d6806765-bd89-4063-8bd4-fae65a9c89a9"
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "GUID": "f3781eb6-1ed5-47ee-a7d5-3bcfb51dac46",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+                        "foreignField": [
+                            "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+                            "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                            "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                        ],
+                        "parentRelationship": "b36818cc-ccc2-438c-9a29-aadf1d9c8e5a",
+                        "error": {}
+                    }
+                ]
+            },
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "collectionName": true
+                }
+            }
+        },
+        {
+            "GUID": "7b8726b6-19c4-43ea-8248-d0f87f0be153",
+            "type": "reference",
+            "$ref": "#external/definitions/Sensor Event Type",
+            "refType": "polyglot",
+            "ref": "12cdf2cf-b4cd-4a07-9950-7a053fcf1efe",
+            "refIdPath": [
+                "3913d541-d258-45ed-b96a-b3966d30f4d3",
+                "c5bc408c-45a2-40d8-835b-40f5922f7fa4",
+                "12cdf2cf-b4cd-4a07-9950-7a053fcf1efe"
+            ],
+            "isActivated": true,
+            "collectionName": "Sensor Event Type",
+            "bucketId": "525285b3-d665-4316-94f6-f39d587902ca",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "60baadca-ae78-4f12-8f72-f55af6c4e78f"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "38a4f2be-4e8d-48c9-89f4-3e375403074e",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+                        "foreignField": [
+                            "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+                            "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                            "642911f6-b1b7-413c-a5ca-a1c0fd914352"
+                        ],
+                        "parentRelationship": "aad37be4-6b24-4cd7-baf2-ff64f7f1f091",
+                        "error": {}
+                    }
+                ]
+            },
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "collectionName": true
+                }
+            }
+        },
+        {
+            "GUID": "6fc337cc-eb96-449b-bc86-881fc0f15a21",
+            "type": "reference",
+            "$ref": "#external/definitions/Equipment Node",
+            "refType": "polyglot",
+            "ref": "cb15922e-8372-4f6d-baba-fdcbe652892f",
+            "refIdPath": [
+                "3913d541-d258-45ed-b96a-b3966d30f4d3",
+                "c5bc408c-45a2-40d8-835b-40f5922f7fa4",
+                "cb15922e-8372-4f6d-baba-fdcbe652892f"
+            ],
+            "isActivated": true,
+            "collectionName": "Equipment Node",
+            "bucketId": "525285b3-d665-4316-94f6-f39d587902ca",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "0d854d31-c59f-4ed1-878f-940e4f7150d6"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "a1ddee7a-1931-4bf1-9fea-b972fe7cca35",
+                        "childRelationships": [
+                            "edece56f-a319-4583-b55d-a2956c13f53d"
+                        ],
+                        "error": {}
+                    }
+                ]
+            },
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "collectionName": true
+                }
+            }
+        },
+        {
+            "GUID": "6fd8181d-210e-41b1-9018-eb14761b85f5",
+            "type": "reference",
+            "$ref": "#external/definitions/Cycle",
+            "refType": "polyglot",
+            "ref": "46371898-f67c-4565-9d2a-95e4feda4254",
+            "refIdPath": [
+                "3913d541-d258-45ed-b96a-b3966d30f4d3",
+                "c5bc408c-45a2-40d8-835b-40f5922f7fa4",
+                "46371898-f67c-4565-9d2a-95e4feda4254"
+            ],
+            "isActivated": true,
+            "collectionName": "Cycle",
+            "bucketId": "525285b3-d665-4316-94f6-f39d587902ca",
+            "properties": [],
+            "definitions": {
+                "properties": [],
+                "GUID": "9194ab10-3b75-483e-bf14-c096bdee584e"
+            },
+            "referenceDiff": {
+                "properties": [
+                    {
+                        "GUID": "2a359fe9-8dde-42ea-9a5e-f3530848682e",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+                        "foreignField": [
+                            "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+                            "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                            "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                        ],
+                        "parentRelationship": "8e9e9d3b-abc4-49ea-b188-17687e1bb1d8",
+                        "error": {}
+                    }
+                ]
+            },
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "525285b3-d665-4316-94f6-f39d587902ca",
+            "name": "PLANT Domain",
+            "type": "reference",
+            "$ref": "#external/definitions/PLANT Domain",
+            "refType": "polyglot",
+            "ref": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+            "refIdPath": [
+                "3913d541-d258-45ed-b96a-b3966d30f4d3",
+                "c5bc408c-45a2-40d8-835b-40f5922f7fa4",
+                "36a81f06-4d30-4fa7-a224-2ff380cbc91b"
+            ],
+            "isActivated": true,
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "collectionIds": [
+                "851d9856-de0f-442e-b5b2-01a3e4d37eb9",
+                "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+                "428e4e0a-86bb-4e0b-8c41-59828ece0323",
+                "0c6594ec-6d22-4a71-9f56-472f0a9b18f8",
+                "7b8726b6-19c4-43ea-8248-d0f87f0be153",
+                "6fc337cc-eb96-449b-bc86-881fc0f15a21",
+                "6fd8181d-210e-41b1-9018-eb14761b85f5"
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "name": true
+                }
+            }
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk Sensor Event.sensor id to Sensor.sensor id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "851d9856-de0f-442e-b5b2-01a3e4d37eb9",
+                    "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "2ef11825-3352-4007-98a2-bc00bae9a094"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "parentCollection": "851d9856-de0f-442e-b5b2-01a3e4d37eb9",
+            "childCollection": "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "f99902b8-dd36-4579-be52-29d6687d0914",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 10695.784694373762,
+                        "y": 8648.475096228372
+                    },
+                    {
+                        "x": 10638.347699797117,
+                        "y": 8648.475096228372
+                    },
+                    {
+                        "x": 10638.347699797117,
+                        "y": 8647.912366662466
+                    },
+                    {
+                        "x": 10580.910705220473,
+                        "y": 8647.912366662466
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            },
+            "hackoladeMeta": {},
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Sensor Event.sensor id to Sensor.sensor id",
+            "refIdPath": [
+                "3913d541-d258-45ed-b96a-b3966d30f4d3",
+                "c5bc408c-45a2-40d8-835b-40f5922f7fa4",
+                "596f6930-9091-4cd5-859f-0a948c0c1e73"
+            ],
+            "ref": "596f6930-9091-4cd5-859f-0a948c0c1e73",
+            "GUID": "8f2b78d0-46c3-4843-b75e-a1c3fdd114c4"
+        },
+        {
+            "name": "fk Process Event Type.sensor event type id to Sensor Event.sensor event type id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "642911f6-b1b7-413c-a5ca-a1c0fd914352"
+                ]
+            ],
+            "parentCardinality": "0..n",
+            "childField": [
+                [
+                    "7b8726b6-19c4-43ea-8248-d0f87f0be153",
+                    "12cdf2cf-b4cd-4a07-9950-7a053fcf1efe",
+                    "38a4f2be-4e8d-48c9-89f4-3e375403074e"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+            "childCollection": "7b8726b6-19c4-43ea-8248-d0f87f0be153",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "de2155e4-3792-4e0e-a0d7-1ceb852f9233",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11156.159481736533,
+                        "y": 8648.296675697173
+                    },
+                    {
+                        "x": 11084.972088055147,
+                        "y": 8648.296675697173
+                    },
+                    {
+                        "x": 11084.972088055147,
+                        "y": 8648.475096228372
+                    },
+                    {
+                        "x": 11013.784694373762,
+                        "y": 8648.475096228372
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            },
+            "hackoladeMeta": {},
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Process Event Type.sensor event type id to Sensor Event.sensor event type id",
+            "refIdPath": [
+                "3913d541-d258-45ed-b96a-b3966d30f4d3",
+                "c5bc408c-45a2-40d8-835b-40f5922f7fa4",
+                "00b945e3-978c-4244-97f0-54da6f471177"
+            ],
+            "ref": "00b945e3-978c-4244-97f0-54da6f471177",
+            "GUID": "aad37be4-6b24-4cd7-baf2-ff64f7f1f091"
+        },
+        {
+            "name": "fk Alarm Code.alarm code id to Alarm.alarm code id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "0c6594ec-6d22-4a71-9f56-472f0a9b18f8",
+                    "82b94275-49cf-4c23-a220-dff7ef13d773",
+                    "6fcba480-0e89-44ce-adf8-ec0e42049ff0"
+                ]
+            ],
+            "parentCardinality": "0..n",
+            "childField": [
+                [
+                    "428e4e0a-86bb-4e0b-8c41-59828ece0323",
+                    "e6926013-972e-41a9-aa62-cf68986a8ca0",
+                    "cf68c2a1-26bc-467e-9305-e76ddfaf4959"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "0c6594ec-6d22-4a71-9f56-472f0a9b18f8",
+            "childCollection": "428e4e0a-86bb-4e0b-8c41-59828ece0323",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "9f8e0dbd-5f82-4686-8fb6-9677d3361395",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 11153.095230875724,
+                        "y": 8933.506438908085
+                    },
+                    {
+                        "x": 11066.574049708532,
+                        "y": 8933.506438908085
+                    },
+                    {
+                        "x": 11066.574049708532,
+                        "y": 8925.235689434976
+                    },
+                    {
+                        "x": 10980.052868541341,
+                        "y": 8925.235689434976
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            },
+            "hackoladeMeta": {},
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Alarm Code.alarm code id to Alarm.alarm code id",
+            "refIdPath": [
+                "3913d541-d258-45ed-b96a-b3966d30f4d3",
+                "c5bc408c-45a2-40d8-835b-40f5922f7fa4",
+                "d3788af4-9ee6-425f-9af3-ce723bc00f50"
+            ],
+            "ref": "d3788af4-9ee6-425f-9af3-ce723bc00f50",
+            "GUID": "d6806765-bd89-4063-8bd4-fae65a9c89a9"
+        },
+        {
+            "name": "fk Alarm.sensor event id to Sensor Event.sensor event id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "0c6594ec-6d22-4a71-9f56-472f0a9b18f8",
+                    "82b94275-49cf-4c23-a220-dff7ef13d773",
+                    "f3781eb6-1ed5-47ee-a7d5-3bcfb51dac46"
+                ]
+            ],
+            "childCardinality": "1",
+            "parentCollection": "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+            "childCollection": "0c6594ec-6d22-4a71-9f56-472f0a9b18f8",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "0618e1d3-b5e2-45ec-ad5f-ef02937c0c98",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 10854.052868541341,
+                        "y": 8863.735689434976
+                    },
+                    {
+                        "x": 10854.052868541341,
+                        "y": 8795.855392831674
+                    },
+                    {
+                        "x": 10854.784694373762,
+                        "y": 8795.855392831674
+                    },
+                    {
+                        "x": 10854.784694373762,
+                        "y": 8727.975096228372
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            },
+            "hackoladeMeta": {},
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Alarm.sensor event id to Sensor Event.sensor event id",
+            "refIdPath": [
+                "3913d541-d258-45ed-b96a-b3966d30f4d3",
+                "c5bc408c-45a2-40d8-835b-40f5922f7fa4",
+                "d5cdd3cb-256d-46d2-84be-354943d42437"
+            ],
+            "ref": "d5cdd3cb-256d-46d2-84be-354943d42437",
+            "GUID": "b36818cc-ccc2-438c-9a29-aadf1d9c8e5a"
+        },
+        {
+            "name": "fk Sensor.station id to Station.station id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "6fc337cc-eb96-449b-bc86-881fc0f15a21",
+                    "cb15922e-8372-4f6d-baba-fdcbe652892f",
+                    "a1ddee7a-1931-4bf1-9fea-b972fe7cca35"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "851d9856-de0f-442e-b5b2-01a3e4d37eb9",
+                    "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "9fe63624-ac48-4016-aac8-067a27c65bb4"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "parentCollection": "6fc337cc-eb96-449b-bc86-881fc0f15a21",
+            "childCollection": "851d9856-de0f-442e-b5b2-01a3e4d37eb9",
+            "lineSize": 2,
+            "hackoladeStyles": {
+                "GUID": "710db331-39ef-458a-8a95-b121a72ea738",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 10303.910705220473,
+                        "y": 8647.912366662466
+                    },
+                    {
+                        "x": 10140.168104363995,
+                        "y": 8647.912366662466
+                    },
+                    {
+                        "x": 10140.168104363995,
+                        "y": 8557.649174113214
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "bottom"
+                ]
+            },
+            "hackoladeMeta": {},
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/fk Sensor.station id to Station.station id",
+            "refIdPath": [
+                "3913d541-d258-45ed-b96a-b3966d30f4d3",
+                "c5bc408c-45a2-40d8-835b-40f5922f7fa4",
+                "84cc3373-e4d5-4685-b766-fe3fe6399e9f"
+            ],
+            "ref": "84cc3373-e4d5-4685-b766-fe3fe6399e9f",
+            "GUID": "edece56f-a319-4583-b55d-a2956c13f53d"
+        },
+        {
+            "name": "New Relationship",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "6fd8181d-210e-41b1-9018-eb14761b85f5",
+                    "46371898-f67c-4565-9d2a-95e4feda4254",
+                    "2a359fe9-8dde-42ea-9a5e-f3530848682e"
+                ]
+            ],
+            "childCardinality": "1",
+            "childCollection": "6fd8181d-210e-41b1-9018-eb14761b85f5",
+            "parentCollection": "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+            "hackoladeStyles": {
+                "GUID": "d5a15487-3bcd-4701-897e-1d196507c319",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 10853.953631719154,
+                        "y": 8482.052535612736
+                    },
+                    {
+                        "x": 10853.953631719154,
+                        "y": 8525.513815920554
+                    },
+                    {
+                        "x": 10854.784694373762,
+                        "y": 8525.513815920554
+                    },
+                    {
+                        "x": 10854.784694373762,
+                        "y": 8568.975096228372
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            },
+            "hackoladeMeta": {},
+            "type": "reference",
+            "refType": "polyglot",
+            "$ref": "#external/definitions/New Relationship",
+            "refIdPath": [
+                "3913d541-d258-45ed-b96a-b3966d30f4d3",
+                "c5bc408c-45a2-40d8-835b-40f5922f7fa4",
+                "e44a80d5-616a-450e-afaf-0d4fdfa6c18d"
+            ],
+            "ref": "e44a80d5-616a-450e-afaf-0d4fdfa6c18d",
+            "GUID": "8e9e9d3b-abc4-49ea-b188-17687e1bb1d8"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "2fc0c12f-e3b8-4c1c-9f58-ee7a90ea19a7": "New annotation",
+        "ddd13725-b893-4238-aebb-057024d49af9": "Note",
+        "ea7d4272-b546-489b-933b-5b72cd695ff5": "New annotation",
+        "7c42b628-f775-4b65-9145-c895cc813baf": "Note",
+        "851d9856-de0f-442e-b5b2-01a3e4d37eb9": "Sensor",
+        "c9207a9b-49d2-4dad-b46c-a9fa04f4289b": "Sensor Event",
+        "428e4e0a-86bb-4e0b-8c41-59828ece0323": "Alarm Code",
+        "0c6594ec-6d22-4a71-9f56-472f0a9b18f8": "Alarm Sensor Event",
+        "7b8726b6-19c4-43ea-8248-d0f87f0be153": "Sensor Event Type",
+        "6fc337cc-eb96-449b-bc86-881fc0f15a21": "Equipment Node",
+        "6fd8181d-210e-41b1-9018-eb14761b85f5": "Cycle",
+        "525285b3-d665-4316-94f6-f39d587902ca": "PLANT Domain",
+        "8ecd3d1e-81bb-4b1d-b688-3e68f1ae2fd7": "New annotation",
+        "4cc5b4ce-e72f-4c14-bcd6-85e22eca3079": "Note",
+        "8f2b78d0-46c3-4843-b75e-a1c3fdd114c4": "fk Sensor Event.sensor id to Sensor.sensor id",
+        "aad37be4-6b24-4cd7-baf2-ff64f7f1f091": "fk Process Event Type.sensor event type id to Sensor Event.sensor event type id",
+        "d6806765-bd89-4063-8bd4-fae65a9c89a9": "fk Alarm Code.alarm code id to Alarm.alarm code id",
+        "b36818cc-ccc2-438c-9a29-aadf1d9c8e5a": "fk Alarm.sensor event id to Sensor Event.sensor event id",
+        "edece56f-a319-4583-b55d-a2956c13f53d": "fk Sensor.station id to Station.station id",
+        "8e9e9d3b-abc4-49ea-b188-17687e1bb1d8": "New Relationship"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "113c8cad-360a-49eb-8a78-13919bb61435"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [
+            {
+                "collectionName": "Sensor",
+                "type": "object",
+                "properties": [
+                    {
+                        "name": "sensor id",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "b822c9dd-8fd8-4d4c-b0aa-1c23381c538b"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1,
+                                    "GUID": "6339b50b-0991-4852-801f-d2a4bd7ce7a1"
+                                },
+                                "tPrecision": 9,
+                                "index": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "mode": "int",
+                                "childType": "number",
+                                "type": "numeric",
+                                "GUID": "a196e3b9-49bb-4e2c-be5b-2a34949d325a",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": true,
+                        "hackoladeMeta": {},
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "childRelationships": [
+                            "596f6930-9091-4cd5-859f-0a948c0c1e73"
+                        ],
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "cc7da46d-ac5f-4055-857c-df44e31cfd33",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "name": "station id",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "42a01535-ee21-4223-b796-220278543d1e"
+                            },
+                            {
+                                "autoincrement": {
+                                    "GUID": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "index": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "mode": "int",
+                                "childType": "number",
+                                "type": "numeric",
+                                "GUID": "4ed8290d-e310-469b-96a7-59968602c0b3",
+                                "error": {
+                                    "name": false,
+                                    "code": false
+                                }
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "relationshipType": "Foreign Key",
+                        "parentRelationship": "84cc3373-e4d5-4685-b766-fe3fe6399e9f",
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "foreignCollection": "cb15922e-8372-4f6d-baba-fdcbe652892f",
+                        "foreignField": [
+                            "cb15922e-8372-4f6d-baba-fdcbe652892f",
+                            "a1ddee7a-1931-4bf1-9fea-b972fe7cca35"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "9fe63624-ac48-4016-aac8-067a27c65bb4",
+                        "error": {}
+                    },
+                    {
+                        "name": "sensor type",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "ff194374-66d8-4fd4-95f4-c98315cb8ac2"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "childType": "string",
+                                "type": "string",
+                                "GUID": "a605c2f9-1322-48b0-9710-faf61cae102d",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "923dfbd5-1185-4319-b06b-217d4d45c4e6",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "required": true,
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "default": null,
+                                        "type": "null",
+                                        "primaryKey": false,
+                                        "name": "Sensor Configuration",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "required": false,
+                                        "GUID": "37ea7a57-6dc7-5066-85ec-f2b8a6f21396",
+                                        "error": {
+                                            "name": true
+                                        }
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "176903db-219d-540e-bf2a-be0b94ff66a5",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "subtype": "map<string>",
+                                        "primaryKey": false,
+                                        "properties": [],
+                                        "childType": "map",
+                                        "type": "document",
+                                        "name": "Sensor Configuration",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "GUID": "dd3c3733-a4b8-45e3-b8ec-3e6d3feb9413",
+                                        "default": null,
+                                        "required": false,
+                                        "error": {
+                                            "name": true
+                                        }
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "e6539806-c887-5ab8-8fd1-90d83560fd87",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "oneOf",
+                        "default": null,
+                        "name": "Sensor Configuration",
+                        "GUID": "c5b11411-a89c-5cca-9a20-b84587f8b087",
+                        "error": {
+                            "name": true
+                        }
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "b72b6c38-512f-4a1d-bd2d-c7281ac77e96"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "definitionEntityType": "collection",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PLANT Domain/Sensor",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionRefs": [
+                    [
+                        "851d9856-de0f-442e-b5b2-01a3e4d37eb9"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "Sensor Event",
+                "type": "object",
+                "properties": [
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "sensor event id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "e3092d9a-390a-42d4-9e81-fd488491f87e",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "sensor id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "2ef11825-3352-4007-98a2-bc00bae9a094",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                        "foreignField": [
+                            "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                            "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "name": "sensor event type id",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "37c34afe-524f-4044-aa26-8d3cf4581f76"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1,
+                                    "GUID": "5b184a92-1343-473b-a38b-d93908999689"
+                                },
+                                "tPrecision": 9,
+                                "index": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "mode": "int",
+                                "childType": "number",
+                                "type": "numeric",
+                                "GUID": "605829b5-fb0d-4d00-a85c-491aff17c14f",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "childRelationships": [
+                            "00b945e3-978c-4244-97f0-54da6f471177"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "642911f6-b1b7-413c-a5ca-a1c0fd914352",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "name": "sensor event timestamp",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "df077134-6133-4fda-b76f-fbc510b6029c"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "childType": "number",
+                                "type": "numeric",
+                                "GUID": "ac554254-a401-418e-be23-177f9f393406",
+                                "error": {},
+                                "mode": "long",
+                                "logicalType": "timestamp-millis"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "002d4b20-2faf-46aa-918b-7b6d22aa607d",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "name": "batch number",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "fbb6f5ec-1513-4c90-8947-e43fd5ec88c7"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "childType": "string",
+                                "type": "string",
+                                "GUID": "b9a1ca90-a5ef-4e9c-9ad1-188b37345312",
+                                "error": {
+                                    "name": false,
+                                    "code": false
+                                }
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "f4bb4f81-0d5d-4bd0-9674-f63c65e74b19",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "name": "bottle id",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "73ce9480-f733-4e7c-ab5b-3233634ae4df"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1,
+                                    "GUID": "e6ebe980-edd1-40a9-a53b-a91623713489"
+                                },
+                                "tPrecision": 9,
+                                "index": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "childType": "number",
+                                "type": "numeric",
+                                "GUID": "185a3b1e-87cf-44ea-aaee-b6b2a3806c4c",
+                                "error": {
+                                    "name": false,
+                                    "code": false
+                                },
+                                "mode": "int"
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "d79a073d-5b9e-4027-bc34-c2a8beda90fd",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "required": true,
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "default": null,
+                                        "type": "null",
+                                        "primaryKey": false,
+                                        "name": "sensor event extension",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "required": false,
+                                        "GUID": "9487d27e-40a3-55cf-99bc-b2927c6de3ad",
+                                        "error": {
+                                            "name": true
+                                        }
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "582bc2b1-3f1e-575e-bdb3-bed16147954b",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "subtype": "map<string>",
+                                        "primaryKey": false,
+                                        "properties": [],
+                                        "childType": "map",
+                                        "type": "document",
+                                        "name": "sensor event extension",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "GUID": "4e7a51a1-4e9c-472f-af4f-6fa4dfe85e09",
+                                        "default": null,
+                                        "required": false,
+                                        "error": {
+                                            "name": true
+                                        }
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "8aec3117-82dd-5bcb-8d72-bc7d6a8be503",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "oneOf",
+                        "default": null,
+                        "name": "sensor event extension",
+                        "GUID": "667ef828-7e46-5de9-b20f-df20caaa748f",
+                        "error": {
+                            "name": true
+                        }
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "c54ada2d-5336-421d-8166-67aeaa6cf49a"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "definitionEntityType": "collection",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PLANT Domain/Sensor Event",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {
+                    "validationErrors": {
+                        "collectionName": true
+                    }
+                },
+                "definitionRefs": [
+                    [
+                        "c9207a9b-49d2-4dad-b46c-a9fa04f4289b"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "Alarm Code",
+                "type": "object",
+                "properties": [
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "alarm code id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "cf68c2a1-26bc-467e-9305-e76ddfaf4959",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "82b94275-49cf-4c23-a220-dff7ef13d773",
+                        "foreignField": [
+                            "82b94275-49cf-4c23-a220-dff7ef13d773",
+                            "6fcba480-0e89-44ce-adf8-ec0e42049ff0"
+                        ],
+                        "description": "The unique Digital Membership assigned identifier",
+                        "error": {}
+                    },
+                    {
+                        "name": "alarm code number",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "74376e25-ddbd-4a38-8f1e-5a603dac5c6b"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "childType": "string",
+                                "type": "string",
+                                "GUID": "69f18a16-a38a-4eb8-99c6-b8a3aa6c23af",
+                                "sample": "Humidity Sensor Fault",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "description": "a short description of the alarm code, typically displayed to the user via the ui of the control software",
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "a071aab9-7e17-4338-8113-320384504446",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "name": "alarm warning message",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "7e116130-9feb-44cb-83a6-573e76abd9e9"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "childType": "string",
+                                "type": "string",
+                                "GUID": "76307643-1d0c-44c8-837b-85806b00d72f",
+                                "sample": "Humidity Sensor Fault",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "description": "a short description of the alarm code, typically displayed to the user via the ui of the control software",
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "06062212-53a1-4776-b43c-8dd7bfddab78",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "name": "alarm condition",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "e605e168-dbfc-4166-8c2c-1273d1a80b3a"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "childType": "string",
+                                "type": "string",
+                                "GUID": "7d0c422e-0f85-4151-becd-42881125417f",
+                                "sample": "Humidity Sensor Has Rported A fault Or Comms Loss",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "description": "the condition or conditions which resulted in this alarm",
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "bb70547d-59a4-4ea7-a81e-86c507828068",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "required": true,
+                        "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                        "primaryKey": false,
+                        "childType": "enum",
+                        "type": "string",
+                        "name": "alarm colour",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "symbols": [
+                            "RED",
+                            "YELLOW",
+                            "WHITE",
+                            "BLUE"
+                        ],
+                        "description": "A colour to indicate the severity of the triggered alarm, with the recovery action:\n - RED - Machine Stop, Clear fault condition and trigger reset/restart\n - YELLOW - Machine Paused, Remove hold condition, machine will resume automatic control.\n - WHITE - Information, n/a\n - BLUE - Low Materials Warning, Replenish material stock\n\nRef: FS01 Data Specification, CPI, martin.keane@cpi-uk.com",
+                        "GUID": "bb32e9d6-8912-4870-a179-1dd957335ea6",
+                        "sample": "RED",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "name": "alarm code  standard recovery action",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "dde1173d-7dc0-4bd8-a98f-57c9d791853a"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "childType": "string",
+                                "type": "string",
+                                "GUID": "282cf682-8ece-4b49-a937-cbaf2779e058",
+                                "sample": "Stop filling system",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "description": "a short description of the action required in response to this alarm",
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "b8b1ff14-97c6-4f74-9dbe-c61e030f278c",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "required": true,
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "default": null,
+                                        "type": "null",
+                                        "primaryKey": false,
+                                        "name": "alarm code type",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "required": false,
+                                        "GUID": "3bcfadb2-3aa2-56e8-8e21-888f50eaf97a",
+                                        "error": {
+                                            "name": true
+                                        }
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "eeb0f3cf-6051-515c-8b4d-a43e8fd2d255",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "required": false,
+                                        "properties": [
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "hackoladeMeta": {},
+                                                "isActivated": true,
+                                                "GUID": "8e9331b6-c8df-4932-a588-284ce801371a",
+                                                "arrayItem": true,
+                                                "displayName": "Air",
+                                                "error": {}
+                                            },
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "hackoladeMeta": {},
+                                                "isActivated": true,
+                                                "GUID": "fa931d59-70f3-4377-a28f-a6e2dbc5750b",
+                                                "arrayItem": true,
+                                                "displayName": "Guarding",
+                                                "foreignCollection": "",
+                                                "foreignField": [],
+                                                "error": {}
+                                            },
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "hackoladeMeta": {},
+                                                "isActivated": true,
+                                                "GUID": "d5866a25-2db9-435f-adb0-ec32f32f072c",
+                                                "arrayItem": true,
+                                                "displayName": "Gripper",
+                                                "foreignCollection": "",
+                                                "foreignField": [],
+                                                "error": {}
+                                            },
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "hackoladeMeta": {},
+                                                "isActivated": true,
+                                                "GUID": "1ca1f998-dd49-4bae-8124-72d6b9099cc8",
+                                                "arrayItem": true,
+                                                "displayName": "Movement",
+                                                "foreignCollection": "",
+                                                "foreignField": [],
+                                                "error": {}
+                                            },
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "hackoladeMeta": {},
+                                                "isActivated": true,
+                                                "GUID": "8fc1974a-e236-4d34-a54f-1582a185a4e4",
+                                                "arrayItem": true,
+                                                "displayName": "Reject",
+                                                "foreignCollection": "",
+                                                "foreignField": [],
+                                                "error": {}
+                                            },
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "hackoladeMeta": {},
+                                                "isActivated": true,
+                                                "GUID": "56b3b44d-287c-4e1c-ad30-dffb1462133f",
+                                                "arrayItem": true,
+                                                "displayName": "Weight",
+                                                "foreignCollection": "",
+                                                "foreignField": [],
+                                                "error": {}
+                                            },
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "hackoladeMeta": {},
+                                                "isActivated": true,
+                                                "GUID": "21d3af82-2a87-41e5-8a00-ba7c80a47e36",
+                                                "arrayItem": true,
+                                                "displayName": "Bottle",
+                                                "foreignCollection": "",
+                                                "foreignField": [],
+                                                "error": {}
+                                            },
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "hackoladeMeta": {},
+                                                "isActivated": true,
+                                                "GUID": "7aad913a-9868-40db-9b3d-09b59bf284e2",
+                                                "arrayItem": true,
+                                                "displayName": "Recipe",
+                                                "foreignCollection": "",
+                                                "foreignField": [],
+                                                "error": {}
+                                            },
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "hackoladeMeta": {},
+                                                "isActivated": true,
+                                                "GUID": "ee019371-a83d-460a-82e0-1d2e7df20427",
+                                                "arrayItem": true,
+                                                "displayName": "Result",
+                                                "foreignCollection": "",
+                                                "foreignField": [],
+                                                "error": {}
+                                            },
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "hackoladeMeta": {},
+                                                "isActivated": true,
+                                                "GUID": "fa93496b-7353-4d91-bf7c-2201236384e8",
+                                                "arrayItem": true,
+                                                "displayName": "Comms",
+                                                "foreignCollection": "",
+                                                "foreignField": [],
+                                                "error": {}
+                                            }
+                                        ],
+                                        "primaryKey": false,
+                                        "uniqueItems": false,
+                                        "childType": "array",
+                                        "type": "array",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "GUID": "8fd5826d-285c-4923-9a8c-f007f377bba4",
+                                        "name": "alarm code type",
+                                        "default": null,
+                                        "error": {
+                                            "name": true
+                                        }
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "b7726b18-f3d6-50c2-a6ea-b00fc9455e3d",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "oneOf",
+                        "default": null,
+                        "name": "alarm code type",
+                        "GUID": "21d6e0b7-64ae-5d33-8560-aff10843ad4e",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "required": true,
+                        "type": "choice",
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "default": null,
+                                        "type": "null",
+                                        "primaryKey": false,
+                                        "name": "alarm code station type",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "required": false,
+                                        "GUID": "496e9378-47e7-5744-a2b3-80f6cb459598",
+                                        "error": {
+                                            "name": true
+                                        }
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "6a536b53-5414-5a12-94b3-f444db7b12ff",
+                                "error": {}
+                            },
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "properties": [
+                                    {
+                                        "required": false,
+                                        "properties": [
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "hackoladeMeta": {},
+                                                "isActivated": true,
+                                                "GUID": "2eb4485b-d3ce-4175-900e-af6ccd0b42de",
+                                                "arrayItem": true,
+                                                "displayName": "WM01",
+                                                "error": {}
+                                            },
+                                            {
+                                                "required": true,
+                                                "primaryKey": false,
+                                                "type": "string",
+                                                "hackoladeMeta": {},
+                                                "isActivated": true,
+                                                "GUID": "6c9327e3-3262-46a4-9a03-8c1b3518ae0b",
+                                                "arrayItem": true,
+                                                "displayName": "FS01",
+                                                "foreignCollection": "",
+                                                "foreignField": [],
+                                                "error": {}
+                                            }
+                                        ],
+                                        "primaryKey": false,
+                                        "uniqueItems": false,
+                                        "childType": "array",
+                                        "type": "array",
+                                        "hackoladeMeta": {},
+                                        "isActivated": true,
+                                        "GUID": "303b3c66-8a1d-4224-951d-0cdc7af0f0bd",
+                                        "name": "alarm code station type",
+                                        "default": null,
+                                        "error": {
+                                            "name": true
+                                        }
+                                    }
+                                ],
+                                "childType": "record",
+                                "type": "document",
+                                "subschema": true,
+                                "isActivated": true,
+                                "GUID": "25bd3c1a-a078-5930-8fba-67e0bfe9b11b",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "choice": "oneOf",
+                        "default": null,
+                        "name": "alarm code station type",
+                        "GUID": "3b46d528-836f-52d5-9d7c-592bf30f0949",
+                        "error": {
+                            "name": true
+                        }
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "GUID": "79b9fddd-d29f-420e-8a9e-c696b6e6259a",
+                    "properties": []
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "e6926013-972e-41a9-aa62-cf68986a8ca0",
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "hackoladeMeta": {
+                    "validationErrors": {
+                        "collectionName": true
+                    }
+                },
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "description": "Alarm codes are defined by CPI as part of the Digital Membership Architecture for Medicines Manufacturing.  They describe the different failure conditions that can occur during medicines manufacturing process, their relative severity (or 'colour'), and the required recovery action.\n\nAlarm codes have been consolidated from a number of sources, including equipment manufacturers.  It is envisaged that this list will continue to evolve as the requirements are better understood.\n\nThe full list of Digital Membership Alarm Codes is currently defined in the PLANT Domain reference data:\n- https://github.com/mmic-collaboration/plant-domain-model/tree/development/reference-data",
+                "definitionEntityType": "collection",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PLANT Domain/Alarm Code",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "428e4e0a-86bb-4e0b-8c41-59828ece0323"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "Alarm Sensor Event",
+                "type": "object",
+                "properties": [
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "sensor event id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "f3781eb6-1ed5-47ee-a7d5-3bcfb51dac46",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "foreignField": [
+                            "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                            "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "alarm code id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "6fcba480-0e89-44ce-adf8-ec0e42049ff0",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "name": "status",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "7d5a926a-4d73-4229-8ac4-35272a9cec8d"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "childType": "string",
+                                "type": "string",
+                                "GUID": "e23c304a-1b3f-4b8d-a908-679c112cf69e",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "b798161f-067c-4257-9358-2c8d0ab3cbb1",
+                        "error": {}
+                    },
+                    {
+                        "name": "custom message",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "eecb5019-b0dd-417f-8332-f917c89a9ad0"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "childType": "string",
+                                "type": "string",
+                                "GUID": "23c39db7-45c6-4008-9552-adc9634fed2e",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "e2f7a715-cac8-4ba2-8d7c-dacbd8a86c0a",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "name": "acknowledged",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "ff043183-b0b2-4a6a-9d9e-a8849a76d926"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "index": true,
+                                "childType": "boolean",
+                                "type": "boolean",
+                                "GUID": "c75426f1-773e-459e-a5da-1febe1c2b230",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "description": "Describes the state of an alarm.\nref: OPC-UA=10000-Part9 (v1.05.03)",
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "bb2d9248-f23f-482f-98a5-3f4aa5ce063c",
+                        "error": {}
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "GUID": "78ba49ad-5b21-44f3-9865-c3aa9b5ed701",
+                    "properties": []
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "82b94275-49cf-4c23-a220-dff7ef13d773",
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "hackoladeMeta": {
+                    "validationErrors": {
+                        "collectionName": true
+                    }
+                },
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "definitionEntityType": "collection",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PLANT Domain/Alarm Sensor Event",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "0c6594ec-6d22-4a71-9f56-472f0a9b18f8"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "Sensor Event Type",
+                "type": "object",
+                "properties": [
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "sensor event type id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "38a4f2be-4e8d-48c9-89f4-3e375403074e",
+                        "relationshipType": "Foreign Key",
+                        "foreignCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "foreignField": [
+                            "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                            "642911f6-b1b7-413c-a5ca-a1c0fd914352"
+                        ],
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "primaryKey": false,
+                        "type": "string",
+                        "name": "sensor event type name",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "6b2747d9-7971-44f2-b383-e666f7efbcb3",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "name": "sensor event type description",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "d569d538-a22e-4558-92d0-b0df8826b372"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "childType": "string",
+                                "type": "string",
+                                "GUID": "12146cab-e866-4c55-9ea3-5f10343e33d2",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "729c28b2-d45c-452f-a924-89cb0c4bb516",
+                        "error": {
+                            "name": true
+                        }
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "GUID": "3cebab2b-233b-4f07-9882-ad86a339bda2",
+                    "properties": []
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "12cdf2cf-b4cd-4a07-9950-7a053fcf1efe",
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "hackoladeMeta": {
+                    "validationErrors": {
+                        "collectionName": true
+                    }
+                },
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "definitionEntityType": "collection",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PLANT Domain/Sensor Event Type",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "7b8726b6-19c4-43ea-8248-d0f87f0be153"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "Equipment Node",
+                "type": "object",
+                "properties": [
+                    {
+                        "name": "equipment node id",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "c774519b-215a-476d-9742-2c210b519bc5"
+                            },
+                            {
+                                "autoincrement": {
+                                    "GUID": "d266ad69-1519-4cfa-ade3-fa5a33caf90d",
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "index": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "mode": "int",
+                                "childType": "number",
+                                "type": "numeric",
+                                "GUID": "6a0ee378-da5d-46bd-9760-b6110265b17e",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": true,
+                        "hackoladeMeta": {},
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "childRelationships": [
+                            "84cc3373-e4d5-4685-b766-fe3fe6399e9f"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "a1ddee7a-1931-4bf1-9fea-b972fe7cca35",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "name": "equipment id",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "d40066ac-9c92-49ae-a634-972e6b36d032"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1,
+                                    "GUID": "6339b50b-0991-4852-801f-d2a4bd7ce7a1"
+                                },
+                                "tPrecision": 9,
+                                "index": true,
+                                "exclusiveMinimum": false,
+                                "exclusiveMaximum": false,
+                                "mode": "int",
+                                "childType": "number",
+                                "type": "numeric",
+                                "GUID": "6c94f956-8aa0-4baa-b6a9-b79e760e652c",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "ae3d36c2-6cc0-421b-8026-19c30c2831ac",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "required": true,
+                        "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                        "primaryKey": false,
+                        "childType": "enum",
+                        "type": "string",
+                        "name": "state",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "60787e5d-d15e-407c-9438-19d83eeea474",
+                        "description": "The station state captures the lifecycle of a station:\n\n1. The transition from “Available” to “Running” occurs when a Station Start Request is received from either the local HMI or the Machine Level SCADA.\n2. The transition from “Running” to “In Cycle” occurs when the machine is in the “Running” state and the machine is in auto mode.\n3. The transition from “In Cycle” to “Fault” occurs when a “red” alarm becomes active.\n4. The transition from “Fault” to “In Cycle” occurs when all “red” alarms have been cleared.\n\nRef: FS01 Data Specification, CPI, martin.keane@cpi-uk.com\n",
+                        "error": {}
+                    },
+                    {
+                        "name": "station short code",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "99ee5c6b-646b-4d28-9561-6e260efc6540"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "childType": "string",
+                                "type": "string",
+                                "GUID": "4104b29c-f7a1-4b81-8bdf-c4947b5f4475",
+                                "sample": "FS01",
+                                "error": {}
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "5ce63241-bbf5-4e96-a199-433c6a54f066",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "name": "equipment asset number",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "18a10942-7a33-4908-8109-4ee48d6fafc9"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "childType": "string",
+                                "type": "string",
+                                "GUID": "560c1f2c-c69f-4da0-b6cc-1ae1e459c92b",
+                                "error": {
+                                    "name": false,
+                                    "code": false
+                                }
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "962cade6-acde-48c1-b347-84ba40930aab",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "name": "equipment model",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "3df5e8a3-b17d-458c-9f8a-a68ac9417e44"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "childType": "string",
+                                "type": "string",
+                                "GUID": "d45cf6e2-0d36-4a44-9d06-d862d7069435",
+                                "error": {
+                                    "name": false,
+                                    "code": false
+                                }
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "c5d7a5fd-dc34-4fd0-9062-bfc4be5495be",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "name": "manufacturer",
+                        "type": "multiple",
+                        "properties": [],
+                        "multipleTypes": [
+                            {
+                                "type": "null",
+                                "GUID": "4d763d4e-bc19-458f-be74-a95edc85dedd"
+                            },
+                            {
+                                "autoincrement": {
+                                    "step_num": 1
+                                },
+                                "tPrecision": 9,
+                                "childType": "string",
+                                "type": "string",
+                                "GUID": "5bc67f7f-e7a4-450e-8658-38d0bc403f14",
+                                "error": {
+                                    "name": false,
+                                    "code": false
+                                }
+                            }
+                        ],
+                        "isActivated": true,
+                        "primaryKey": false,
+                        "hackoladeMeta": {},
+                        "required": true,
+                        "compositeKey": [
+                            "compositePrimaryKey",
+                            "compositeUniqueKey"
+                        ],
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "default": null,
+                        "compositePrimaryKey": false,
+                        "compositeUniqueKey": false,
+                        "GUID": "a6463c4d-7374-43c2-aace-350c271be55e",
+                        "error": {}
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "GUID": "afbc8611-a6d3-4953-b86f-c9645801e3aa",
+                    "properties": []
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "cb15922e-8372-4f6d-baba-fdcbe652892f",
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "hackoladeMeta": {
+                    "validationErrors": {
+                        "collectionName": true
+                    }
+                },
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "definitionEntityType": "collection",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PLANT Domain/Equipment Node",
+                "fileType": "hackoladeSchema",
+                "definitionRefs": [
+                    [
+                        "6fc337cc-eb96-449b-bc86-881fc0f15a21"
+                    ]
+                ]
+            },
+            {
+                "collectionName": "Cycle",
+                "type": "object",
+                "properties": [
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": true,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "cycle id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "44f22dff-5865-4f52-a3e5-075be03aae35",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "sensor event id",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "2a359fe9-8dde-42ea-9a5e-f3530848682e",
+                        "foreignCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                        "foreignField": [
+                            "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                            "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                        ],
+                        "relationshipType": "Foreign Key",
+                        "error": {}
+                    },
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "long",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "cycle start timestamp",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "0de2c1ad-fc39-485f-b341-10c45cc46ee1",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "logicalType": "timestamp-millis",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "required": true,
+                        "primaryKey": false,
+                        "childType": "boolean",
+                        "type": "boolean",
+                        "name": "cycle result",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "7acc2f32-501e-4657-9786-a75387f9bccd",
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "int",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "cycle result code",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "e778b8c8-f40d-47fc-8b19-3ed45d0cfdce",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "error": {
+                            "name": true
+                        }
+                    },
+                    {
+                        "required": true,
+                        "exclusiveMinimum": false,
+                        "exclusiveMaximum": false,
+                        "primaryKey": false,
+                        "mode": "long",
+                        "childType": "number",
+                        "type": "numeric",
+                        "name": "cycle end timestamp",
+                        "hackoladeMeta": {},
+                        "isActivated": true,
+                        "GUID": "614faf40-35a9-4f88-83cb-a0d6acaaceda",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "logicalType": "timestamp-millis",
+                        "error": {
+                            "name": true
+                        }
+                    }
+                ],
+                "definitions": {
+                    "type": "definitions",
+                    "properties": [],
+                    "GUID": "a4567b70-3b67-4227-a6fd-8b4a19a5f118"
+                },
+                "isActivated": true,
+                "additionalProperties": false,
+                "GUID": "46371898-f67c-4565-9d2a-95e4feda4254",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "definitionEntityType": "collection",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PLANT Domain/Cycle",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {
+                    "validationErrors": {}
+                },
+                "definitionRefs": [
+                    [
+                        "6fd8181d-210e-41b1-9018-eb14761b85f5"
+                    ]
+                ]
+            },
+            {
+                "GUID": "ccbd3678-e58b-4dfa-8ce0-3df7488dedf0",
+                "name": "New annotation",
+                "type": "annotation",
+                "disableInitialFocus": true,
+                "value": "# PLANT Domain Logical Data Model\n\n- author: timothy.galvin@atos.net\n- version: 0.3.1\n- date: 20-jan-2024\n\nThis is the PLANT Domain LDM for the Digital Membership data architecture.",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "definitionEntityType": "decorativeSymbol",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PLANT Domain/New annotation",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {},
+                "definitionRefs": [
+                    [
+                        "8ecd3d1e-81bb-4b1d-b688-3e68f1ae2fd7"
+                    ]
+                ]
+            },
+            {
+                "GUID": "711297b0-41ad-4b48-a5de-8f124a1364a1",
+                "name": "Note",
+                "type": "annotation",
+                "bucketId": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "disableInitialFocus": true,
+                "value": "expand sensor event extension - TBD",
+                "definitionEntityType": "decorativeSymbol",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PLANT Domain/Note",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {},
+                "definitionRefs": [
+                    [
+                        "4cc5b4ce-e72f-4c14-bcd6-85e22eca3079"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Sensor Event.sensor id to Sensor.sensor id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "cc7da46d-ac5f-4055-857c-df44e31cfd33"
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "2ef11825-3352-4007-98a2-bc00bae9a094"
+                ],
+                "childCardinality": "0..n",
+                "GUID": "596f6930-9091-4cd5-859f-0a948c0c1e73",
+                "parentCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                "childCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "f99902b8-dd36-4579-be52-29d6687d0914",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 10695.784694373762,
+                            "y": 8648.475096228372
+                        },
+                        {
+                            "x": 10638.347699797117,
+                            "y": 8648.475096228372
+                        },
+                        {
+                            "x": 10638.347699797117,
+                            "y": 8647.912366662466
+                        },
+                        {
+                            "x": 10580.910705220473,
+                            "y": 8647.912366662466
+                        }
+                    ],
+                    "sides": [
+                        "left",
+                        "right"
+                    ]
+                },
+                "definitionEntityType": "relationship",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk Sensor Event.sensor id to Sensor.sensor id",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {},
+                "definitionRefs": [
+                    [
+                        "8f2b78d0-46c3-4843-b75e-a1c3fdd114c4"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Process Event Type.sensor event type id to Sensor Event.sensor event type id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "642911f6-b1b7-413c-a5ca-a1c0fd914352"
+                ],
+                "parentCardinality": "0..n",
+                "childField": [
+                    "12cdf2cf-b4cd-4a07-9950-7a053fcf1efe",
+                    "38a4f2be-4e8d-48c9-89f4-3e375403074e"
+                ],
+                "childCardinality": "1",
+                "parentCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                "childCollection": "12cdf2cf-b4cd-4a07-9950-7a053fcf1efe",
+                "GUID": "00b945e3-978c-4244-97f0-54da6f471177",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "de2155e4-3792-4e0e-a0d7-1ceb852f9233",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 11156.159481736533,
+                            "y": 8648.296675697173
+                        },
+                        {
+                            "x": 11084.972088055147,
+                            "y": 8648.296675697173
+                        },
+                        {
+                            "x": 11084.972088055147,
+                            "y": 8648.475096228372
+                        },
+                        {
+                            "x": 11013.784694373762,
+                            "y": 8648.475096228372
+                        }
+                    ],
+                    "sides": [
+                        "left",
+                        "right"
+                    ]
+                },
+                "definitionEntityType": "relationship",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk Process Event Type.sensor event type id to Sensor Event.sensor event type id",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {},
+                "definitionRefs": [
+                    [
+                        "aad37be4-6b24-4cd7-baf2-ff64f7f1f091"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Alarm Code.alarm code id to Alarm.alarm code id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    "82b94275-49cf-4c23-a220-dff7ef13d773",
+                    "6fcba480-0e89-44ce-adf8-ec0e42049ff0"
+                ],
+                "parentCardinality": "0..n",
+                "childField": [
+                    "e6926013-972e-41a9-aa62-cf68986a8ca0",
+                    "cf68c2a1-26bc-467e-9305-e76ddfaf4959"
+                ],
+                "childCardinality": "1",
+                "parentCollection": "82b94275-49cf-4c23-a220-dff7ef13d773",
+                "childCollection": "e6926013-972e-41a9-aa62-cf68986a8ca0",
+                "GUID": "d3788af4-9ee6-425f-9af3-ce723bc00f50",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "9f8e0dbd-5f82-4686-8fb6-9677d3361395",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 11153.095230875724,
+                            "y": 8933.506438908085
+                        },
+                        {
+                            "x": 11066.574049708532,
+                            "y": 8933.506438908085
+                        },
+                        {
+                            "x": 11066.574049708532,
+                            "y": 8925.235689434976
+                        },
+                        {
+                            "x": 10980.052868541341,
+                            "y": 8925.235689434976
+                        }
+                    ],
+                    "sides": [
+                        "left",
+                        "right"
+                    ]
+                },
+                "definitionEntityType": "relationship",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk Alarm Code.alarm code id to Alarm.alarm code id",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {},
+                "definitionRefs": [
+                    [
+                        "d6806765-bd89-4063-8bd4-fae65a9c89a9"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Alarm.sensor event id to Sensor Event.sensor event id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    "82b94275-49cf-4c23-a220-dff7ef13d773",
+                    "f3781eb6-1ed5-47ee-a7d5-3bcfb51dac46"
+                ],
+                "childCardinality": "1",
+                "parentCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                "childCollection": "82b94275-49cf-4c23-a220-dff7ef13d773",
+                "GUID": "d5cdd3cb-256d-46d2-84be-354943d42437",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "0618e1d3-b5e2-45ec-ad5f-ef02937c0c98",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 10854.052868541341,
+                            "y": 8863.735689434976
+                        },
+                        {
+                            "x": 10854.052868541341,
+                            "y": 8795.855392831674
+                        },
+                        {
+                            "x": 10854.784694373762,
+                            "y": 8795.855392831674
+                        },
+                        {
+                            "x": 10854.784694373762,
+                            "y": 8727.975096228372
+                        }
+                    ],
+                    "sides": [
+                        "top",
+                        "bottom"
+                    ]
+                },
+                "definitionEntityType": "relationship",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk Alarm.sensor event id to Sensor Event.sensor event id",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {},
+                "definitionRefs": [
+                    [
+                        "b36818cc-ccc2-438c-9a29-aadf1d9c8e5a"
+                    ]
+                ]
+            },
+            {
+                "name": "fk Sensor.station id to Station.station id",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    "cb15922e-8372-4f6d-baba-fdcbe652892f",
+                    "a1ddee7a-1931-4bf1-9fea-b972fe7cca35"
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "9fe63624-ac48-4016-aac8-067a27c65bb4"
+                ],
+                "childCardinality": "1..n",
+                "parentCollection": "cb15922e-8372-4f6d-baba-fdcbe652892f",
+                "childCollection": "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                "GUID": "84cc3373-e4d5-4685-b766-fe3fe6399e9f",
+                "lineSize": 2,
+                "hackoladeStyles": {
+                    "GUID": "710db331-39ef-458a-8a95-b121a72ea738",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 10303.910705220473,
+                            "y": 8647.912366662466
+                        },
+                        {
+                            "x": 10140.168104363995,
+                            "y": 8647.912366662466
+                        },
+                        {
+                            "x": 10140.168104363995,
+                            "y": 8557.649174113214
+                        }
+                    ],
+                    "sides": [
+                        "left",
+                        "bottom"
+                    ]
+                },
+                "definitionEntityType": "relationship",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/fk Sensor.station id to Station.station id",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {},
+                "definitionRefs": [
+                    [
+                        "edece56f-a319-4583-b55d-a2956c13f53d"
+                    ]
+                ]
+            },
+            {
+                "name": "New Relationship",
+                "relationshipType": "Foreign Key",
+                "parentField": [
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "e3092d9a-390a-42d4-9e81-fd488491f87e"
+                ],
+                "parentCardinality": "1",
+                "childField": [
+                    "46371898-f67c-4565-9d2a-95e4feda4254",
+                    "2a359fe9-8dde-42ea-9a5e-f3530848682e"
+                ],
+                "childCardinality": "1",
+                "GUID": "e44a80d5-616a-450e-afaf-0d4fdfa6c18d",
+                "childCollection": "46371898-f67c-4565-9d2a-95e4feda4254",
+                "parentCollection": "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                "hackoladeStyles": {
+                    "GUID": "d5a15487-3bcd-4701-897e-1d196507c319",
+                    "autoPositioning": true,
+                    "type": "Orthogonal",
+                    "thickness": 2,
+                    "color": "#79c4ff",
+                    "dataType": "",
+                    "shape": [
+                        {
+                            "x": 10853.953631719154,
+                            "y": 8482.052535612736
+                        },
+                        {
+                            "x": 10853.953631719154,
+                            "y": 8525.513815920554
+                        },
+                        {
+                            "x": 10854.784694373762,
+                            "y": 8525.513815920554
+                        },
+                        {
+                            "x": 10854.784694373762,
+                            "y": 8568.975096228372
+                        }
+                    ],
+                    "sides": [
+                        "bottom",
+                        "top"
+                    ]
+                },
+                "definitionEntityType": "relationship",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/relationships/New Relationship",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {},
+                "definitionRefs": [
+                    [
+                        "8e9e9d3b-abc4-49ea-b188-17687e1bb1d8"
+                    ]
+                ]
+            },
+            {
+                "name": "PLANT Domain",
+                "type": "bucket",
+                "collectionIds": [
+                    "e961595d-cd47-4802-91d4-05c90e7f9ee2",
+                    "3d6faa97-fbb0-4a23-9d73-3a8f3c48e4ae",
+                    "e6926013-972e-41a9-aa62-cf68986a8ca0",
+                    "82b94275-49cf-4c23-a220-dff7ef13d773",
+                    "12cdf2cf-b4cd-4a07-9950-7a053fcf1efe",
+                    "cb15922e-8372-4f6d-baba-fdcbe652892f",
+                    "46371898-f67c-4565-9d2a-95e4feda4254"
+                ],
+                "backgroundColor": {
+                    "r": 216,
+                    "g": 0,
+                    "b": 115,
+                    "a": 1
+                },
+                "show": true,
+                "isActivated": true,
+                "indexes": [],
+                "GUID": "36a81f06-4d30-4fa7-a224-2ff380cbc91b",
+                "definitionEntityType": "bucket",
+                "link": "PLANT-Domain-Polyglot.hck.json",
+                "kind": "relativePath",
+                "fieldRelativePath": "#/PLANT Domain",
+                "fileType": "hackoladeSchema",
+                "hackoladeMeta": {
+                    "validationErrors": {
+                        "name": true
+                    }
+                },
+                "definitionRefs": [
+                    [
+                        "525285b3-d665-4316-94f6-f39d587902ca"
+                    ]
+                ]
+            }
+        ],
+        "GUID": "c5bc408c-45a2-40d8-835b-40f5922f7fa4"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "9886a479-63da-4ae4-9d68-b0f6b618d7ae"
+    },
+    "sources": [],
+    "decorativeSymbols": [
+        {
+            "GUID": "8ecd3d1e-81bb-4b1d-b688-3e68f1ae2fd7",
+            "name": "New annotation",
+            "refType": "polyglot",
+            "refIdPath": [
+                "3913d541-d258-45ed-b96a-b3966d30f4d3",
+                "c5bc408c-45a2-40d8-835b-40f5922f7fa4",
+                "ccbd3678-e58b-4dfa-8ce0-3df7488dedf0"
+            ],
+            "type": "reference",
+            "ref": "ccbd3678-e58b-4dfa-8ce0-3df7488dedf0",
+            "bucketId": "525285b3-d665-4316-94f6-f39d587902ca",
+            "disableInitialFocus": true
+        },
+        {
+            "GUID": "4cc5b4ce-e72f-4c14-bcd6-85e22eca3079",
+            "name": "Note",
+            "refType": "polyglot",
+            "refIdPath": [
+                "3913d541-d258-45ed-b96a-b3966d30f4d3",
+                "c5bc408c-45a2-40d8-835b-40f5922f7fa4",
+                "711297b0-41ad-4b48-a5de-8f124a1364a1"
+            ],
+            "type": "reference",
+            "ref": "711297b0-41ad-4b48-a5de-8f124a1364a1",
+            "bucketId": "525285b3-d665-4316-94f6-f39d587902ca",
+            "disableInitialFocus": true
+        }
+    ],
+    "dbVendor": "Avro",
+    "schemaNameStrategy": "TopicNameStrategy",
+    "appTarget": "Avro",
+    "creationTS": "2024-01-19T10:46:14.043Z",
+    "GUID": "3913d541-d258-45ed-b96a-b3966d30f4d3",
+    "isLineageEnabled": false,
+    "polyglotModelPaths": [
+        {
+            "GUID": "7f4757d2-6377-4d45-b562-b9995281830c",
+            "polyglotModelName": "PLANT-Domain-Polyglot.hck",
+            "polyglotModelPath": "PLANT-Domain-Polyglot.hck.json",
+            "normalization": false
+        },
+        {
+            "GUID": "05d1623e-b12b-47b4-89d1-6386c73af45c",
+            "polyglotModelName": "PLANT-Domain-Polyglot.hck(1)",
+            "polyglotModelPath": "PLANT-Domain-Polyglot.hck.json",
+            "normalization": false
+        }
+    ],
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "version": "0.3.1",
+    "lastModifTS": "2024-01-19T10:54:04.077Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Avro",
+        "pluginVersion": "0.1.115",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.9.12"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "851d9856-de0f-442e-b5b2-01a3e4d37eb9",
+                        "x": 10303.910705220473,
+                        "y": 8595.412366662466,
+                        "width": 277,
+                        "height": 105,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "c9207a9b-49d2-4dad-b46c-a9fa04f4289b",
+                        "x": 10695.784694373762,
+                        "y": 8568.975096228372,
+                        "width": 318,
+                        "height": 159,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "428e4e0a-86bb-4e0b-8c41-59828ece0323",
+                        "x": 11153.095230875724,
+                        "y": 8845.006438908085,
+                        "width": 377,
+                        "height": 177,
+                        "color": {
+                            "hex": "#00bcd5"
+                        }
+                    },
+                    {
+                        "GUID": "0c6594ec-6d22-4a71-9f56-472f0a9b18f8",
+                        "x": 10728.052868541341,
+                        "y": 8863.735689434976,
+                        "width": 252,
+                        "height": 123,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "7b8726b6-19c4-43ea-8248-d0f87f0be153",
+                        "x": 11156.159481736533,
+                        "y": 8604.796675697173,
+                        "width": 324,
+                        "height": 87,
+                        "color": {
+                            "hex": "#00bcd5"
+                        }
+                    },
+                    {
+                        "GUID": "6fc337cc-eb96-449b-bc86-881fc0f15a21",
+                        "x": 9989.668104363995,
+                        "y": 8398.649174113214,
+                        "width": 301,
+                        "height": 159,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "6fd8181d-210e-41b1-9018-eb14761b85f5",
+                        "x": 10715.953631719154,
+                        "y": 8341.052535612736,
+                        "width": 276,
+                        "height": 141,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 9949.668104363995,
+                        "y": 8215.013785742995,
+                        "GUID": "525285b3-d665-4316-94f6-f39d587902ca"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [
+                    {
+                        "GUID": "8ecd3d1e-81bb-4b1d-b688-3e68f1ae2fd7",
+                        "x": 11098.904449853511,
+                        "y": 8255.013785742995,
+                        "height": 237,
+                        "width": 425
+                    },
+                    {
+                        "GUID": "4cc5b4ce-e72f-4c14-bcd6-85e22eca3079",
+                        "x": 10477.325984374744,
+                        "y": 8943.528817056253,
+                        "height": 61,
+                        "width": 237,
+                        "color": {
+                            "hsl": {
+                                "h": 14.454545454545455,
+                                "s": 0.990990990990991,
+                                "l": 0.5647058823529412,
+                                "a": 1
+                            },
+                            "hex": "#fe5722",
+                            "rgb": {
+                                "r": 254,
+                                "g": 87,
+                                "b": 34,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 14.454545454545455,
+                                "s": 0.8661417322834646,
+                                "v": 0.996078431372549,
+                                "a": 1
+                            },
+                            "oldHue": 14.454545454545455,
+                            "source": "hex"
+                        }
+                    }
+                ],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

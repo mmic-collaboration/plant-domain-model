@@ -16,3 +16,11 @@ The PLANT Domain LDM is derived from a recent version of the PLANT Domain Concep
 Here is a snapshot of the graphic (refer to the architecture repo for the definitions):
 
 ![PROCESS CDM](images/PlantDomainCDM.jpg)
+
+
+## Release Notes
+
+| Version | Date | Author | Changes |
+| --------:| :------: | :------: | :------: |
+| 0.2.2    | tbd  | @timothygalvin  | Sprint 2 baseline    |
+| 0.3.1   | tbd  | @timothygalvin  | Rework of domain interactions with PROCESS    |

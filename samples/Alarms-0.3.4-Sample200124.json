@@ -1,6 +1,6 @@
 {
-    "Deviations-Sample200124": [{
-        "Deviation": {
+    "Alarms-0.3.4-Sample200124": [{
+        "AlarmSensorEvent": {
             "sensor event id": "ABCD-EFAB-1234-5678-0000-0010",
             "alarm code id": 95,
             "status": "Lorem",
@@ -18,7 +18,7 @@
             }
         },
         "SomeMetaData": "P0000000026S",
-        "SomeOtherMetaData": "station-id"
+        "SomeOtherMetaData": "5F77C03E-FFCA-4E2C-B46B-A536E875DAC9"
     }, {
         "AlarmSensorEvent": {
             "sensor event id": "ABCD-EFAB-1234-5678-0000-0011",
@@ -38,7 +38,7 @@
             }
         },
         "SomeMetaData": "P0000000026S",
-        "SomeOtherMetaData": "station-id"
+        "SomeOtherMetaData": "6A5176EE-072B-4F69-A4F5-FAF6DA2C1AF9"
     }, {
         "AlarmSensorEvent": {
             "sensor event id": "ABCD-EFAB-1234-5678-0000-0012",
@@ -58,6 +58,6 @@
             }
         },
         "SomeMetaData": "P0000000026S",
-        "SomeOtherMetaData": "station-id"
+        "SomeOtherMetaData": "B22E4BB3-36F3-4CD3-BC7C-E5CE25BC2816"
     }]
 }

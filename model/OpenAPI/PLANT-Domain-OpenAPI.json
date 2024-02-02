@@ -5,13 +5,14 @@
     "contact": {
       "email": "timothy.galvin@atos.net"
     },
-    "version": "0.2.2"
+    "version": "0.3.1"
   },
   "paths": {},
   "components": {
     "schemas": {
-      "Sensor": {
+      "sensor": {
         "type": "object",
+        "title": "Sensor",
         "properties": {
           "sensorId": {
             "type": "integer",
@@ -28,40 +29,16 @@
             "title": "sensor type"
           },
           "sensorConfiguration": {
-            "type": "array",
+            "type": "object",
             "title": "Sensor Configuration",
-            "items": {
-              "type": "string"
-            },
             "nullable": false
           }
         },
         "nullable": false
       },
-      "Equipment": {
+      "sensorEvent": {
         "type": "object",
-        "required": [
-          "equipmentId"
-        ],
-        "properties": {
-          "equipmentId": {
-            "type": "integer",
-            "format": "int32",
-            "title": "equipment id"
-          },
-          "equipmentModel": {
-            "type": "string",
-            "title": "equipment model"
-          },
-          "manufacturer": {
-            "type": "string",
-            "title": "manufacturer"
-          }
-        },
-        "nullable": false
-      },
-      "Sensor_Event": {
-        "type": "object",
+        "title": "Sensor Event",
         "required": [
           "sensorEventId",
           "sensorId"
@@ -86,32 +63,64 @@
             "type": "string",
             "format": "date-time",
             "title": "sensor event timestamp"
+          },
+          "batchNumber": {
+            "type": "string",
+            "title": "batch number"
+          },
+          "bottleId": {
+            "type": "number",
+            "format": "float",
+            "title": "bottle id"
+          },
+          "sensorEventExtension": {
+            "type": "object",
+            "title": "sensor event extension",
+            "nullable": false
           }
         },
         "nullable": false
       },
-      "Alarm_Code": {
+      "alarmCode": {
         "type": "object",
+        "title": "Alarm Code",
         "description": "Alarm codes are defined by CPI as part of the Digital Membership Architecture for Medicines Manufacturing.  They describe the different failure conditions that can occur during medicines manufacturing process, their relative severity (or 'colour'), and the required recovery action.\n\nAlarm codes have been consolidated from a number of sources, including equipment manufacturers.  It is envisaged that this list will continue to evolve as the requirements are better understood.\n\nThe full list of Digital Membership Alarm Codes is currently defined in the PLANT Domain reference data:\n- https://github.com/mmic-collaboration/plant-domain-model/tree/development/reference-data",
         "required": [
           "alarmCodeId",
-          "alarmCodeColour"
+          "alarmColour",
+          "alarmCodeStationType"
         ],
         "properties": {
           "alarmCodeId": {
             "type": "number",
             "format": "float",
             "title": "alarm code id",
-            "description": "The unique Digital Membership assigned identifier"
+            "description": "The unique Digital Membership assigned identifier",
+            "examples": [
+              2
+            ]
           },
-          "alarmCodeTitle": {
+          "alarmCodeNumber": {
             "type": "string",
-            "title": "alarm code title",
-            "description": "short description of the alarm code"
+            "title": "alarm code number",
+            "description": "a short description of the alarm code, typically displayed to the user via the ui of the control software",
+            "example": "2"
           },
-          "alarmCodeColour": {
+          "alarmWarningMessage": {
             "type": "string",
-            "title": "alarm code colour",
+            "title": "alarm warning message",
+            "description": "a short description of the alarm code, typically displayed to the user via the ui of the control software",
+            "example": "Air Pressure Low PS1035"
+          },
+          "alarmCondition": {
+            "type": "string",
+            "title": "alarm condition",
+            "description": "the condition or conditions which resulted in this alarm",
+            "example": "Air Pressure switch PRS1035 indicating a Low Inlet Air Pressure"
+          },
+          "alarmColour": {
+            "type": "string",
+            "title": "alarm colour",
             "description": "A colour to indicate the severity of the triggered alarm, with the recovery action:\n - RED - Machine Stop, Clear fault condition and trigger reset/restart\n - YELLOW - Machine Paused, Remove hold condition, machine will resume automatic control.\n - WHITE - Information, n/a\n - BLUE - Low Materials Warning, Replenish material stock\n\nRef: FS01 Data Specification, CPI, martin.keane@cpi-uk.com",
             "enum": [
               "RED",
@@ -122,29 +131,47 @@
             "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
             "example": "RED"
           },
-          "alarmCodeRecoveryAction": {
+          "alarmCodeStandardRecoveryAction": {
             "type": "string",
-            "title": "alarm code recovery action",
+            "title": "alarm code  standard recovery action",
             "description": "a short description of the action required in response to this alarm",
-            "example": "Stop filling system"
+            "example": "Stop filling system, de-energise air dump valve"
           },
-          "alarmWarningMessage": {
+          "alarmCodeType": {
             "type": "string",
-            "title": "alarm warning message",
-            "description": "a short description of the alarm code, typically displayed to the user via the ui of the control software",
-            "example": "Humidity Sensor Fault"
+            "title": "alarm code type",
+            "enum": [
+              "Air",
+              "Guarding",
+              "Gripper",
+              "Movement",
+              "Reject",
+              "Weight",
+              "Bottle",
+              "Recipe",
+              "Result",
+              "Comms"
+            ],
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
           },
-          "alarmCodeCondition": {
+          "alarmCodeStationType": {
             "type": "string",
-            "title": "alarm code condition",
-            "description": "the condition or conditions which resulted in this alarm",
-            "example": "Humidity Sensor Has Rported A fault Or Comms Loss"
+            "title": "alarm code station type",
+            "enum": [
+              "FS01",
+              "WS01"
+            ],
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "examples": [
+              "FS01"
+            ]
           }
         },
         "nullable": false
       },
-      "Alarm_Sensor_Event": {
+      "alarmSensorEvent": {
         "type": "object",
+        "title": "Alarm Sensor Event",
         "required": [
           "sensorEventId",
           "alarmCodeId"
@@ -176,8 +203,9 @@
         },
         "nullable": false
       },
-      "Sensor_Event_Type": {
+      "sensorEventType": {
         "type": "object",
+        "title": "Sensor Event Type",
         "required": [
           "sensorEventTypeId",
           "sensorEventTypeName"
@@ -199,16 +227,17 @@
         },
         "nullable": false
       },
-      "Station": {
+      "equipmentNode": {
         "type": "object",
+        "title": "Equipment Node",
         "required": [
           "state"
         ],
         "properties": {
-          "stationId": {
+          "equipmentNodeId": {
             "type": "integer",
             "format": "int32",
-            "title": "station id"
+            "title": "equipment node id"
           },
           "equipmentId": {
             "type": "integer",
@@ -225,6 +254,62 @@
             "type": "string",
             "title": "station short code",
             "example": "FS01"
+          },
+          "equipmentAssetNumber": {
+            "type": "string",
+            "title": "equipment asset number"
+          },
+          "equipmentModel": {
+            "type": "string",
+            "title": "equipment model"
+          },
+          "manufacturer": {
+            "type": "string",
+            "title": "manufacturer"
+          }
+        },
+        "nullable": false
+      },
+      "cycle": {
+        "type": "object",
+        "title": "Cycle",
+        "required": [
+          "cycleId",
+          "finishSensorEventId",
+          "cycleStartTimestamp",
+          "cycleResult",
+          "cycleResultCode",
+          "cycleEndTimestamp"
+        ],
+        "properties": {
+          "cycleId": {
+            "type": "number",
+            "format": "float",
+            "title": "cycle id"
+          },
+          "finishSensorEventId": {
+            "type": "integer",
+            "format": "int32",
+            "title": "finish sensor event id"
+          },
+          "cycleStartTimestamp": {
+            "type": "string",
+            "format": "date-time",
+            "title": "cycle start timestamp"
+          },
+          "cycleResult": {
+            "type": "boolean",
+            "title": "cycle result"
+          },
+          "cycleResultCode": {
+            "type": "integer",
+            "format": "int32",
+            "title": "cycle result code"
+          },
+          "cycleEndTimestamp": {
+            "type": "string",
+            "format": "date-time",
+            "title": "cycle end timestamp"
           }
         },
         "nullable": false
